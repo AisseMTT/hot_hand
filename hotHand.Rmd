@@ -1,0 +1,45 @@
+---
+title: "hotHand"
+author: "Ben Peloquin"
+date: "April 19, 2016"
+output: html_document
+---
+
+```{r}
+## Reference
+# https://thedatagame.com.au/2015/09/27/how-to-create-nba-shot-charts-in-r/
+```
+
+
+```{r}
+setwd("/Users/benpeloquin/Desktop/Spring2016/Stats267/")
+library(rjson)
+```
+
+
+```{r}
+## Example data
+playerID <- 201939
+shotURL <- paste("http://stats.nba.com/stats/shotchartdetail?CFID=33&CFPARAMS=2014-15&ContextFilter=&ContextMeasure=FGA&DateFrom=&DateTo=&GameID=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Base&Month=0&OpponentTeamID=0&Outcome=&PaceAdjust=N&PerMode=PerGame&Period=0&PlayerID=",playerID,"&PlusMinus=N&Position=&Rank=N&RookieYear=&Season=2014-15&SeasonSegment=&SeasonType=Regular+Season&TeamID=0&VsConference=&VsDivision=&mode=Advanced&showDetails=0&showShots=1&showZones=0", sep = "")
+ 
+# import from JSON
+shotData <- fromJSON(file = shotURL, method="C")
+```
+
+```{r}
+shotDataf <- data.frame(matrix(unlist(shotData$resultSets[[1]][[3]]), ncol=21, byrow = TRUE))
+ 
+# shot data headers
+colnames(shotDataf) <- shotData$resultSets[[1]][[2]]
+ 
+# covert x and y coordinates into numeric
+shotDataf$LOC_X <- as.numeric(as.character(shotDataf$LOC_X))
+shotDataf$LOC_Y <- as.numeric(as.character(shotDataf$LOC_Y))
+shotDataf$SHOT_DISTANCE <- as.numeric(as.character(shotDataf$SHOT_DISTANCE))
+ 
+# have a look at the data
+ggplot(shotDataf, aes(x=LOC_X, y=LOC_Y)) +
+         geom_point(aes(colour = EVENT_TYPE))
+```
+
+
