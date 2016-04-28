@@ -3,6 +3,7 @@ import urllib
 import requests
 import json
 import pdb
+import re
 import goldsberry
 import pandas as pd
 import numpy as np
@@ -12,22 +13,8 @@ from selenium import webdriver
 from bs4 import BeautifulSoup
 print goldsberry.__version__
 
-######
-###### Get 2015 player list
-######
-players = goldsberry.PlayerList()
-players2015 = pd.DataFrame(players.players())
-# print players2015.head()
-id_list = players2015['PERSON_ID']
-# ids = [str(id) for id in id_list]
-
-
-### Write player ids to csv
-### ------------------------
-# with open('player_ids.csv', 'wb') as output_file:
-#   writer = csv.writer(output_file, dialect = 'excel')
-#   for id in ids:
-#     writer.writerow([id])
+player_data_path = 'player_data/'
+player_id = '203500'
 
 ### Read in ids
 ### -----------
@@ -37,76 +24,60 @@ with open('player_ids.csv', 'r') as input:
   for row in reader:
     ids.append(row[0])
 
-# id_list = ['203500']
-def get_shot_data(player_id):
-  # print 'sleeping for 5'
-  # time.sleep(5)
-  # print '==============='
-  # print 'player_id: ', player_id
-  # print type(player_id)
-  # print '==============='
+#####
+##### get_player_shot_data()
+##### ----------------------
+##### Arg    :: player id string
+##### Return :: all shot data for player_id from 2014-2015 season
+def get_player_shot_data(player_id):
+  
+  ## URL
   url = 'http://stats.nba.com/stats/shotchartdetail?Period=0&VsConference=&LeagueID=' +\
       '00&LastNGames=0&TeamID=0&Position=&Location=&Outcome=&ContextMeasure=FGA&DateFrom=' +\
       '&StartPeriod=&DateTo=&OpponentTeamID=0&ContextFilter=&RangeType=&Season=2014-15&AheadBehind=&PlayerID=' + player_id +\
       '&EndRange=&VsDivision=&PointDiff=&RookieYear=&GameSegment=&Month=0&ClutchTime=&StartRange=&EndPeriod=&SeasonType=' +\
       'Regular+Season&SeasonSegment=&GameID='
-  # print url
-  # htmlData = urllib.urlopen(url).read()
-  # print htmlData
-  # soup = BeautifulSoup(htmlData, "html.parser")
-  # print soup
-  # data = json.loads(str(soup))
+  
+  ## Use selenium
   browser = webdriver.Firefox()
-        # browser.set_window_size(1, 1)
   browser.get(url)
   soup = BeautifulSoup(browser.page_source, "html.parser")
   browser.close()
-  print soup
+  html_str = str(soup)
 
-  # response = requests.get(url, timeout = 10)
-  # return response.status_code
+  ## Extract JSON
+  front_pattern = '(<html xmlns=.+<pre>)'
+  rear_pattern = '</pre></body></html>'
+  html_str = re.sub(front_pattern, '', html_str)
+  html_str = re.sub(rear_pattern, '', html_str)
+  
+  ## Data saved to JSON
+  player_data = json.loads(html_str)
+  return player_data
 
-  # print 'response: ', response
-  # headers = response.json()['resultSets'][0]['headers']
-  # shots = response.json()['resultSets'][0]['rowSet']
-  # return shots[0]
-# a = ids[:10]
-# random.shuffle(a)
-# print [get_shot_data(id) for id in a]
+#####
+##### make_shots_df()
+##### ---------------
+##### Arg    :: player json data (from get_player_shot_data())
+##### Return :: shots in pandas data.frame
+def make_shots_df(player_json):
+  headers = player_json['resultSets'][0]['headers']
+  shots = player_json['resultSets'][0]['rowSet']
+  shot_df = pd.DataFrame(shots, columns = headers)
+  return shot_df
 
-print get_shot_data('201167')
+def player_data_to_csv(player_id, shots_df, path):
+  shots_df.to_csv(path + player_id + '.csv')
 
-# for id in ids:
-#   print type(id)
-#   curr_shot_data = get_shot_data(id)
-#   print curr_shot_data
+player_json = get_player_shot_data(player_id)
+shot_df = make_shots_df(player_json)
+player_data_to_csv(player_id, shot_df, player_data_path)
 
-# player_id = '203919'
-# print get_shot_data(player_id)
-
-
-
-# url = 'http://stats.nba.com/stats/shotchartdetail?Period=0&VsConference=&LeagueID=' +\
-#       '00&LastNGames=0&TeamID=0&Position=&Location=&Outcome=&ContextMeasure=FGA&DateFrom=' +\
-#       '&StartPeriod=&DateTo=&OpponentTeamID=0&ContextFilter=&RangeType=&Season=2014-15&AheadBehind=&PlayerID=' + PlayerID +\
-#       '&EndRange=&VsDivision=&PointDiff=&RookieYear=&GameSegment=&Month=0&ClutchTime=&StartRange=&EndPeriod=&SeasonType=' +\
-#       'Regular+Season&SeasonSegment=&GameID='
-# Get the webpage containing the data
-# response = requests.get(url)
-# # # Grab the headers to be used as column headers for our DataFrame
-# headers = response.json()['resultSets'][0]['headers']
-# # # Grab the shot chart data
-# shots = response.json()['resultSets'][0]['rowSet']
-# # # data = json.loads(response.text)
-# print shots
-
-
-    
-# http://stats.nba.com/stats/shotchartdetail?Period=0&VsConference=&LeagueID=00&LastNGames=0&TeamID=0&Position=&Location=&Outcome=&ContextMeasure=FGA&DateFrom=&StartPeriod=&DateTo=&OpponentTeamID=0&ContextFilter=&RangeType=&Season=2014-15&AheadBehind=&PlayerID=203112&EndRange=&VsDivision=&PointDiff=&RookieYear=&GameSegment=&Month=0&ClutchTime=&StartRange=&EndPeriod=&SeasonType=Regular+Season&SeasonSegment=&GameID=
-# http://stats.nba.com/stats/shotchartdetail?Period=0&VsConference=&LeagueID=00&LastNGames=0&TeamID=0&Position=&Location=&Outcome=&ContextMeasure=FGA&DateFrom=&StartPeriod=&DateTo=&OpponentTeamID=0&ContextFilter=&RangeType=&Season=2014-15&AheadBehind=&PlayerID=201935&EndRange=&VsDivision=&PointDiff=&RookieYear=&GameSegment=&Month=0&ClutchTime=&StartRange=&EndPeriod=&SeasonType=Regular+Season&SeasonSegment=&GameID=
-
-
-
+# player_data = get_player_shot_data('201167')
+# headers = player_data['resultSets'][0]['headers']
+# shots = player_data['resultSets'][0]['rowSet']
+# shot_df = pd.DataFrame(shots, columns=headers)
+# print shot_df.head()
 
 
 
@@ -170,10 +141,3 @@ print get_shot_data('201167')
 # df = pd.DataFrame(players,columns = cols)  
 
 # print df.head()
-
-
-
-# http://stats.nba.com/stats/shotchartdetail?CFID=33&CFPARAMS=2014-15&ContextFilter=&ContextMeasure=FGA&DateFrom=&DateTo=&GameID=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Base&Month=0&OpponentTeamID=0&Outcome=&PaceAdjust=N&PerMode=PerGame&Period=0&PlayerID=",playerID,"&PlusMinus=N&Position=&Rank=N&RookieYear=&Season=2014-15&SeasonSegment=&SeasonType=Regular+Season&TeamID=0&VsConference=&VsDivision=&mode=Advanced&showDetails=0&showShots=1&showZones=0
-# http://stats.nba.com/stats/shotchartdetail?CFID=33&CFPARAMS=2014-15&ContextFilter=&ContextMeasure=FGA&DateFrom=&DateTo=&GameID=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Base&Month=0&OpponentTeamID=0&Outcome=&PaceAdjust=N&PerMode=PerGame&Period=0&PlayerID=201939&PlusMinus=N&Position=&Rank=N&RookieYear=&Season=2014-15&SeasonSegment=&SeasonType=Regular+Season&TeamID=0&VsConference=&VsDivision=&mode=Advanced&showDetails=0&showShots=1&showZones=0
-
-
