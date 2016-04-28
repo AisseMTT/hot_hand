@@ -29,6 +29,7 @@ with open('player_ids.csv', 'r') as input:
 ##### ----------------------
 ##### Arg    :: player id string
 ##### Return :: all shot data for player_id from 2014-2015 season
+#####
 def get_player_shot_data(player_id):
   
   ## URL
@@ -60,12 +61,18 @@ def get_player_shot_data(player_id):
 ##### ---------------
 ##### Arg    :: player json data (from get_player_shot_data())
 ##### Return :: shots in pandas data.frame
+#####
 def make_shots_df(player_json):
   headers = player_json['resultSets'][0]['headers']
   shots = player_json['resultSets'][0]['rowSet']
   shot_df = pd.DataFrame(shots, columns = headers)
   return shot_df
 
+#####
+##### player_data_to_csv()
+##### ---------------
+##### Args   :: player id, shots data frame, file path
+#####
 def player_data_to_csv(player_id, shots_df, path):
   shots_df.to_csv(path + player_id + '.csv')
 
