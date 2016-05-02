@@ -38,6 +38,11 @@ def get_player_shot_data(player_id):
       '&StartPeriod=&DateTo=&OpponentTeamID=0&ContextFilter=&RangeType=&Season=2014-15&AheadBehind=&PlayerID=' + player_id +\
       '&EndRange=&VsDivision=&PointDiff=&RookieYear=&GameSegment=&Month=0&ClutchTime=&StartRange=&EndPeriod=&SeasonType=' +\
       'Regular+Season&SeasonSegment=&GameID='
+  # url = 'http://stats.nba.com/stats/playerdashptshotlog?'+ \
+  #   'DateFrom=&DateTo=&GameSegment=&LastNGames=0&LeagueID=00&' + \
+  #   'Location=&Month=0&OpponentTeamID=0&Outcome=&Period=0&' + \
+  #   'PlayerID='+player_id+'&Season=2014-15&SeasonSegment=&' + \
+  #   'SeasonType=Regular+Season&TeamID=0&VsConference=&VsDivision='
   
   ## Use selenium
   browser = webdriver.Firefox()
@@ -77,6 +82,7 @@ def player_data_to_csv(player_id, shots_df, path):
   shots_df.to_csv(path + player_id + '.csv')
 
 player_json = get_player_shot_data(player_id)
+print player_json
 shot_df = make_shots_df(player_json)
 player_data_to_csv(player_id, shot_df, player_data_path)
 
