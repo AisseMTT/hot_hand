@@ -1,10 +1,30 @@
+rm(list = ls())
+
 library(dplyr)
 library(tidyr)
 library(ggplot2)
-
 setwd('/Users/benpeloquin/Desktop/Spring2016/Stats267/hot_hand')
 
-d <- read.csv('player_data/203500.csv', stringsAsFactors = FALSE)
+
+####
+#### Read in data
+####
+path <- "player_data/"
+files <- list.files(path)
+d.raw <- data.frame()
+for (f in files) {
+  d <- read.csv(paste0(path, f))
+  d.raw <- rbind(d.raw, d)
+}
+player_ids <- read.csv('player_ids.csv')
+
+d.raw$PLAYER_ID <- as.factor(d.raw$PLAYER_ID)
+length(unique(d.raw$PLAYER_ID))
+
+## Run this before running python get_data.py
+write.csv(unique(d.raw$PLAYER_ID), file = 'good_ids.csv')
+
+# d <- read.csv('player_data/203500.csv', stringsAsFactors = FALSE)
 
 ## Some initial data processing
 d$PERIOD <- as.factor(d$PERIOD)
