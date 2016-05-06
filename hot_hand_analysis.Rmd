@@ -2,14 +2,138 @@
 title: "hotHandAnalysis"
 author: "Ben Peloquin"
 date: "May 6, 2016"
-output: html_document
+output: 
+  html_document:
+    toc: true
+    toc_depth: 2
 ---
 
 Prelims
 ```{r}
+rm(list = ls())
 library(dplyr)
 library(tidyr)
 library(ggplot2)
+setwd('/Users/benpeloquin/Desktop/Spring2016/Stats267/hot_hand')
 source("analysis_helpers.R")
+```
+
+Read in data - see `get_data.py` for data collection code
+```{r}
+## Note this takes appr 2min to run
+path <- "player_data/"
+files <- list.files(path)
+d.raw <- data.frame()
+for (f in files) {
+  d <- read.csv(paste0(path, f))
+  d.raw <- rbind(d.raw, d)
+}
+```
+
+What kind of data do we have, generally?
+```{r}
+str(d.raw)
+head(d.raw)
+```
+We have `r dim(d.raw)[1]` observations with `r dim(d.raw)[2]` predictor variables.
+
+From the get go we can see a number of predictors we might want to recode. Looks like `GAME_ID`, `GAME_EVENT_ID`, `PLAYER_ID`, `TEAM_ID`, `PERIOD`, `SHOT_ATTEMPTED_FLAG`, and `SHOT_MADE_FLAG` should all be coded as factors (currently coded as ints).
+```{r}
+d <- d.raw %>%
+  mutate(GAME_ID = as.factor(GAME_ID),
+         GAME_EVENT_ID = as.factor(GAME_EVENT_ID),
+         PLAYER_ID = as.factor(PLAYER_ID),
+         TEAM_ID = as.factor(TEAM_ID),
+         PERIOD = as.factor(PERIOD))
+```
+
+We may want to do something with the two `*_TIME_REMAINING` predictors. Let's combine to get a predictor in seconds.
+```{r}
+d <- d %>%
+  mutate(TOTAL_TIME_REMAINING = SECONDS_REMAINING + 60 * MINUTES_REMAINING)
+```
+
+Let's do some preliminary exploring just to make sure this data makes sense...
+
+Number of players
+```{r}
+length(unique(d$PLAYER_ID)) == length(unique(d$PLAYER_NAME))
+length(unique(d$PLAYER_ID))
+```
+Seems about right - should confirm this was the number of players in 2014-2015
+
+Number of teams?
+```{r}
+length(unique(d$TEAM_ID))
+```
+Looks good, there are 30 teams
+
+Number of shots by player
+```{r}
+player_shots_summary <- d %>%
+  group_by(PLAYER_NAME, TEAM_NAME) %>%
+  summarize(total_shots_taken = n(),
+            total_shots_made = sum(SHOT_MADE_FLAG),
+            shooting_percentage = total_shots_made / total_shots_taken)
+
+ggplot(player_shots_summary, aes(x = total_shots_taken, y = total_shots_made, col = TEAM_NAME)) +
+  geom_point(alpha = 0.5, size = 4) +
+  geom_smooth(method = "lm", aes(group=1)) + 
+  guides(col = FALSE) +
+  ggtitle("Shots made by shots taken - all players in NBA season 2014-2015")
+```
+
+Who made the most shots?
+```{r}
+ggplot(player_shots_summary, aes(x = reorder(PLAYER_NAME, total_shots_made), y = total_shots_made, fill = TEAM_NAME)) +
+  geom_bar(stat = "identity") +
+  guides(col = FALSE) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  ggtitle("Shots made by player")
+```
+Those stray lines represent players who playe for multiple teams. We can ignore them for now, just interested in making sure the data looks reasonable.
+
+OK, who were the top 50 players with the best shooting percentage of players who took more than 50 shots in the season?
+```{r}
+top_50_shooting_percentage <- d %>%
+  group_by(PLAYER_NAME) %>%
+  summarize(total_shots_taken = n(),
+            total_shots_made = sum(SHOT_MADE_FLAG),
+            shooting_percentage = total_shots_made / total_shots_taken,
+            avg_shot_distance = mean(SHOT_DISTANCE)) %>%
+  filter(total_shots_taken >= 50) %>%
+  arrange(-shooting_percentage) %>%
+  head(n = 50)
+
+  ggplot(top_50_shooting_percentage, aes(x = reorder(PLAYER_NAME, shooting_percentage), y = shooting_percentage)) +
+    geom_bar(stat = "identity") +
+    guides(col = FALSE) +
+    theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+    ggtitle("Shots made by player")
+```
+
+Interesting, what kind of shots are these guys taking? Let's look a distance...
+```{r}
+top50_names <- unique(top_50_shooting_percentage$PLAYER_NAME)
+
+d %>%
+  mutate(top_50 = ifelse(PLAYER_NAME %in% top50_names, TRUE, FALSE)) %>%
+  group_by(PLAYER_NAME) %>%
+  summarize(total_shots_taken = n(),
+            total_shots_made = sum(SHOT_MADE_FLAG),
+            shooting_percentage = total_shots_made / total_shots_taken,
+            avg_shot_distance = mean(SHOT_DISTANCE)) %>%
+  filter(total_shots_taken >= 50) %>%
+  ggplot(aes(x = reorder(PLAYER_NAME, shooting_percentage), y = shooting_percentage, fill = avg_shot_distance)) +
+    geom_bar(stat = "identity") +
+    theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+    ggtitle("Shots made by player")
+```
+
+Clearly there is an effect of position, which makes sense.
+
+```{r}
+unique(d$ACTION_TYPE)
+unique(d$SHOT_TYPE)
 ```
 
