@@ -1,0 +1,15 @@
+---
+title: "hotHandAnalysis"
+author: "Ben Peloquin"
+date: "May 6, 2016"
+output: html_document
+---
+
+Prelims
+```{r}
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+source("analysis_helpers.R")
+```
+
