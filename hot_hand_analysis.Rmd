@@ -28,7 +28,15 @@ for (f in files) {
   d <- read.csv(paste0(path, f))
   d.raw <- rbind(d.raw, d)
 }
+
+d.player_info <- read.csv("player_info/players_info.csv") %>%
+  select(player_number, age, weight, height, years_in_league, player_id, position)
+names(d.player_info) <- c("PLAYER_NUMBER", "AGE", "WEIGHT", "HEIGHT", "YEARS_IN_LEAGUE", "PLAYER_ID", "POSITION")
+
+d.raw <- full_join(d.raw, d.player_info, by = 'PLAYER_ID')
 ```
+
+# Data confirmation
 
 What kind of data do we have, generally?
 ```{r}
@@ -37,14 +45,15 @@ head(d.raw)
 ```
 We have `r dim(d.raw)[1]` observations with `r dim(d.raw)[2]` predictor variables.
 
-From the get go we can see a number of predictors we might want to recode. Looks like `GAME_ID`, `GAME_EVENT_ID`, `PLAYER_ID`, `TEAM_ID`, `PERIOD`, `SHOT_ATTEMPTED_FLAG`, and `SHOT_MADE_FLAG` should all be coded as factors (currently coded as ints).
+From the get go we can see a number of predictors we might want to recode. Looks like `GAME_ID`, `GAME_EVENT_ID`, `PLAYER_ID`, `TEAM_ID`, `PERIOD`, `SHOT_ATTEMPTED_FLAG`, and `SHOT_MADE_FLAG` should all be coded as factors (currently coded as ints). Let's also convert `SHOT_TYP` to an integer value...
 ```{r}
 d <- d.raw %>%
   mutate(GAME_ID = as.factor(GAME_ID),
          GAME_EVENT_ID = as.factor(GAME_EVENT_ID),
          PLAYER_ID = as.factor(PLAYER_ID),
          TEAM_ID = as.factor(TEAM_ID),
-         PERIOD = as.factor(PERIOD))
+         PERIOD = as.factor(PERIOD),
+         SHOT_VALUE = ifelse(SHOT_TYPE == "2PT Field Goal", 2, 3))
 ```
 
 We may want to do something with the two `*_TIME_REMAINING` predictors. Let's combine to get a predictor in seconds.
@@ -68,6 +77,8 @@ length(unique(d$TEAM_ID))
 ```
 Looks good, there are 30 teams
 
+# Prelim exploration
+
 Number of shots by player
 ```{r}
 player_shots_summary <- d %>%
@@ -90,7 +101,7 @@ ggplot(player_shots_summary, aes(x = reorder(PLAYER_NAME, total_shots_made), y =
   guides(col = FALSE) +
   theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
   ggtitle("Shots made by player")
-```
+``` 
 Those stray lines represent players who playe for multiple teams. We can ignore them for now, just interested in making sure the data looks reasonable.
 
 OK, who were the top 50 players with the best shooting percentage of players who took more than 50 shots in the season?
@@ -135,5 +146,12 @@ Clearly there is an effect of position, which makes sense.
 ```{r}
 unique(d$ACTION_TYPE)
 unique(d$SHOT_TYPE)
+```
+
+# Hot hand analysis helpers
+
+We'll want some features with tell us about a players previous shot (or previous few shots as in )
+```{r}
+d$PLAYER_ID[1]
 ```
 
