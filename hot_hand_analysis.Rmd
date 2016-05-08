@@ -148,11 +148,10 @@ unique(d$ACTION_TYPE)
 unique(d$SHOT_TYPE)
 ```
 
-# Hot hand analysis helpers
+## Hot hand analysis helpers
 
 We'll want some features with tell us about a players previous shot (or previous few shots as in )
 ```{r}
-
 ########
 ######## populate_prev_shots()
 ######## ---------------------
@@ -220,7 +219,7 @@ d_prev %>%
     geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper))
 ```
 
-## League wide previous shots effects
+## League-wide previous shots effects
 
 ### Data
 ```{r}
