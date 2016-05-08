@@ -102,7 +102,7 @@ ggplot(player_shots_summary, aes(x = reorder(PLAYER_NAME, total_shots_made), y =
   theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
   ggtitle("Shots made by player")
 ``` 
-Those stray lines represent players who playe for multiple teams. We can ignore them for now, just interested in making sure the data looks reasonable.
+Those stray lines represent players who play for multiple teams. We can ignore them for now, just interested in making sure the data looks reasonable.
 
 OK, who were the top 50 players with the best shooting percentage of players who took more than 50 shots in the season?
 ```{r}
@@ -141,7 +141,7 @@ d %>%
     ggtitle("Shots made by player")
 ```
 
-Clearly there is an effect of position, which makes sense.
+Clearly there is an effect of location, which makes sense.
 
 ```{r}
 unique(d$ACTION_TYPE)
@@ -152,6 +152,81 @@ unique(d$SHOT_TYPE)
 
 We'll want some features with tell us about a players previous shot (or previous few shots as in )
 ```{r}
-d$PLAYER_ID[1]
+populate_prev_shots <- function(d) {
+  for (row in seq(1, nrow(d))) {
+    if (row != 1) d[row, "prev_shot1"] <- d[row - 1, "SHOT_MADE_FLAG"]
+    else d2[row, "prev_shot1"] <- NA
+    
+    if (row > 2) d[row, "prev_shot2"] <- d[row - 2, "SHOT_MADE_FLAG"]
+    else d2[row, "prev_shot2"] <- NA
+    
+    if (row > 3) d[row, "prev_shot3"] <- d[row - 3, "SHOT_MADE_FLAG"]
+    else d2[row, "prev_shot3"] <- NA
+    
+    if (row > 4) d[row, "prev_shot4"] <- d[row - 4, "SHOT_MADE_FLAG"]
+    else d2[row, "prev_shot4"] <- NA
+  }
+  
+  d <- d %>%
+  mutate(
+    ## Made prev shots
+    made_last_1 = prev_shot1 == 1,
+    made_last_2 = made_last_1 & prev_shot2 == 1,
+    made_last_3 = made_last_2 & prev_shot3 == 1,
+    made_last_4 = made_last_3 & prev_shot4 == 1,
+    ## Missed prev shots
+    missed_last_1 = prev_shot1 == 1,
+    missed_last_2 = missed_last_1 & prev_shot2 == 0,
+    missed_last_3 = missed_last_2 & prev_shot3 == 0,
+    missed_last_4 = missed_last_3 & prev_shot4 == 0)
+  
+  d
+}
+
+ptm <- proc.time()
+d2 <- populate_prev_shots(d)
+proc.time() - ptm
+
+
+d3 <- d %>%
+  head(n = 20) %>%
+  populate_prev_shots(.)
+
+```
+
+```{r}
+d2 <- d %>%
+  mutate(prev_shot1 = NA,
+         prev_shot2 = NA,
+         prev_shot3 = NA,
+         prev_shot4 = NA) %>%
+  head(n = 20)
+
+populate_prev_shots <- function(d) {
+  d <- d %>% mutate(prev_shot1 = NA,
+                        prev_shot2 = NA,
+                        prev_shot3 = NA,
+                        prev_shot4 = NA)
+  
+  if (nrow(d) > 1) d$prev_shot1 <- c(NA, d$SHOT_MADE_FLAG[seq(1, length(d$SHOT_MADE_FLAG) - 1)])
+  if (nrow(d) > 2) d$prev_shot2 <- c(rep(NA, 2), d$SHOT_MADE_FLAG[seq(1, length(d$SHOT_MADE_FLAG) - 2)])
+  if (nrow(d) > 3) d$prev_shot3 <- c(rep(NA, 3), d$SHOT_MADE_FLAG[seq(1, length(d$SHOT_MADE_FLAG) - 3)])
+  if (nrow(d) > 4) d$prev_shot4 <- c(rep(NA, 4), d$SHOT_MADE_FLAG[seq(1, length(d$SHOT_MADE_FLAG) - 4)])
+  
+  d
+}
+
+d4 <- d %>% head(n = 20)
+populate_prev_shots(d4)
+
+
+d %>% head(n = 100) %>% arrange(PLAYER_ID, GAME_ID) %>% View()
+
+# plyr::ddply(data, .fun = rsa.runDf, 
+#                   .variables = c(groupName),
+
+undebug(populate_prev_shots)
+plyr::ddply(d4, .variables = c("PLAYER_ID", "GAME_ID"), .fun = populate_prev_shots) %>% View()
+
 ```
 
