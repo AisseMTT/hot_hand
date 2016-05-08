@@ -224,9 +224,33 @@ d %>% head(n = 100) %>% arrange(PLAYER_ID, GAME_ID) %>% View()
 
 # plyr::ddply(data, .fun = rsa.runDf, 
 #                   .variables = c(groupName),
+d <- d %>% arrange(PLAYER_ID, GAME_ID)
+ptm <- proc.time()
+d7 <- plyr::ddply(d, .variables = c("PLAYER_ID", "GAME_ID"), .fun = populate_prev_shots)
+proc.time() - ptm
 
-undebug(populate_prev_shots)
-plyr::ddply(d4, .variables = c("PLAYER_ID", "GAME_ID"), .fun = populate_prev_shots) %>% View()
+d8 <- d7 %>%
+  
 
+d5 <- d %>% head(n = 500)
+d5 <- d5 %>% arrange(PLAYER_ID, GAME_ID)
+d6 <- plyr::ddply(d5, .variables = c("PLAYER_ID", "GAME_ID"), .fun = populate_prev_shots)
+d7 <- d6 %>%
+  mutate(
+    ## Made prev shots
+    made_last_1 = prev_shot1 == 1,
+    made_last_2 = made_last_1 & prev_shot2 == 1,
+    made_last_3 = made_last_2 & prev_shot3 == 1,
+    made_last_4 = made_last_3 & prev_shot4 == 1,
+    ## Missed prev shots
+    missed_last_1 = prev_shot1 == 0,
+    missed_last_2 = missed_last_1 & prev_shot2 == 0,
+    missed_last_3 = missed_last_2 & prev_shot3 == 0,
+    missed_last_4 = missed_last_3 & prev_shot4 == 0)
+
+d7 %>% select(PLAYER_ID, GAME_ID, prev_shot1, prev_shot2, prev_shot3, prev_shot4,
+              made_last_1, made_last_2, made_last_3, made_last_4,
+              missed_last_1, missed_last_2, missed_last_3, missed_last_4) %>%
+  View()
 ```
 
