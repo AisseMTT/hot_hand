@@ -152,105 +152,189 @@ unique(d$SHOT_TYPE)
 
 We'll want some features with tell us about a players previous shot (or previous few shots as in )
 ```{r}
+
+########
+######## populate_prev_shots()
+######## ---------------------
+######## Appends 13 new rows:
+######## * what occurred on prev shot (1-4)
+######## * shot number in game (5)
+######## * made streaks (6-9)
+######## * missed streaks (10 - 13)
+########
 populate_prev_shots <- function(d) {
-  for (row in seq(1, nrow(d))) {
-    if (row != 1) d[row, "prev_shot1"] <- d[row - 1, "SHOT_MADE_FLAG"]
-    else d2[row, "prev_shot1"] <- NA
+  
+  ## Get previous shots
+  get_prev_shots <- function(d) {
+    d <- d %>% mutate(prev_shot1 = NA,
+                          prev_shot2 = NA,
+                          prev_shot3 = NA,
+                          prev_shot4 = NA)
     
-    if (row > 2) d[row, "prev_shot2"] <- d[row - 2, "SHOT_MADE_FLAG"]
-    else d2[row, "prev_shot2"] <- NA
+    if (nrow(d) > 1) d$prev_shot1 <- c(NA, d$SHOT_MADE_FLAG[seq(1, length(d$SHOT_MADE_FLAG) - 1)])
+    if (nrow(d) > 2) d$prev_shot2 <- c(rep(NA, 2), d$SHOT_MADE_FLAG[seq(1, length(d$SHOT_MADE_FLAG) - 2)])
+    if (nrow(d) > 3) d$prev_shot3 <- c(rep(NA, 3), d$SHOT_MADE_FLAG[seq(1, length(d$SHOT_MADE_FLAG) - 3)])
+    if (nrow(d) > 4) d$prev_shot4 <- c(rep(NA, 4), d$SHOT_MADE_FLAG[seq(1, length(d$SHOT_MADE_FLAG) - 4)])
     
-    if (row > 3) d[row, "prev_shot3"] <- d[row - 3, "SHOT_MADE_FLAG"]
-    else d2[row, "prev_shot3"] <- NA
+    d$shot_num <- seq(1, nrow(d))
     
-    if (row > 4) d[row, "prev_shot4"] <- d[row - 4, "SHOT_MADE_FLAG"]
-    else d2[row, "prev_shot4"] <- NA
+    d
   }
+  d_prev <-  plyr::ddply(d, .variables = c("PLAYER_ID", "GAME_ID"), .fun = get_prev_shots)
   
-  d <- d %>%
-  mutate(
-    ## Made prev shots
-    made_last_1 = prev_shot1 == 1,
-    made_last_2 = made_last_1 & prev_shot2 == 1,
-    made_last_3 = made_last_2 & prev_shot3 == 1,
-    made_last_4 = made_last_3 & prev_shot4 == 1,
-    ## Missed prev shots
-    missed_last_1 = prev_shot1 == 1,
-    missed_last_2 = missed_last_1 & prev_shot2 == 0,
-    missed_last_3 = missed_last_2 & prev_shot3 == 0,
-    missed_last_4 = missed_last_3 & prev_shot4 == 0)
+  ## Add in streak data
+  res_d <- d_prev %>%
+    mutate(
+      ## Made prev shots
+      made_last_1 = prev_shot1 == 1,
+      made_last_2 = made_last_1 & prev_shot2 == 1,
+      made_last_3 = made_last_2 & prev_shot3 == 1,
+      made_last_4 = made_last_3 & prev_shot4 == 1,
+      ## Missed prev shots
+      missed_last_1 = prev_shot1 == 0,
+      missed_last_2 = missed_last_1 & prev_shot2 == 0,
+      missed_last_3 = missed_last_2 & prev_shot3 == 0,
+      missed_last_4 = missed_last_3 & prev_shot4 == 0
+    )
   
-  d
+  res_d
 }
 
 ptm <- proc.time()
-d2 <- populate_prev_shots(d)
+d_prev <- populate_prev_shots(d)
 proc.time() - ptm
-
-
-d3 <- d %>%
-  head(n = 20) %>%
-  populate_prev_shots(.)
-
 ```
 
+## Shooting percentage by shot number
 ```{r}
-d2 <- d %>%
-  mutate(prev_shot1 = NA,
-         prev_shot2 = NA,
-         prev_shot3 = NA,
-         prev_shot4 = NA) %>%
-  head(n = 20)
+d_prev %>%
+  group_by(shot_num) %>%
+  filter(shot_num < 30) %>%
+  summarize(shots_taken = n(),
+            shots_made = sum(SHOT_MADE_FLAG),
+            shooting_percentage = shots_made / shots_taken,
+            ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
+            ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
+  ggplot(aes(x = shot_num, y = shooting_percentage)) +
+    geom_bar(stat = "identity") +
+    geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper))
+```
 
-populate_prev_shots <- function(d) {
-  d <- d %>% mutate(prev_shot1 = NA,
-                        prev_shot2 = NA,
-                        prev_shot3 = NA,
-                        prev_shot4 = NA)
-  
-  if (nrow(d) > 1) d$prev_shot1 <- c(NA, d$SHOT_MADE_FLAG[seq(1, length(d$SHOT_MADE_FLAG) - 1)])
-  if (nrow(d) > 2) d$prev_shot2 <- c(rep(NA, 2), d$SHOT_MADE_FLAG[seq(1, length(d$SHOT_MADE_FLAG) - 2)])
-  if (nrow(d) > 3) d$prev_shot3 <- c(rep(NA, 3), d$SHOT_MADE_FLAG[seq(1, length(d$SHOT_MADE_FLAG) - 3)])
-  if (nrow(d) > 4) d$prev_shot4 <- c(rep(NA, 4), d$SHOT_MADE_FLAG[seq(1, length(d$SHOT_MADE_FLAG) - 4)])
-  
-  d
-}
+## League wide previous shots effects
 
-d4 <- d %>% head(n = 20)
-populate_prev_shots(d4)
+### Data
+```{r}
+d_current <- d_prev %>%
+    summarize(shots_taken = n(),
+              shots_made = sum(SHOT_MADE_FLAG),
+              shooting_percentage = shots_made / shots_taken,
+              ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
+              ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
+d_made_last_1 <- d_prev %>%
+    filter(made_last_1 == TRUE) %>%
+    summarize(shots_taken = n(),
+              shots_made = sum(SHOT_MADE_FLAG),
+              shooting_percentage = shots_made / shots_taken,
+              ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
+              ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
+d_made_last_2 <- d_prev %>%
+    filter(made_last_2 == TRUE) %>%
+    summarize(shots_taken = n(),
+              shots_made = sum(SHOT_MADE_FLAG),
+              shooting_percentage = shots_made / shots_taken,
+              ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
+              ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
+d_made_last_3 <- d_prev %>%
+    filter(made_last_3 == TRUE) %>%
+    summarize(shots_taken = n(),
+              shots_made = sum(SHOT_MADE_FLAG),
+              shooting_percentage = shots_made / shots_taken,
+              ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
+              ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
+d_made_last_4 <- d_prev %>%
+    filter(made_last_4 == TRUE) %>%
+    summarize(shots_taken = n(),
+              shots_made = sum(SHOT_MADE_FLAG),
+              shooting_percentage = shots_made / shots_taken,
+              ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
+              ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
+d_missed_last_1 <- d_prev %>%
+    filter(missed_last_1 == TRUE) %>%
+    summarize(shots_taken = n(),
+              shots_made = sum(SHOT_MADE_FLAG),
+              shooting_percentage = shots_made / shots_taken,
+              ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
+              ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
+d_missed_last_2 <- d_prev %>%
+    filter(made_last_2 == TRUE) %>%
+    summarize(shots_taken = n(),
+              shots_made = sum(SHOT_MADE_FLAG),
+              shooting_percentage = shots_made / shots_taken,
+              ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
+              ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
+d_missed_last_3 <- d_prev %>%
+    filter(made_last_3 == TRUE) %>%
+    summarize(shots_taken = n(),
+              shots_made = sum(SHOT_MADE_FLAG),
+              shooting_percentage = shots_made / shots_taken,
+              ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
+              ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
+d_missed_last_4 <- d_prev %>%
+    filter(made_last_4 == TRUE) %>%
+    summarize(shots_taken = n(),
+              shots_made = sum(SHOT_MADE_FLAG),
+              shooting_percentage = shots_made / shots_taken,
+              ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
+              ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
 
+d_prev_shot_effects <- rbind(d_made_last_1,
+                             d_made_last_2,
+                             d_made_last_3,
+                             d_made_last_4,
+                             d_current,
+                             d_missed_last_1,
+                             d_missed_last_2,
+                             d_missed_last_3,
+                             d_missed_last_4) %>%
+  mutate(context = c('made_1',
+                     'made_2',
+                     'made_3',
+                     'made_4',
+                     'overall',
+                     'missed_1',
+                     'missed_2',
+                     'missed_3',
+                     'missed_4'))
 
-d %>% head(n = 100) %>% arrange(PLAYER_ID, GAME_ID) %>% View()
+d_prev_shot_effects$context <- factor(d_prev_shot_effects$context, levels = c('made_4',
+                                                                              'made_3',
+                                                                              'made_2',
+                                                                              'made_1',
+                                                                              'overall',
+                                                                              'missed_1',
+                                                                              'missed_2',
+                                                                              'missed_3',
+                                                                              'missed_4'))
+```
 
-# plyr::ddply(data, .fun = rsa.runDf, 
-#                   .variables = c(groupName),
-d <- d %>% arrange(PLAYER_ID, GAME_ID)
-ptm <- proc.time()
-d7 <- plyr::ddply(d, .variables = c("PLAYER_ID", "GAME_ID"), .fun = populate_prev_shots)
-proc.time() - ptm
+### Plot
+```{r}
+ggplot(d_prev_shot_effects, aes(x = context, y = shooting_percentage)) +
+  geom_bar(stat = "identity") +
+  geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper)) +
+  ggtitle("Impact of previous shot on current shooting percentage\n
+          All shots from NBA 2014-2015 season")
+```
 
-d8 <- d7 %>%
-  
-
-d5 <- d %>% head(n = 500)
-d5 <- d5 %>% arrange(PLAYER_ID, GAME_ID)
-d6 <- plyr::ddply(d5, .variables = c("PLAYER_ID", "GAME_ID"), .fun = populate_prev_shots)
-d7 <- d6 %>%
-  mutate(
-    ## Made prev shots
-    made_last_1 = prev_shot1 == 1,
-    made_last_2 = made_last_1 & prev_shot2 == 1,
-    made_last_3 = made_last_2 & prev_shot3 == 1,
-    made_last_4 = made_last_3 & prev_shot4 == 1,
-    ## Missed prev shots
-    missed_last_1 = prev_shot1 == 0,
-    missed_last_2 = missed_last_1 & prev_shot2 == 0,
-    missed_last_3 = missed_last_2 & prev_shot3 == 0,
-    missed_last_4 = missed_last_3 & prev_shot4 == 0)
-
-d7 %>% select(PLAYER_ID, GAME_ID, prev_shot1, prev_shot2, prev_shot3, prev_shot4,
-              made_last_1, made_last_2, made_last_3, made_last_4,
-              missed_last_1, missed_last_2, missed_last_3, missed_last_4) %>%
-  View()
+# Modeling
+```{r}
+summary(glm(SHOT_MADE_FLAG ~ SHOT_TYPE +
+              MINUTES_REMAINING +
+              missed_last_1 +
+              made_last_1 +
+              made_last_2 +
+              made_last_3 + 
+              made_last_4,
+            family = "binomial", na.action = "na.omit", data = d_prev))
 ```
 
