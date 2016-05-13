@@ -16,24 +16,42 @@ library(tidyr)
 library(ggplot2)
 setwd('/Users/benpeloquin/Desktop/Spring2016/Stats267/hot_hand')
 source("analysis_helpers.R")
+path <- "player_data/"
 ```
 
-Read in data - see `get_data.py` for data collection code
+Generic helpers
+```{r}
+#####
+##### inGlobalEnv()
+##### -------------
+##### boolean object presence in global env
+#####
+inGlobalEnv <- function(item) {
+  item %in% ls(envir = .GlobalEnv)
+}
+```
+
+
+Read in data - see `get_data.py` for data collection code (first check store)
 ```{r}
 ## Note this takes appr 2min to run
-path <- "player_data/"
-files <- list.files(path)
-d.raw <- data.frame()
-for (f in files) {
-  d <- read.csv(paste0(path, f))
-  d.raw <- rbind(d.raw, d)
+d.raw <- read.csv("full_season_data_player_info.csv")
+
+if (!inGlobalEnv("d.raw")) {
+  files <- list.files(path)
+  d.raw <- data.frame()
+  for (f in files) {
+    d <- read.csv(paste0(path, f))
+    d.raw <- rbind(d.raw, d)
+  }
+  
+  d.player_info <- read.csv("player_info/players_info.csv") %>%
+    select(player_number, age, weight, height, years_in_league, player_id, position)
+  names(d.player_info) <- c("PLAYER_NUMBER", "AGE", "WEIGHT", "HEIGHT", "YEARS_IN_LEAGUE", "PLAYER_ID", "POSITION")
+  
+  d.raw <- full_join(d.raw, d.player_info, by = 'PLAYER_ID')
+  write.csv(d.raw, "full_season_data_player_info.csv")
 }
-
-d.player_info <- read.csv("player_info/players_info.csv") %>%
-  select(player_number, age, weight, height, years_in_league, player_id, position)
-names(d.player_info) <- c("PLAYER_NUMBER", "AGE", "WEIGHT", "HEIGHT", "YEARS_IN_LEAGUE", "PLAYER_ID", "POSITION")
-
-d.raw <- full_join(d.raw, d.player_info, by = 'PLAYER_ID')
 ```
 
 # Data confirmation
@@ -155,7 +173,7 @@ We'll want some features with tell us about a players previous shot (or previous
 ########
 ######## populate_prev_shots()
 ######## ---------------------
-######## Appends 13 new rows:
+######## Appends 13 new cols:
 ######## * what occurred on prev shot (1-4)
 ######## * shot number in game (5)
 ######## * made streaks (6-9)
@@ -198,10 +216,18 @@ populate_prev_shots <- function(d) {
   
   res_d
 }
+```
 
-ptm <- proc.time()
-d_prev <- populate_prev_shots(d)
-proc.time() - ptm
+```{r}
+d_prev <- read.csv("d_prev_shots.csv")
+
+if (!inGlobalEnv("d_prev")) {
+  ptm <- proc.time()
+  ## Caution this takes ~5min to run
+  d_prev <- populate_prev_shots(d)
+  proc.time() - ptm  
+  write.csv(d_prev, "d_prev_shots.csv")
+}
 ```
 
 ## Shooting percentage by shot number
@@ -210,114 +236,155 @@ d_prev %>%
   group_by(shot_num) %>%
   filter(shot_num < 30) %>%
   summarize(shots_taken = n(),
+            avg_shot_distance = mean(SHOT_DISTANCE),
             shots_made = sum(SHOT_MADE_FLAG),
             shooting_percentage = shots_made / shots_taken,
             ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
-            ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
-  ggplot(aes(x = shot_num, y = shooting_percentage)) +
+            ci_upper = binom.test(shots_made, shots_taken)$conf.int[2]) %>%
+  ggplot(aes(x = shot_num, y = shooting_percentage, fill = avg_shot_distance)) +
     geom_bar(stat = "identity") +
     geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper))
 ```
+
+Hmmm, this plot makes it look like accuracy stays steady, but `avg_shot_distance` is possibly incresing...
+
+```{r}
+d_prev %>%
+  ggplot(aes(x = shot_num, y = SHOT_DISTANCE, col = as.factor(SHOT_MADE_FLAG))) +
+    geom_point(alpha = 0.4)
+```
+
+Well, it actually isn't the case that people are taking longer shots later in the game - that was an artificat of increased variance with fewer sample at the higher number of shots.
 
 ## League-wide previous shots effects
 
 ### Data
 ```{r}
-d_current <- d_prev %>%
-    summarize(shots_taken = n(),
-              shots_made = sum(SHOT_MADE_FLAG),
-              shooting_percentage = shots_made / shots_taken,
-              ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
-              ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
-d_made_last_1 <- d_prev %>%
-    filter(made_last_1 == TRUE) %>%
-    summarize(shots_taken = n(),
-              shots_made = sum(SHOT_MADE_FLAG),
-              shooting_percentage = shots_made / shots_taken,
-              ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
-              ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
-d_made_last_2 <- d_prev %>%
-    filter(made_last_2 == TRUE) %>%
-    summarize(shots_taken = n(),
-              shots_made = sum(SHOT_MADE_FLAG),
-              shooting_percentage = shots_made / shots_taken,
-              ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
-              ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
-d_made_last_3 <- d_prev %>%
-    filter(made_last_3 == TRUE) %>%
-    summarize(shots_taken = n(),
-              shots_made = sum(SHOT_MADE_FLAG),
-              shooting_percentage = shots_made / shots_taken,
-              ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
-              ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
-d_made_last_4 <- d_prev %>%
-    filter(made_last_4 == TRUE) %>%
-    summarize(shots_taken = n(),
-              shots_made = sum(SHOT_MADE_FLAG),
-              shooting_percentage = shots_made / shots_taken,
-              ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
-              ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
-d_missed_last_1 <- d_prev %>%
-    filter(missed_last_1 == TRUE) %>%
-    summarize(shots_taken = n(),
-              shots_made = sum(SHOT_MADE_FLAG),
-              shooting_percentage = shots_made / shots_taken,
-              ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
-              ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
-d_missed_last_2 <- d_prev %>%
-    filter(made_last_2 == TRUE) %>%
-    summarize(shots_taken = n(),
-              shots_made = sum(SHOT_MADE_FLAG),
-              shooting_percentage = shots_made / shots_taken,
-              ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
-              ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
-d_missed_last_3 <- d_prev %>%
-    filter(made_last_3 == TRUE) %>%
-    summarize(shots_taken = n(),
-              shots_made = sum(SHOT_MADE_FLAG),
-              shooting_percentage = shots_made / shots_taken,
-              ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
-              ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
-d_missed_last_4 <- d_prev %>%
-    filter(made_last_4 == TRUE) %>%
-    summarize(shots_taken = n(),
-              shots_made = sum(SHOT_MADE_FLAG),
-              shooting_percentage = shots_made / shots_taken,
-              ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
-              ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
 
-d_prev_shot_effects <- rbind(d_made_last_1,
-                             d_made_last_2,
-                             d_made_last_3,
-                             d_made_last_4,
-                             d_current,
-                             d_missed_last_1,
-                             d_missed_last_2,
-                             d_missed_last_3,
-                             d_missed_last_4) %>%
-  mutate(context = c('made_1',
-                     'made_2',
-                     'made_3',
-                     'made_4',
-                     'overall',
-                     'missed_1',
-                     'missed_2',
-                     'missed_3',
-                     'missed_4'))
-
-d_prev_shot_effects$context <- factor(d_prev_shot_effects$context, levels = c('made_4',
-                                                                              'made_3',
-                                                                              'made_2',
-                                                                              'made_1',
-                                                                              'overall',
-                                                                              'missed_1',
-                                                                              'missed_2',
-                                                                              'missed_3',
-                                                                              'missed_4'))
+calc_prev_shot_effects <- function(df) {
+  d_current <- df %>%
+    summarize(shots_taken = n(),
+              shots_made = sum(SHOT_MADE_FLAG),
+              shooting_percentage = shots_made / shots_taken,
+              ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
+              ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
+  d_made_last_1 <- df %>%
+      filter(made_last_1 == TRUE) %>%
+      summarize(shots_taken = n(),
+                shots_made = sum(SHOT_MADE_FLAG),
+                shooting_percentage = shots_made / shots_taken,
+                ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
+                ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
+  d_made_last_2 <- df %>%
+      filter(made_last_2 == TRUE) %>%
+      summarize(shots_taken = n(),
+                shots_made = sum(SHOT_MADE_FLAG),
+                shooting_percentage = shots_made / shots_taken,
+                ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
+                ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
+  d_made_last_3 <- df %>%
+      filter(made_last_3 == TRUE) %>%
+      summarize(shots_taken = n(),
+                shots_made = sum(SHOT_MADE_FLAG),
+                shooting_percentage = shots_made / shots_taken,
+                ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
+                ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
+  d_made_last_4 <- df %>%
+      filter(made_last_4 == TRUE) %>%
+      summarize(shots_taken = n(),
+                shots_made = sum(SHOT_MADE_FLAG),
+                shooting_percentage = shots_made / shots_taken,
+                ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
+                ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
+  d_missed_last_1 <- df %>%
+      filter(missed_last_1 == TRUE) %>%
+      summarize(shots_taken = n(),
+                shots_made = sum(SHOT_MADE_FLAG),
+                shooting_percentage = shots_made / shots_taken,
+                ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
+                ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
+  d_missed_last_2 <- df %>%
+      filter(missed_last_2 == TRUE) %>%
+      summarize(shots_taken = n(),
+                shots_made = sum(SHOT_MADE_FLAG),
+                shooting_percentage = shots_made / shots_taken,
+                ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
+                ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
+  d_missed_last_3 <- df %>%
+      filter(missed_last_3 == TRUE) %>%
+      summarize(shots_taken = n(),
+                shots_made = sum(SHOT_MADE_FLAG),
+                shooting_percentage = shots_made / shots_taken,
+                ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
+                ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
+  d_missed_last_4 <- df %>%
+      filter(missed_last_4 == TRUE) %>%
+      summarize(shots_taken = n(),
+                shots_made = sum(SHOT_MADE_FLAG),
+                shooting_percentage = shots_made / shots_taken,
+                ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
+                ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
+  
+  d_prev_shot_effects <- rbind(d_made_last_1,
+                               d_made_last_2,
+                               d_made_last_3,
+                               d_made_last_4,
+                               d_current,
+                               d_missed_last_1,
+                               d_missed_last_2,
+                               d_missed_last_3,
+                               d_missed_last_4) %>%
+    mutate(context = c('made_1',
+                       'made_2',
+                       'made_3',
+                       'made_4',
+                       'overall',
+                       'missed_1',
+                       'missed_2',
+                       'missed_3',
+                       'missed_4'))
+  
+  d_prev_shot_effects$context <- factor(d_prev_shot_effects$context, levels = c('made_4',
+                                                                                'made_3',
+                                                                                'made_2',
+                                                                                'made_1',
+                                                                                'overall',
+                                                                                'missed_1',
+                                                                                'missed_2',
+                                                                                'missed_3',
+                                                                                'missed_4'))
+  d_prev_shot_effects
+}
 ```
+
+
+```{r}
+
+unique(d_prev$PLAYER_ID)
+
+d_prev %>%
+  group_by(PLAYER_ID) %>%
+  summarize(shots = n())
+
+d_prev %>% filter(PLAYER_ID == 203994) %>% calc_prev_shot_effects()
+
+
+d_prev_shots_by_team <- plyr::ddply(d_prev, .variables = c("PLAYER_ID"), calc_prev_shot_effects)
+
+ggplot(d_prev_shots_by_team, aes(x = context, y = shooting_percentage, fill = TEAM_ID)) +
+  geom_bar(stat = "identity") +
+  geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper)) +
+  facet_wrap(~TEAM_ID)
+  ggtitle("Impact of previous shot on current shooting percentage\n
+          All shots from NBA 2014-2015 season\n
+          By team")
+
+```
+
 
 ### Plot
 ```{r}
+d_prev_shot_effects <- calc_prev_shot_effects(d_prev)
 ggplot(d_prev_shot_effects, aes(x = context, y = shooting_percentage)) +
   geom_bar(stat = "identity") +
   geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper)) +
@@ -329,7 +396,7 @@ ggplot(d_prev_shot_effects, aes(x = context, y = shooting_percentage)) +
 ```{r}
 summary(glm(SHOT_MADE_FLAG ~ SHOT_TYPE +
               MINUTES_REMAINING +
-              missed_last_1 +
+              SHOT_DISTANCE + 
               made_last_1 +
               made_last_2 +
               made_last_3 + 
