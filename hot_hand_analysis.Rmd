@@ -189,8 +189,6 @@ unique(d$SHOT_TYPE)
 
 
 ```{r}
-d_practice <- data.frame(SHOT_MADE_FLAG = c(1, 0, 0, 1, 1, 1, 1, 0, 1, 1))
-
 populate_prev_shots <- function(d) {
   get_streaks <- function(d) {
     df <- d %>%
@@ -221,25 +219,9 @@ populate_prev_shots <- function(d) {
   }
   d_prev <-  plyr::ddply(d, .variables = c("PLAYER_ID", "GAME_ID"), .fun = get_streaks)
   
-  ## Add in streak data
-#   res_d <- d_prev %>%
-#     mutate(
-#       ## Made prev shots
-#       made_last_1 = prev_shot1 == 1,
-#       made_last_2 = made_last_1 & prev_shot2 == 1,
-#       made_last_3 = made_last_2 & prev_shot3 == 1,
-#       made_last_4 = made_last_3 & prev_shot4 == 1,
-#       ## Missed prev shots
-#       missed_last_1 = prev_shot1 == 0,
-#       missed_last_2 = missed_last_1 & prev_shot2 == 0,
-#       missed_last_3 = missed_last_2 & prev_shot3 == 0,
-#       missed_last_4 = missed_last_3 & prev_shot4 == 0
-#     )
-  
   d_prev
 }
 
-d_practice <- d[1:100,]
 
 start_time <- proc.time()
 d_practice2 <- populate_prev_shots(d_practice)
@@ -261,43 +243,43 @@ We'll want some features with tell us about a players previous shot (or previous
 ######## * made streaks (6-9)
 ######## * missed streaks (10 - 13)
 ########
-populate_prev_shots <- function(d) {
-  
-  ## Get previous shots
-  get_prev_shots <- function(d) {
-    d <- d %>% mutate(prev_shot1 = NA,
-                          prev_shot2 = NA,
-                          prev_shot3 = NA,
-                          prev_shot4 = NA)
-    
-    if (nrow(d) > 1) d$prev_shot1 <- c(NA, d$SHOT_MADE_FLAG[seq(1, length(d$SHOT_MADE_FLAG) - 1)])
-    if (nrow(d) > 2) d$prev_shot2 <- c(rep(NA, 2), d$SHOT_MADE_FLAG[seq(1, length(d$SHOT_MADE_FLAG) - 2)])
-    if (nrow(d) > 3) d$prev_shot3 <- c(rep(NA, 3), d$SHOT_MADE_FLAG[seq(1, length(d$SHOT_MADE_FLAG) - 3)])
-    if (nrow(d) > 4) d$prev_shot4 <- c(rep(NA, 4), d$SHOT_MADE_FLAG[seq(1, length(d$SHOT_MADE_FLAG) - 4)])
-    
-    d$shot_num <- seq(1, nrow(d))
-    
-    d
-  }
-  d_prev <-  plyr::ddply(d, .variables = c("PLAYER_ID", "GAME_ID"), .fun = get_prev_shots)
-  
-  ## Add in streak data
-  res_d <- d_prev %>%
-    mutate(
-      ## Made prev shots
-      made_last_1 = prev_shot1 == 1,
-      made_last_2 = made_last_1 & prev_shot2 == 1,
-      made_last_3 = made_last_2 & prev_shot3 == 1,
-      made_last_4 = made_last_3 & prev_shot4 == 1,
-      ## Missed prev shots
-      missed_last_1 = prev_shot1 == 0,
-      missed_last_2 = missed_last_1 & prev_shot2 == 0,
-      missed_last_3 = missed_last_2 & prev_shot3 == 0,
-      missed_last_4 = missed_last_3 & prev_shot4 == 0
-    )
-  
-  res_d
-}
+# populate_prev_shots <- function(d) {
+#   
+#   ## Get previous shots
+#   get_prev_shots <- function(d) {
+#     d <- d %>% mutate(prev_shot1 = NA,
+#                           prev_shot2 = NA,
+#                           prev_shot3 = NA,
+#                           prev_shot4 = NA)
+#     
+#     if (nrow(d) > 1) d$prev_shot1 <- c(NA, d$SHOT_MADE_FLAG[seq(1, length(d$SHOT_MADE_FLAG) - 1)])
+#     if (nrow(d) > 2) d$prev_shot2 <- c(rep(NA, 2), d$SHOT_MADE_FLAG[seq(1, length(d$SHOT_MADE_FLAG) - 2)])
+#     if (nrow(d) > 3) d$prev_shot3 <- c(rep(NA, 3), d$SHOT_MADE_FLAG[seq(1, length(d$SHOT_MADE_FLAG) - 3)])
+#     if (nrow(d) > 4) d$prev_shot4 <- c(rep(NA, 4), d$SHOT_MADE_FLAG[seq(1, length(d$SHOT_MADE_FLAG) - 4)])
+#     
+#     d$shot_num <- seq(1, nrow(d))
+#     
+#     d
+#   }
+#   d_prev <-  plyr::ddply(d, .variables = c("PLAYER_ID", "GAME_ID"), .fun = get_prev_shots)
+#   
+#   ## Add in streak data
+#   res_d <- d_prev %>%
+#     mutate(
+#       ## Made prev shots
+#       made_last_1 = prev_shot1 == 1,
+#       made_last_2 = made_last_1 & prev_shot2 == 1,
+#       made_last_3 = made_last_2 & prev_shot3 == 1,
+#       made_last_4 = made_last_3 & prev_shot4 == 1,
+#       ## Missed prev shots
+#       missed_last_1 = prev_shot1 == 0,
+#       missed_last_2 = missed_last_1 & prev_shot2 == 0,
+#       missed_last_3 = missed_last_2 & prev_shot3 == 0,
+#       missed_last_4 = missed_last_3 & prev_shot4 == 0
+#     )
+#   
+#   res_d
+# }
 ```
 
 ```{r}
