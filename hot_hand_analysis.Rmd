@@ -1,4 +1,4 @@
----
+git ---
 title: "hotHandAnalysis"
 author: "Ben Peloquin"
 date: "May 6, 2016"
@@ -63,7 +63,7 @@ head(d.raw)
 ```
 We have `r dim(d.raw)[1]` observations with `r dim(d.raw)[2]` predictor variables.
 
-From the get go we can see a number of predictors we might want to recode. Looks like `GAME_ID`, `GAME_EVENT_ID`, `PLAYER_ID`, `TEAM_ID`, `PERIOD`, `SHOT_ATTEMPTED_FLAG`, and `SHOT_MADE_FLAG` should all be coded as factors (currently coded as ints). Let's also convert `SHOT_TYP` to an integer value...
+From the get go we can see a number of predictors we might want to recode. Looks like `GAME_ID`, `GAME_EVENT_ID`, `PLAYER_ID`, `TEAM_ID`, `PERIOD`, `SHOT_ATTEMPTED_FLAG`, and `SHOT_MADE_FLAG` should all be coded as factors (currently coded as ints). Let's also convert `SHOT_TYPE` to an integer value...
 ```{r}
 d <- d.raw %>%
   mutate(GAME_ID = as.factor(GAME_ID),
@@ -82,22 +82,34 @@ d <- d %>%
 
 Let's do some preliminary exploring just to make sure this data makes sense...
 
-Number of players
+# Data summary
+
+
+## Total number of shots taken
+```{r}
+sum(player_shots_summary$total_shots_taken)
+```
+
+## Total number of shots made
+```{r}
+sum(player_shots_summary$total_shots_made)
+```
+
+
+## Number of players
 ```{r}
 length(unique(d$PLAYER_ID)) == length(unique(d$PLAYER_NAME))
 length(unique(d$PLAYER_ID))
 ```
 Seems about right - should confirm this was the number of players in 2014-2015
 
-Number of teams?
+## Number of teams?
 ```{r}
 length(unique(d$TEAM_ID))
 ```
 Looks good, there are 30 teams
 
-# Prelim exploration
-
-Number of shots by player
+## Number of shots by player
 ```{r}
 player_shots_summary <- d %>%
   group_by(PLAYER_NAME, TEAM_NAME) %>%
@@ -110,6 +122,13 @@ ggplot(player_shots_summary, aes(x = total_shots_taken, y = total_shots_made, co
   geom_smooth(method = "lm", aes(group=1)) + 
   guides(col = FALSE) +
   ggtitle("Shots made by shots taken - all players in NBA season 2014-2015")
+```
+
+## How many have taken over 500 shots?
+```{r}
+player_shots_summary %>%
+  filter(total_shots_taken > 500) %>%
+  nrow
 ```
 
 Who made the most shots?
@@ -134,7 +153,7 @@ top_50_shooting_percentage <- d %>%
   arrange(-shooting_percentage) %>%
   head(n = 50)
 
-  ggplot(top_50_shooting_percentage, aes(x = reorder(PLAYER_NAME, shooting_percentage), y = shooting_percentage)) +
+ggplot(top_50_shooting_percentage, aes(x = reorder(PLAYER_NAME, shooting_percentage), y = shooting_percentage)) +
     geom_bar(stat = "identity") +
     guides(col = FALSE) +
     theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
@@ -167,6 +186,69 @@ unique(d$SHOT_TYPE)
 ```
 
 ## Hot hand analysis helpers
+
+
+```{r}
+d_practice <- data.frame(SHOT_MADE_FLAG = c(1, 0, 0, 1, 1, 1, 1, 0, 1, 1))
+
+populate_prev_shots <- function(d) {
+  get_streaks <- function(d) {
+    df <- d %>%
+      mutate(prev_shot = lag(SHOT_MADE_FLAG),
+             curr_hit_streak = NA,
+             curr_miss_streak = NA)
+    df$shot_num <- seq(1, nrow(d))
+    
+    for (row in 1:nrow(df)) {
+      ## First hot
+      if (row == 1) {
+        df[row, ]$curr_hit_streak <- 0
+        df[row, ]$curr_miss_streak <- 0
+      }
+      ## Add to hit streak
+      else if (df[row, ]$prev_shot == 1) {
+        df[row, ]$curr_hit_streak <- df[row - 1, ]$curr_hit_streak + 1
+        df[row, ]$curr_miss_streak <- 0
+      }
+      ## Add to miss streak
+      else {
+        df[row, ]$curr_miss_streak <- df[row - 1, ]$curr_miss_streak + 1
+        df[row, ]$curr_hit_streak <- 0
+      }
+    }
+    
+    df
+  }
+  d_prev <-  plyr::ddply(d, .variables = c("PLAYER_ID", "GAME_ID"), .fun = get_streaks)
+  
+  ## Add in streak data
+#   res_d <- d_prev %>%
+#     mutate(
+#       ## Made prev shots
+#       made_last_1 = prev_shot1 == 1,
+#       made_last_2 = made_last_1 & prev_shot2 == 1,
+#       made_last_3 = made_last_2 & prev_shot3 == 1,
+#       made_last_4 = made_last_3 & prev_shot4 == 1,
+#       ## Missed prev shots
+#       missed_last_1 = prev_shot1 == 0,
+#       missed_last_2 = missed_last_1 & prev_shot2 == 0,
+#       missed_last_3 = missed_last_2 & prev_shot3 == 0,
+#       missed_last_4 = missed_last_3 & prev_shot4 == 0
+#     )
+  
+  d_prev
+}
+
+d_practice <- d[1:100,]
+
+start_time <- proc.time()
+d_practice2 <- populate_prev_shots(d_practice)
+run_time <- proc.time() - start_time
+run_time
+d_practice2 %>% select(PLAYER_ID, GAME_ID, SHOT_MADE_FLAG, curr_hit_streak, curr_miss_streak) %>%
+  View
+```
+
 
 We'll want some features with tell us about a players previous shot (or previous few shots as in )
 ```{r}
