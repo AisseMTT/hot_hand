@@ -1,98 +1,85 @@
-rm(list = ls())
-
-library(dplyr)
-library(tidyr)
-library(ggplot2)
-setwd('/Users/benpeloquin/Desktop/Spring2016/Stats267/hot_hand')
-
-
-####
-#### Read in data
-####
-ptm <- proc.time()
-path <- "player_data/"
-files <- list.files(path)
-d.raw <- data.frame()
-for (f in files) {
-  d <- read.csv(paste0(path, f))
-  d.raw <- rbind(d.raw, d)
+#####
+##### inGlobalEnv()
+##### -------------
+##### boolean object presence in global env
+#####
+inGlobalEnv <- function(item) {
+  item %in% ls(envir = .GlobalEnv)
 }
-print(paste0("Time took: ", proc.time() - ptm))
 
-player_ids <- read.csv('player_ids.csv')
-names(player_ids) <- "ids"
-
-
-d.raw$PLAYER_ID <- as.factor(d.raw$PLAYER_ID)
-length(unique(d.raw$PLAYER_ID))
-player_ids
-
-setdiff(unique(d.raw$PLAYER_ID), player_ids$ids)
-## Run this before running python get_data.py
-# write.csv(unique(d.raw$PLAYER_ID), file = 'good_ids.csv')
-
-# d <- read.csv('player_data/203500.csv', stringsAsFactors = FALSE)
-
-## Some initial data processing
-d$PERIOD <- as.factor(d$PERIOD)
-
-## Add more features here?
-d <- d %>%
-  mutate(total_sec_remaining = MINUTES_REMAINING * 60 + SECONDS_REMAINING,
-         shot_zone_type_concat = as.factor(paste0(SHOT_ZONE_RANGE, '-', SHOT_TYPE)),
-         action_type_shot_type = as.factor(paste0(ACTION_TYPE, '-', SHOT_TYPE)))
-
-d2 <- d %>%
-  mutate(prev_shot1 = NA)
-for (row in seq(1, nrow(d))) {
-  if (row != 1) {
-    d2[row, "prev_shot1"] <- d2[row - 1, "SHOT_MADE_FLAG"]
-  } 
+########
+######## populate_prev_shots()
+######## ---------------------
+######## Populate new column with hit / miss streak data up to that point
+########
+populate_prev_shots <- function(d) {
+  get_streaks <- function(d) {
+    df <- d %>%
+      mutate(prev_shot = lag(SHOT_MADE_FLAG),
+             curr_hit_streak = NA,
+             curr_miss_streak = NA)
+    df$shot_num <- seq(1, nrow(d))
+    
+    for (row in 1:nrow(df)) {
+      ## First hot
+      if (row == 1) {
+        df[row, ]$curr_hit_streak <- 0
+        df[row, ]$curr_miss_streak <- 0
+      }
+      ## Add to hit streak
+      else if (df[row, ]$prev_shot == 1) {
+        df[row, ]$curr_hit_streak <- df[row - 1, ]$curr_hit_streak + 1
+        df[row, ]$curr_miss_streak <- 0
+      }
+      ## Add to miss streak
+      else {
+        df[row, ]$curr_miss_streak <- df[row - 1, ]$curr_miss_streak + 1
+        df[row, ]$curr_hit_streak <- 0
+      }
+    }
+    
+    df
+  }
+  d_prev <-  plyr::ddply(d, .variables = c("PLAYER_ID", "GAME_ID"), .fun = get_streaks)
+  
+  d_prev
 }
-d2
-sum(d2$prev_shot1[2:length(d2$prev_shot1)]) / nrow(d2)
-sum(d2$SHOT_MADE_FLAG) / nrow(d2)
-names(d2)
-summary(glm(SHOT_MADE_FLAG ~
-              SHOT_DISTANCE +
-              PERIOD +
-              SHOT_TYPE +
-              LOC_X +
-              LOC_Y +
-              prev_shot1 +
-              total_sec_remaining,
-            family = "binomial", data = d2))
-
-player_shot_summary <- function(d) {
-  player_name <- unique(d$PLAYER_NAME)
-  cat(paste0("Player name: ", player_name), "\n")  
-  
-  team_name <- unique(d$TEAM_NAME)
-  cat(paste0("Team name: ", team_name), "\n")  
-  
-  shots_attempted <- sum(d$SHOT_ATTEMPTED_FLAG)
-  cat(paste0("Shots attempted: ", shots_attempted), "\n")
-  
-  shots_made <- sum(d$SHOT_MADE_FLAG)
-  cat(paste0("Shots made: ", shots_made), "\n")
-  
-  shooting_percentage <- shots_made / shots_attempted
-  cat(paste0("Shot percentage: ", shooting_percentage), "\n")
-}
-player_shot_summary(d)
-
-## Plot shots made / attempted by type
-d %>%
-  group_by(shot_zone_type_concat) %>%
-  summarise(shot_attempted = n(),
-            shot_made = sum(SHOT_MADE_FLAG),
-            shot_percentage = shot_made / shot_attempted) %>%
-  gather(shot_type, shot_value, c(shot_attempted, shot_made)) %>%
-  ggplot(aes(x = shot_zone_type_concat, y = shot_value, fill = shot_type)) +
-    geom_bar(stat = "identity", position = "dodge")
-
-ggplot(d, aes(x = total_sec_remaining, y = SHOT_ATTEMPTED_FLAG, col = as.factor(GAME_ID), size = SHOT_DISTANCE)) +
-  geom_point(alpha = 0.5, position = position_jitter(height = 0.005)) +
-  ylim(0.95, 1.05)
-  
-names(d)
+## Previous go
+## ----------
+# populate_prev_shots <- function(d) {
+#   
+#   ## Get previous shots
+#   get_prev_shots <- function(d) {
+#     d <- d %>% mutate(prev_shot1 = NA,
+#                           prev_shot2 = NA,
+#                           prev_shot3 = NA,
+#                           prev_shot4 = NA)
+#     
+#     if (nrow(d) > 1) d$prev_shot1 <- c(NA, d$SHOT_MADE_FLAG[seq(1, length(d$SHOT_MADE_FLAG) - 1)])
+#     if (nrow(d) > 2) d$prev_shot2 <- c(rep(NA, 2), d$SHOT_MADE_FLAG[seq(1, length(d$SHOT_MADE_FLAG) - 2)])
+#     if (nrow(d) > 3) d$prev_shot3 <- c(rep(NA, 3), d$SHOT_MADE_FLAG[seq(1, length(d$SHOT_MADE_FLAG) - 3)])
+#     if (nrow(d) > 4) d$prev_shot4 <- c(rep(NA, 4), d$SHOT_MADE_FLAG[seq(1, length(d$SHOT_MADE_FLAG) - 4)])
+#     
+#     d$shot_num <- seq(1, nrow(d))
+#     
+#     d
+#   }
+#   d_prev <-  plyr::ddply(d, .variables = c("PLAYER_ID", "GAME_ID"), .fun = get_prev_shots)
+#   
+#   ## Add in streak data
+#   res_d <- d_prev %>%
+#     mutate(
+#       ## Made prev shots
+#       made_last_1 = prev_shot1 == 1,
+#       made_last_2 = made_last_1 & prev_shot2 == 1,
+#       made_last_3 = made_last_2 & prev_shot3 == 1,
+#       made_last_4 = made_last_3 & prev_shot4 == 1,
+#       ## Missed prev shots
+#       missed_last_1 = prev_shot1 == 0,
+#       missed_last_2 = missed_last_1 & prev_shot2 == 0,
+#       missed_last_3 = missed_last_2 & prev_shot3 == 0,
+#       missed_last_4 = missed_last_3 & prev_shot4 == 0
+#     )
+#   
+#   res_d
+# }
