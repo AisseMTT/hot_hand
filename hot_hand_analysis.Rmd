@@ -176,16 +176,15 @@ unique(d$SHOT_TYPE)
 
 We'll want some features with tell us about a players previous shot (or previous few shots as in )
 ```{r echo=FALSE}
-########
-######## populate_prev_shots()
-######## ---------------------
-######## Appends 13 new cols:
-######## * what occurred on prev shot (1-4)
-######## * shot number in game (5)
-######## * made streaks (6-9)
-######## * missed streaks (10 - 13)
-########
+# populate_prev_shots(d_prev_mini)
+# undebug(populate_prev_shots)
 
+
+
+d_prev_mini2 <- d_prev_mini[1:18, ]
+
+test1 <- plyr::ddply(d_prev_mini2, .variables = c("GAME_ID", "PERIOD"), .fun = get_time_between_shots) %>% select(GAME_ID, PERIOD, TOTAL_TIME_REMAINING, MINUTES_REMAINING, SECONDS_REMAINING, time_between_shots)
+# plyr::ddply(d, .variables = c("PLAYER_ID", "GAME_ID"), .fun = get_streaks)
 ```
 
 # Section II - Populating streak info
@@ -201,6 +200,52 @@ if (!inGlobalEnv("d_prev")) {
   write.csv(d_prev, "d_prev_shots.csv")
 }
 ```
+
+
+## Indicator for streak of 3+
+```{r}
+d_prev_mini <- d_prev[1:1000,]
+
+d_prev_mini <- d_prev_mini %>%
+  mutate(is_hot = curr_hit_streak >= 3,
+         is_cold = curr_miss_streak >= 3)
+
+d_prev_mini %>%
+  group_by(hit_3plus) %>%
+  summarize(shots_taken = n(),
+            avg_shot_distance = mean(SHOT_DISTANCE),
+            shots_made = sum(SHOT_MADE_FLAG),
+            shooting_percentage = shots_made / shots_taken,
+            ci_lower = binom.test(shots_made, shots_taken)$conf.int[1],
+            ci_upper = binom.test(shots_made, shots_taken)$conf.int[2])
+```
+
+## Does streak predict shot distance?
+```{r}
+d_prev %>%
+  gather(streak_type, streak_value, c(curr_hit_streak, curr_miss_streak)) %>%
+ggplot(., aes(x=streak_value, y=SHOT_DISTANCE)) +
+  geom_point(alpha=0.25) +
+  geom_jitter(width=1) +
+  facet_wrap(~streak_type) +
+  geom_smooth(method="lm")
+```
+
+## lmer predict SHOT_DISTANCE
+```{r}
+library(lme4)
+library(lmerTest)
+summary(lmer(SHOT_DISTANCE ~ curr_hit_streak + curr_miss_streak + (1 | PLAYER_ID) + (1 | POSITION), data=d_prev))
+```
+
+
+```{r}
+# d.raw_mini <- d[1:1000,]
+# d.raw_mini2 <- populate_prev_shots(d.raw_mini)
+# d.raw_mini2 %>% select(GAME_ID, PLAYER_NAME, PERIOD, TOTAL_TIME_REMAINING, time_between_shots, curr_hit_streak, curr_miss_streak) %>% View
+# undebug(get_time_between_shots)
+```
+
 
 ## Shooting percentage by shot number
 ```{r}
@@ -232,7 +277,6 @@ Well, it actually isn't the case that people are taking longer shots later in th
 
 ### Data
 ```{r}
-
 calc_prev_shot_effects <- function(df) {
   d_current <- df %>%
     summarize(shots_taken = n(),

@@ -7,39 +7,74 @@ inGlobalEnv <- function(item) {
   item %in% ls(envir = .GlobalEnv)
 }
 
+#####
+##### get_time_between_shots()
+##### ------------------------
+##### calculate time between shots within a quarter
+#####
+get_time_between_shots <- function(d) {
+  quarter_data <- d %>% mutate(time_between_shots = NA) ## create new col
+  
+  for (row in 1:nrow(quarter_data)) {
+    if (row == 1) {
+      quarter_data[row, ]$time_between_shots <- NA
+    }
+    else {
+      prev_row <- row - 1
+      quarter_data[row, ]$time_between_shots <- quarter_data[prev_row, ]$TOTAL_TIME_REMAINING - quarter_data[row, ]$TOTAL_TIME_REMAINING
+    }
+  }
+  quarter_data
+}
+
+#####
+##### get_streaks()
+##### -------------
+##### find hit and miss streaks in data frame d
+#####
+get_streaks <- function(d) {
+  
+  ## Set-up df
+  df <- d %>%
+    mutate(prev_shot = lag(SHOT_MADE_FLAG),
+           curr_hit_streak = NA,
+           curr_miss_streak = NA)
+ 
+   ## Store shot number
+  df$shot_num <- seq(1, nrow(d))
+  
+  ## Store time between shots
+  df <- plyr::ddply(df, .variables = c("PERIOD"), .fun = get_time_between_shots)
+  
+  ## Store streak data
+  for (row in 1:nrow(df)) {
+    ## First hot
+    if (row == 1) {
+      df[row, ]$curr_hit_streak <- 0
+      df[row, ]$curr_miss_streak <- 0
+    }
+    ## Add to hit streak
+    else if (df[row, ]$prev_shot == 1) {
+      df[row, ]$curr_hit_streak <- df[row - 1, ]$curr_hit_streak + 1
+      df[row, ]$curr_miss_streak <- 0
+    }
+    ## Add to miss streak
+    else {
+      df[row, ]$curr_miss_streak <- df[row - 1, ]$curr_miss_streak + 1
+      df[row, ]$curr_hit_streak <- 0
+    }
+  }
+  
+  ## Return new df
+  df
+}
+
 ########
 ######## populate_prev_shots()
 ######## ---------------------
 ######## Populate new column with hit / miss streak data up to that point
 ########
 populate_prev_shots <- function(d) {
-  get_streaks <- function(d) {
-    df <- d %>%
-      mutate(prev_shot = lag(SHOT_MADE_FLAG),
-             curr_hit_streak = NA,
-             curr_miss_streak = NA)
-    df$shot_num <- seq(1, nrow(d))
-    
-    for (row in 1:nrow(df)) {
-      ## First hot
-      if (row == 1) {
-        df[row, ]$curr_hit_streak <- 0
-        df[row, ]$curr_miss_streak <- 0
-      }
-      ## Add to hit streak
-      else if (df[row, ]$prev_shot == 1) {
-        df[row, ]$curr_hit_streak <- df[row - 1, ]$curr_hit_streak + 1
-        df[row, ]$curr_miss_streak <- 0
-      }
-      ## Add to miss streak
-      else {
-        df[row, ]$curr_miss_streak <- df[row - 1, ]$curr_miss_streak + 1
-        df[row, ]$curr_hit_streak <- 0
-      }
-    }
-    
-    df
-  }
   d_prev <-  plyr::ddply(d, .variables = c("PLAYER_ID", "GAME_ID"), .fun = get_streaks)
   
   d_prev
