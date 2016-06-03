@@ -313,10 +313,20 @@ run_test_df <- run_test_df %>%
 
 ### plot
 ```{r}
-ggplot(run_test_df, aes(x=reorder(PLAYER_NAME, RUNS_STAT), y=RUNS_STAT, fill=abs(RUNS_PVALUE < 0.05))) +
+run_test_df_plot <- run_test_df %>% 
+  mutate(PLAYER_NAME = as.factor(PLAYER_NAME),
+         p_value_col = ifelse(RUNS_PVALUE < 0.01, "green", "grey")) %>%
+  arrange(-RUNS_STAT)
+
+x_breaks <- levels(run_test_df_plot$PLAYER_NAME)[rep(c(TRUE,FALSE), length(run_test_df_plot$PLAYER_NAME)/2)]
+ggplot(run_test_df_plot, aes(x=reorder(PLAYER_NAME, RUNS_STAT), y=RUNS_STAT, fill=p_value_col)) +
   geom_bar(stat="identity", position="identity") +
-  guides(fill=FALSE) + 
-  theme(axis.text.x = element_text(angle=60, hjust = 1))
+  scale_fill_manual(values=c("forest green", "grey")) +
+  xlab("Players") +
+  ylab("Z") +
+  theme(axis.text.x = element_blank())
+
+
 ```
 
 
