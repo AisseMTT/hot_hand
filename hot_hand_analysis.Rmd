@@ -291,6 +291,32 @@ ggplot(overall_cond_df, aes(x = context, y = shooting_percentage)) +
 ## Runs analysis
 
 ```{r}
+players_over_100_shots <- d_prev %>%
+  group_by(PLAYER_NAME) %>%
+  summarise(num_shots = n()) %>%
+  filter(num_shots >= 100) %>%
+  select(PLAYER_NAME)
+players_over_100_shots <- players_over_100_shots$PLAYER_NAME
+
+run_test_df <- data.frame("PLAYER_NAME"=NA, "RUNS_STAT"=NA, "RUNS_PVALUE"=NA)
+for (player in players_over_100_shots) {
+  res <- calc_runs(subset(d_prev, as.character(PLAYER_NAME) == player)$SHOT_MADE_FLAG, pmethod="normal")
+  statistic <- as.numeric(res[1])
+  p.value <- as.numeric(res[2])
+  run_test_df <- rbind(run_test_df, c("PLAYER_NAME"=player, "RUNS_STAT"=statistic, "RUNS_PVALUE"=p.value))
+}
+run_test_df <- run_test_df %>%
+  filter(!is.na(PLAYER_NAME)) %>%
+  mutate(RUNS_STAT = as.numeric(RUNS_STAT),
+         RUNS_PVALUE = as.numeric(RUNS_PVALUE))
+```
+
+### plot
+```{r}
+ggplot(run_test_df, aes(x=reorder(PLAYER_NAME, RUNS_STAT), y=RUNS_STAT, fill=abs(RUNS_PVALUE < 0.05))) +
+  geom_bar(stat="identity", position="identity") +
+  guides(fill=FALSE) + 
+  theme(axis.text.x = element_text(angle=60, hjust = 1))
 ```
 
 
@@ -300,19 +326,6 @@ calc_runs(subset(d_prev, as.character(PLAYER_NAME) == "Al Jefferson")$SHOT_MADE_
 strruns(lawstat::runs.test(subset(d_prev, as.character(PLAYER_NAME) == "Al Jefferson")$SHOT_MADE_FLAG))
 
 
-
-run_test_df <- data.frame("PLAYER_NAME" = NA, "P_VALUE" = NA)
-for (player in players_over_100_shots) {
-  value <- runs.pvalue(subset(d_prev, as.character(PLAYER_NAME) == player)$SHOT_MADE_FLAG, pmethod="normal")
-  run_test_df <- rbind(run_test_df, c("PLAYER_NAME" = player, "P_VALUE" = value))
-}
-
-players_over_100_shots <- d_prev %>%
-  group_by(PLAYER_NAME) %>%
-  summarise(num_shots = n()) %>%
-  filter(num_shots >= 100) %>%
-  select(PLAYER_NAME)
-players_over_100_shots <- players_over_100_shots$PLAYER_NAME
 
 d_prev %>%
   filter(PLAYER_NAME %in% players_over_1000_shots) %>%
