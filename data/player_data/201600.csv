@@ -1,0 +1,413 @@
+,GRID_TYPE,GAME_ID,GAME_EVENT_ID,PLAYER_ID,PLAYER_NAME,TEAM_ID,TEAM_NAME,PERIOD,MINUTES_REMAINING,SECONDS_REMAINING,EVENT_TYPE,ACTION_TYPE,SHOT_TYPE,SHOT_ZONE_BASIC,SHOT_ZONE_AREA,SHOT_ZONE_RANGE,SHOT_DISTANCE,LOC_X,LOC_Y,SHOT_ATTEMPTED_FLAG,SHOT_MADE_FLAG
+0,Shot Chart Detail,0021400001,29,201600,Omer Asik,1610612740,New Orleans Pelicans,1,10,5,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,13,9,1,1
+1,Shot Chart Detail,0021400001,32,201600,Omer Asik,1610612740,New Orleans Pelicans,1,9,38,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,28,0,1,0
+2,Shot Chart Detail,0021400001,48,201600,Omer Asik,1610612740,New Orleans Pelicans,1,7,13,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+3,Shot Chart Detail,0021400001,69,201600,Omer Asik,1610612740,New Orleans Pelicans,1,5,12,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,6,20,1,0
+4,Shot Chart Detail,0021400001,125,201600,Omer Asik,1610612740,New Orleans Pelicans,1,1,52,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,10,9,1,1
+5,Shot Chart Detail,0021400001,142,201600,Omer Asik,1610612740,New Orleans Pelicans,1,1,13,Made Shot,Putback Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+6,Shot Chart Detail,0021400001,176,201600,Omer Asik,1610612740,New Orleans Pelicans,2,10,45,Made Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-24,11,1,1
+7,Shot Chart Detail,0021400001,238,201600,Omer Asik,1610612740,New Orleans Pelicans,2,5,57,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-7,7,1,1
+8,Shot Chart Detail,0021400001,331,201600,Omer Asik,1610612740,New Orleans Pelicans,3,10,57,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-24,1,1,0
+9,Shot Chart Detail,0021400001,567,201600,Omer Asik,1610612740,New Orleans Pelicans,4,2,36,Made Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,15,22,1,1
+10,Shot Chart Detail,0021400027,38,201600,Omer Asik,1610612740,New Orleans Pelicans,1,8,13,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,18,12,1,1
+11,Shot Chart Detail,0021400027,42,201600,Omer Asik,1610612740,New Orleans Pelicans,1,7,51,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,24,7,1,0
+12,Shot Chart Detail,0021400027,154,201600,Omer Asik,1610612740,New Orleans Pelicans,2,11,17,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+13,Shot Chart Detail,0021400027,184,201600,Omer Asik,1610612740,New Orleans Pelicans,2,8,12,Missed Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,21,9,1,0
+14,Shot Chart Detail,0021400027,291,201600,Omer Asik,1610612740,New Orleans Pelicans,3,10,34,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+15,Shot Chart Detail,0021400027,317,201600,Omer Asik,1610612740,New Orleans Pelicans,3,8,43,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+16,Shot Chart Detail,0021400027,413,201600,Omer Asik,1610612740,New Orleans Pelicans,4,11,37,Missed Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,1,6,1,0
+17,Shot Chart Detail,0021400027,453,201600,Omer Asik,1610612740,New Orleans Pelicans,4,7,48,Made Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-15,7,1,1
+18,Shot Chart Detail,0021400045,42,201600,Omer Asik,1610612740,New Orleans Pelicans,1,5,31,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,12,1,1,0
+19,Shot Chart Detail,0021400045,73,201600,Omer Asik,1610612740,New Orleans Pelicans,1,3,13,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,23,3,1,0
+20,Shot Chart Detail,0021400045,212,201600,Omer Asik,1610612740,New Orleans Pelicans,2,3,6,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,18,20,1,0
+21,Shot Chart Detail,0021400045,232,201600,Omer Asik,1610612740,New Orleans Pelicans,2,1,26,Missed Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,12,-2,1,0
+22,Shot Chart Detail,0021400045,297,201600,Omer Asik,1610612740,New Orleans Pelicans,3,8,24,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,20,3,1,1
+23,Shot Chart Detail,0021400045,313,201600,Omer Asik,1610612740,New Orleans Pelicans,3,7,16,Missed Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,1,12,1,0
+24,Shot Chart Detail,0021400045,321,201600,Omer Asik,1610612740,New Orleans Pelicans,3,6,40,Missed Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,0
+25,Shot Chart Detail,0021400054,34,201600,Omer Asik,1610612740,New Orleans Pelicans,1,7,51,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+26,Shot Chart Detail,0021400054,284,201600,Omer Asik,1610612740,New Orleans Pelicans,3,8,38,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-24,15,1,0
+27,Shot Chart Detail,0021400054,299,201600,Omer Asik,1610612740,New Orleans Pelicans,3,6,46,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+28,Shot Chart Detail,0021400054,436,201600,Omer Asik,1610612740,New Orleans Pelicans,4,4,49,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+29,Shot Chart Detail,0021400089,20,201600,Omer Asik,1610612740,New Orleans Pelicans,1,8,30,Made Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-13,11,1,1
+30,Shot Chart Detail,0021400089,222,201600,Omer Asik,1610612740,New Orleans Pelicans,2,1,23,Made Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,6,11,1,1
+31,Shot Chart Detail,0021400089,288,201600,Omer Asik,1610612740,New Orleans Pelicans,3,7,18,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-4,-5,1,1
+32,Shot Chart Detail,0021400089,458,201600,Omer Asik,1610612740,New Orleans Pelicans,4,5,28,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,13,1,1,0
+33,Shot Chart Detail,0021400098,38,201600,Omer Asik,1610612740,New Orleans Pelicans,1,7,56,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-7,-5,1,0
+34,Shot Chart Detail,0021400098,164,201600,Omer Asik,1610612740,New Orleans Pelicans,2,7,9,Missed Shot,Jump Bank Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,6,-5,66,1,0
+35,Shot Chart Detail,0021400098,175,201600,Omer Asik,1610612740,New Orleans Pelicans,2,6,20,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,6,28,1,0
+36,Shot Chart Detail,0021400098,439,201600,Omer Asik,1610612740,New Orleans Pelicans,4,8,13,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+37,Shot Chart Detail,0021400098,446,201600,Omer Asik,1610612740,New Orleans Pelicans,4,7,32,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,0,11,1,1
+38,Shot Chart Detail,0021400114,76,201600,Omer Asik,1610612740,New Orleans Pelicans,1,4,31,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,7,19,1,1
+39,Shot Chart Detail,0021400114,214,201600,Omer Asik,1610612740,New Orleans Pelicans,2,1,48,Made Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-29,0,1,1
+40,Shot Chart Detail,0021400114,258,201600,Omer Asik,1610612740,New Orleans Pelicans,3,9,59,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+41,Shot Chart Detail,0021400128,6,201600,Omer Asik,1610612740,New Orleans Pelicans,1,11,11,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-23,4,1,1
+42,Shot Chart Detail,0021400128,51,201600,Omer Asik,1610612740,New Orleans Pelicans,1,6,29,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+43,Shot Chart Detail,0021400128,171,201600,Omer Asik,1610612740,New Orleans Pelicans,2,8,7,Made Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-5,15,1,1
+44,Shot Chart Detail,0021400128,238,201600,Omer Asik,1610612740,New Orleans Pelicans,2,1,10,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+45,Shot Chart Detail,0021400128,240,201600,Omer Asik,1610612740,New Orleans Pelicans,2,0,42,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side(L),8-16 ft.,15,-141,69,1,0
+46,Shot Chart Detail,0021400208,8,201600,Omer Asik,1610612740,New Orleans Pelicans,1,10,49,Missed Shot,Hook Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,5,1,52,1,0
+47,Shot Chart Detail,0021400208,33,201600,Omer Asik,1610612740,New Orleans Pelicans,1,8,9,Missed Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,37,3,1,0
+48,Shot Chart Detail,0021400208,66,201600,Omer Asik,1610612740,New Orleans Pelicans,1,4,50,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-8,4,1,1
+49,Shot Chart Detail,0021400208,194,201600,Omer Asik,1610612740,New Orleans Pelicans,2,5,22,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,17,19,1,0
+50,Shot Chart Detail,0021400208,293,201600,Omer Asik,1610612740,New Orleans Pelicans,3,8,28,Missed Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-15,4,1,0
+51,Shot Chart Detail,0021400225,26,201600,Omer Asik,1610612740,New Orleans Pelicans,1,7,32,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,10,6,1,1
+52,Shot Chart Detail,0021400225,192,201600,Omer Asik,1610612740,New Orleans Pelicans,2,4,9,Made Shot,Running Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,7,7,1,1
+53,Shot Chart Detail,0021400225,213,201600,Omer Asik,1610612740,New Orleans Pelicans,2,1,59,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,10,-5,1,0
+54,Shot Chart Detail,0021400225,254,201600,Omer Asik,1610612740,New Orleans Pelicans,3,10,10,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+55,Shot Chart Detail,0021400225,278,201600,Omer Asik,1610612740,New Orleans Pelicans,3,7,20,Missed Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,6,12,1,0
+56,Shot Chart Detail,0021400225,293,201600,Omer Asik,1610612740,New Orleans Pelicans,3,5,59,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,9,3,1,0
+57,Shot Chart Detail,0021400225,399,201600,Omer Asik,1610612740,New Orleans Pelicans,4,8,27,Made Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,2,6,1,1
+58,Shot Chart Detail,0021400236,18,201600,Omer Asik,1610612740,New Orleans Pelicans,1,9,44,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,12,4,1,0
+59,Shot Chart Detail,0021400236,142,201600,Omer Asik,1610612740,New Orleans Pelicans,2,10,5,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-8,-5,1,0
+60,Shot Chart Detail,0021400236,161,201600,Omer Asik,1610612740,New Orleans Pelicans,2,7,31,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-7,-6,1,0
+61,Shot Chart Detail,0021400236,274,201600,Omer Asik,1610612740,New Orleans Pelicans,3,7,42,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-18,-5,1,0
+62,Shot Chart Detail,0021400258,6,201600,Omer Asik,1610612740,New Orleans Pelicans,1,11,27,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,26,7,1,0
+63,Shot Chart Detail,0021400258,275,201600,Omer Asik,1610612740,New Orleans Pelicans,2,4,51,Missed Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-5,15,1,0
+64,Shot Chart Detail,0021400258,347,201600,Omer Asik,1610612740,New Orleans Pelicans,3,11,46,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-24,14,1,0
+65,Shot Chart Detail,0021400258,349,201600,Omer Asik,1610612740,New Orleans Pelicans,3,11,43,Made Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,12,-3,1,1
+66,Shot Chart Detail,0021400258,378,201600,Omer Asik,1610612740,New Orleans Pelicans,3,8,1,Missed Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,0,19,1,0
+67,Shot Chart Detail,0021400275,2,201600,Omer Asik,1610612740,New Orleans Pelicans,1,11,45,Made Shot,Slam Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+68,Shot Chart Detail,0021400275,4,201600,Omer Asik,1610612740,New Orleans Pelicans,1,11,8,Missed Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,18,30,1,0
+69,Shot Chart Detail,0021400275,119,201600,Omer Asik,1610612740,New Orleans Pelicans,2,11,20,Made Shot,Jump Bank Hook Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,15,34,1,1
+70,Shot Chart Detail,0021400275,140,201600,Omer Asik,1610612740,New Orleans Pelicans,2,8,38,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,7,19,1,0
+71,Shot Chart Detail,0021400275,158,201600,Omer Asik,1610612740,New Orleans Pelicans,2,6,32,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,6,20,1,1
+72,Shot Chart Detail,0021400275,268,201600,Omer Asik,1610612740,New Orleans Pelicans,3,8,13,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,0,26,1,0
+73,Shot Chart Detail,0021400275,370,201600,Omer Asik,1610612740,New Orleans Pelicans,3,6,43,Missed Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-8,1,1,0
+74,Shot Chart Detail,0021400275,400,201600,Omer Asik,1610612740,New Orleans Pelicans,4,8,54,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,12,20,1,1
+75,Shot Chart Detail,0021400293,23,201600,Omer Asik,1610612740,New Orleans Pelicans,1,8,50,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+76,Shot Chart Detail,0021400293,191,201600,Omer Asik,1610612740,New Orleans Pelicans,2,2,47,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,5,-7,53,1,0
+77,Shot Chart Detail,0021400293,230,201600,Omer Asik,1610612740,New Orleans Pelicans,3,11,42,Made Shot,Hook Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,-13,28,1,1
+78,Shot Chart Detail,0021400293,249,201600,Omer Asik,1610612740,New Orleans Pelicans,3,8,49,Made Shot,Putback Slam Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+79,Shot Chart Detail,0021400300,14,201600,Omer Asik,1610612740,New Orleans Pelicans,1,9,31,Made Shot,Slam Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+80,Shot Chart Detail,0021400300,18,201600,Omer Asik,1610612740,New Orleans Pelicans,1,8,48,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,18,20,1,1
+81,Shot Chart Detail,0021400300,21,201600,Omer Asik,1610612740,New Orleans Pelicans,1,8,25,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-13,14,1,0
+82,Shot Chart Detail,0021400300,222,201600,Omer Asik,1610612740,New Orleans Pelicans,2,3,46,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-4,28,1,0
+83,Shot Chart Detail,0021400300,298,201600,Omer Asik,1610612740,New Orleans Pelicans,3,10,32,Missed Shot,Jump Hook Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,6,41,1,0
+84,Shot Chart Detail,0021400300,331,201600,Omer Asik,1610612740,New Orleans Pelicans,3,6,23,Made Shot,Slam Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+85,Shot Chart Detail,0021400300,362,201600,Omer Asik,1610612740,New Orleans Pelicans,3,3,2,Made Shot,Slam Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+86,Shot Chart Detail,0021400311,51,201600,Omer Asik,1610612740,New Orleans Pelicans,1,5,39,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,0,15,1,1
+87,Shot Chart Detail,0021400311,74,201600,Omer Asik,1610612740,New Orleans Pelicans,1,3,23,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,13,3,1,0
+88,Shot Chart Detail,0021400311,229,201600,Omer Asik,1610612740,New Orleans Pelicans,2,0,18,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+89,Shot Chart Detail,0021400311,262,201600,Omer Asik,1610612740,New Orleans Pelicans,3,8,16,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,18,0,1,0
+90,Shot Chart Detail,0021400311,267,201600,Omer Asik,1610612740,New Orleans Pelicans,3,7,43,Made Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,23,11,1,1
+91,Shot Chart Detail,0021400311,296,201600,Omer Asik,1610612740,New Orleans Pelicans,3,5,29,Made Shot,Putback Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,13,14,1,1
+92,Shot Chart Detail,0021400311,396,201600,Omer Asik,1610612740,New Orleans Pelicans,4,8,28,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,6,11,1,1
+93,Shot Chart Detail,0021400311,425,201600,Omer Asik,1610612740,New Orleans Pelicans,4,5,55,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,15,6,1,1
+94,Shot Chart Detail,0021400311,465,201600,Omer Asik,1610612740,New Orleans Pelicans,4,1,48,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,17,0,1,0
+95,Shot Chart Detail,0021400311,467,201600,Omer Asik,1610612740,New Orleans Pelicans,4,1,47,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+96,Shot Chart Detail,0021400323,6,201600,Omer Asik,1610612740,New Orleans Pelicans,1,9,1,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,3,1,1,1
+97,Shot Chart Detail,0021400323,22,201600,Omer Asik,1610612740,New Orleans Pelicans,1,7,12,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,7,3,1,0
+98,Shot Chart Detail,0021400323,272,201600,Omer Asik,1610612740,New Orleans Pelicans,3,9,42,Missed Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,0
+99,Shot Chart Detail,0021400323,316,201600,Omer Asik,1610612740,New Orleans Pelicans,3,6,13,Missed Shot,Running Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,23,11,1,0
+100,Shot Chart Detail,0021400323,324,201600,Omer Asik,1610612740,New Orleans Pelicans,3,5,21,Made Shot,Slam Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+101,Shot Chart Detail,0021400323,438,201600,Omer Asik,1610612740,New Orleans Pelicans,4,6,30,Missed Shot,Running Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,7,3,1,0
+102,Shot Chart Detail,0021400336,38,201600,Omer Asik,1610612740,New Orleans Pelicans,1,8,7,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,9,11,1,0
+103,Shot Chart Detail,0021400336,268,201600,Omer Asik,1610612740,New Orleans Pelicans,2,3,30,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,9,6,1,1
+104,Shot Chart Detail,0021400336,278,201600,Omer Asik,1610612740,New Orleans Pelicans,2,2,24,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+105,Shot Chart Detail,0021400336,348,201600,Omer Asik,1610612740,New Orleans Pelicans,3,5,53,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+106,Shot Chart Detail,0021400348,7,201600,Omer Asik,1610612740,New Orleans Pelicans,1,11,8,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+107,Shot Chart Detail,0021400348,13,201600,Omer Asik,1610612740,New Orleans Pelicans,1,10,17,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),8-16 ft.,15,-46,143,1,0
+108,Shot Chart Detail,0021400348,201,201600,Omer Asik,1610612740,New Orleans Pelicans,2,4,30,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,6,4,60,1,0
+109,Shot Chart Detail,0021400348,203,201600,Omer Asik,1610612740,New Orleans Pelicans,2,4,28,Missed Shot,Hook Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,5,53,22,1,0
+110,Shot Chart Detail,0021400348,294,201600,Omer Asik,1610612740,New Orleans Pelicans,3,9,26,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,6,20,1,0
+111,Shot Chart Detail,0021400348,299,201600,Omer Asik,1610612740,New Orleans Pelicans,3,8,57,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-13,11,1,0
+112,Shot Chart Detail,0021400348,321,201600,Omer Asik,1610612740,New Orleans Pelicans,3,7,1,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,18,12,1,1
+113,Shot Chart Detail,0021400366,191,201600,Omer Asik,1610612740,New Orleans Pelicans,2,2,36,Made Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-4,19,1,1
+114,Shot Chart Detail,0021400366,207,201600,Omer Asik,1610612740,New Orleans Pelicans,2,1,29,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+115,Shot Chart Detail,0021400366,212,201600,Omer Asik,1610612740,New Orleans Pelicans,2,0,10,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,4,-5,1,0
+116,Shot Chart Detail,0021400366,265,201600,Omer Asik,1610612740,New Orleans Pelicans,3,7,34,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,24,14,1,1
+117,Shot Chart Detail,0021400380,7,201600,Omer Asik,1610612740,New Orleans Pelicans,1,10,34,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,17,0,1,0
+118,Shot Chart Detail,0021400380,38,201600,Omer Asik,1610612740,New Orleans Pelicans,1,6,41,Made Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,10,12,1,1
+119,Shot Chart Detail,0021400380,170,201600,Omer Asik,1610612740,New Orleans Pelicans,2,7,53,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),8-16 ft.,9,6,96,1,0
+120,Shot Chart Detail,0021400394,20,201600,Omer Asik,1610612740,New Orleans Pelicans,1,9,59,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+121,Shot Chart Detail,0021400394,247,201600,Omer Asik,1610612740,New Orleans Pelicans,2,1,50,Missed Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,2,17,1,0
+122,Shot Chart Detail,0021400394,275,201600,Omer Asik,1610612740,New Orleans Pelicans,3,11,17,Missed Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-23,-3,1,0
+123,Shot Chart Detail,0021400394,290,201600,Omer Asik,1610612740,New Orleans Pelicans,3,10,16,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+124,Shot Chart Detail,0021400394,296,201600,Omer Asik,1610612740,New Orleans Pelicans,3,9,23,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,10,7,1,0
+125,Shot Chart Detail,0021400408,5,201600,Omer Asik,1610612740,New Orleans Pelicans,1,11,27,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+126,Shot Chart Detail,0021400408,21,201600,Omer Asik,1610612740,New Orleans Pelicans,1,10,24,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-13,11,1,0
+127,Shot Chart Detail,0021400408,50,201600,Omer Asik,1610612740,New Orleans Pelicans,1,7,10,Missed Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,-30,0,1,0
+128,Shot Chart Detail,0021400408,73,201600,Omer Asik,1610612740,New Orleans Pelicans,1,5,9,Missed Shot,Jump Bank Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,29,28,1,0
+129,Shot Chart Detail,0021400417,23,201600,Omer Asik,1610612740,New Orleans Pelicans,1,9,53,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,2,-2,1,1
+130,Shot Chart Detail,0021400417,31,201600,Omer Asik,1610612740,New Orleans Pelicans,1,8,53,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,20,-14,1,0
+131,Shot Chart Detail,0021400417,59,201600,Omer Asik,1610612740,New Orleans Pelicans,1,5,43,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,21,-5,1,0
+132,Shot Chart Detail,0021400417,212,201600,Omer Asik,1610612740,New Orleans Pelicans,2,1,31,Missed Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,-30,-6,1,0
+133,Shot Chart Detail,0021400417,246,201600,Omer Asik,1610612740,New Orleans Pelicans,3,10,48,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-7,0,1,1
+134,Shot Chart Detail,0021400417,258,201600,Omer Asik,1610612740,New Orleans Pelicans,3,8,26,Made Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,6,1,1,1
+135,Shot Chart Detail,0021400437,15,201600,Omer Asik,1610612740,New Orleans Pelicans,1,10,1,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,20,4,1,0
+136,Shot Chart Detail,0021400437,35,201600,Omer Asik,1610612740,New Orleans Pelicans,1,7,6,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-8,20,1,1
+137,Shot Chart Detail,0021400437,287,201600,Omer Asik,1610612740,New Orleans Pelicans,3,6,17,Missed Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-13,11,1,0
+138,Shot Chart Detail,0021400447,17,201600,Omer Asik,1610612740,New Orleans Pelicans,1,8,38,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,26,4,1,0
+139,Shot Chart Detail,0021400447,31,201600,Omer Asik,1610612740,New Orleans Pelicans,1,6,45,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,7,22,1,0
+140,Shot Chart Detail,0021400447,201,201600,Omer Asik,1610612740,New Orleans Pelicans,2,5,39,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,13,12,1,0
+141,Shot Chart Detail,0021400447,279,201600,Omer Asik,1610612740,New Orleans Pelicans,3,11,42,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,12,12,1,0
+142,Shot Chart Detail,0021400447,319,201600,Omer Asik,1610612740,New Orleans Pelicans,3,7,45,Made Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,1,12,1,1
+143,Shot Chart Detail,0021400469,36,201600,Omer Asik,1610612740,New Orleans Pelicans,1,8,52,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+144,Shot Chart Detail,0021400469,147,201600,Omer Asik,1610612740,New Orleans Pelicans,2,9,52,Made Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-24,0,1,1
+145,Shot Chart Detail,0021400469,160,201600,Omer Asik,1610612740,New Orleans Pelicans,2,7,48,Missed Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,6,8,1,0
+146,Shot Chart Detail,0021400469,168,201600,Omer Asik,1610612740,New Orleans Pelicans,2,7,6,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,20,3,1,1
+147,Shot Chart Detail,0021400469,172,201600,Omer Asik,1610612740,New Orleans Pelicans,2,6,29,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,15,6,1,1
+148,Shot Chart Detail,0021400469,284,201600,Omer Asik,1610612740,New Orleans Pelicans,3,8,58,Made Shot,Hook Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,47,3,1,1
+149,Shot Chart Detail,0021400481,31,201600,Omer Asik,1610612740,New Orleans Pelicans,1,8,14,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-13,-6,1,0
+150,Shot Chart Detail,0021400481,102,201600,Omer Asik,1610612740,New Orleans Pelicans,1,0,11,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,29,3,1,0
+151,Shot Chart Detail,0021400488,25,201600,Omer Asik,1610612740,New Orleans Pelicans,1,8,44,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+152,Shot Chart Detail,0021400488,170,201600,Omer Asik,1610612740,New Orleans Pelicans,2,8,43,Missed Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,-32,7,1,0
+153,Shot Chart Detail,0021400488,220,201600,Omer Asik,1610612740,New Orleans Pelicans,2,3,19,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,23,12,1,0
+154,Shot Chart Detail,0021400488,232,201600,Omer Asik,1610612740,New Orleans Pelicans,2,1,59,Made Shot,Driving Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+155,Shot Chart Detail,0021400488,254,201600,Omer Asik,1610612740,New Orleans Pelicans,3,11,28,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),8-16 ft.,14,135,64,1,1
+156,Shot Chart Detail,0021400515,11,201600,Omer Asik,1610612740,New Orleans Pelicans,1,10,13,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,15,3,1,1
+157,Shot Chart Detail,0021400522,12,201600,Omer Asik,1610612740,New Orleans Pelicans,1,10,21,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-8,6,1,0
+158,Shot Chart Detail,0021400522,235,201600,Omer Asik,1610612740,New Orleans Pelicans,2,1,41,Missed Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,0
+159,Shot Chart Detail,0021400522,284,201600,Omer Asik,1610612740,New Orleans Pelicans,3,9,16,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,18,0,1,1
+160,Shot Chart Detail,0021400541,11,201600,Omer Asik,1610612740,New Orleans Pelicans,1,11,10,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+161,Shot Chart Detail,0021400541,26,201600,Omer Asik,1610612740,New Orleans Pelicans,1,9,29,Made Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-2,11,1,1
+162,Shot Chart Detail,0021400563,22,201600,Omer Asik,1610612740,New Orleans Pelicans,1,9,31,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,2,-8,1,0
+163,Shot Chart Detail,0021400563,161,201600,Omer Asik,1610612740,New Orleans Pelicans,2,8,27,Made Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-1,16,1,1
+164,Shot Chart Detail,0021400563,320,201600,Omer Asik,1610612740,New Orleans Pelicans,3,3,46,Missed Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,6,-5,1,0
+165,Shot Chart Detail,0021400563,487,201600,Omer Asik,1610612740,New Orleans Pelicans,4,5,22,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-15,-8,1,0
+166,Shot Chart Detail,0021400577,20,201600,Omer Asik,1610612740,New Orleans Pelicans,1,9,9,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,6,1,1
+167,Shot Chart Detail,0021400577,40,201600,Omer Asik,1610612740,New Orleans Pelicans,1,5,39,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,2,9,1,0
+168,Shot Chart Detail,0021400577,110,201600,Omer Asik,1610612740,New Orleans Pelicans,2,9,29,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,7,1,1
+169,Shot Chart Detail,0021400577,155,201600,Omer Asik,1610612740,New Orleans Pelicans,2,5,50,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-16,17,1,0
+170,Shot Chart Detail,0021400577,389,201600,Omer Asik,1610612740,New Orleans Pelicans,4,9,11,Missed Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,1,37,1,0
+171,Shot Chart Detail,0021400589,217,201600,Omer Asik,1610612740,New Orleans Pelicans,2,2,58,Missed Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,0
+172,Shot Chart Detail,0021400589,255,201600,Omer Asik,1610612740,New Orleans Pelicans,2,0,23,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,13,6,1,0
+173,Shot Chart Detail,0021400589,266,201600,Omer Asik,1610612740,New Orleans Pelicans,2,0,0,Made Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-2,12,1,1
+174,Shot Chart Detail,0021400589,273,201600,Omer Asik,1610612740,New Orleans Pelicans,3,11,45,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,15,44,1,0
+175,Shot Chart Detail,0021400589,293,201600,Omer Asik,1610612740,New Orleans Pelicans,3,10,18,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-11,7,1,1
+176,Shot Chart Detail,0021400608,40,201600,Omer Asik,1610612740,New Orleans Pelicans,1,7,32,Missed Shot,Jump Hook Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,0,36,1,0
+177,Shot Chart Detail,0021400608,48,201600,Omer Asik,1610612740,New Orleans Pelicans,1,6,33,Missed Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,32,9,1,0
+178,Shot Chart Detail,0021400608,50,201600,Omer Asik,1610612740,New Orleans Pelicans,1,6,28,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,17,171,20,1,0
+179,Shot Chart Detail,0021400608,66,201600,Omer Asik,1610612740,New Orleans Pelicans,1,5,29,Made Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,26,4,1,1
+180,Shot Chart Detail,0021400608,98,201600,Omer Asik,1610612740,New Orleans Pelicans,1,1,56,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+181,Shot Chart Detail,0021400608,229,201600,Omer Asik,1610612740,New Orleans Pelicans,2,2,9,Missed Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-29,6,1,0
+182,Shot Chart Detail,0021400608,247,201600,Omer Asik,1610612740,New Orleans Pelicans,3,11,44,Made Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,23,6,1,1
+183,Shot Chart Detail,0021400608,302,201600,Omer Asik,1610612740,New Orleans Pelicans,3,5,56,Missed Shot,Slam Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,0
+184,Shot Chart Detail,0021400608,349,201600,Omer Asik,1610612740,New Orleans Pelicans,3,2,31,Made Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,15,12,1,1
+185,Shot Chart Detail,0021400608,527,201600,Omer Asik,1610612740,New Orleans Pelicans,4,1,54,Made Shot,Slam Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+186,Shot Chart Detail,0021400618,51,201600,Omer Asik,1610612740,New Orleans Pelicans,1,6,1,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,13,15,1,0
+187,Shot Chart Detail,0021400618,53,201600,Omer Asik,1610612740,New Orleans Pelicans,1,5,59,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,13,4,1,0
+188,Shot Chart Detail,0021400618,231,201600,Omer Asik,1610612740,New Orleans Pelicans,3,10,34,Made Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,0,12,1,1
+189,Shot Chart Detail,0021400618,254,201600,Omer Asik,1610612740,New Orleans Pelicans,3,7,42,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,4,9,1,1
+190,Shot Chart Detail,0021400618,260,201600,Omer Asik,1610612740,New Orleans Pelicans,3,7,8,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+191,Shot Chart Detail,0021400618,281,201600,Omer Asik,1610612740,New Orleans Pelicans,3,5,11,Made Shot,Slam Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+192,Shot Chart Detail,0021400618,285,201600,Omer Asik,1610612740,New Orleans Pelicans,3,4,26,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-10,0,1,1
+193,Shot Chart Detail,0021400618,485,201600,Omer Asik,1610612740,New Orleans Pelicans,4,0,1,Missed Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-7,14,1,0
+194,Shot Chart Detail,0021400632,63,201600,Omer Asik,1610612740,New Orleans Pelicans,1,6,13,Made Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-18,-2,1,1
+195,Shot Chart Detail,0021400632,218,201600,Omer Asik,1610612740,New Orleans Pelicans,2,4,37,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-16,14,1,0
+196,Shot Chart Detail,0021400632,476,201600,Omer Asik,1610612740,New Orleans Pelicans,4,3,42,Made Shot,Slam Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+197,Shot Chart Detail,0021400632,488,201600,Omer Asik,1610612740,New Orleans Pelicans,4,2,32,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+198,Shot Chart Detail,0021400647,31,201600,Omer Asik,1610612740,New Orleans Pelicans,1,7,44,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-2,9,1,1
+199,Shot Chart Detail,0021400647,188,201600,Omer Asik,1610612740,New Orleans Pelicans,2,3,42,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+200,Shot Chart Detail,0021400647,385,201600,Omer Asik,1610612740,New Orleans Pelicans,4,9,0,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,12,-2,1,0
+201,Shot Chart Detail,0021400647,474,201600,Omer Asik,1610612740,New Orleans Pelicans,4,0,47,Missed Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-23,1,1,0
+202,Shot Chart Detail,0021400660,60,201600,Omer Asik,1610612740,New Orleans Pelicans,1,5,16,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-24,3,1,0
+203,Shot Chart Detail,0021400660,186,201600,Omer Asik,1610612740,New Orleans Pelicans,2,6,26,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+204,Shot Chart Detail,0021400660,271,201600,Omer Asik,1610612740,New Orleans Pelicans,3,10,20,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+205,Shot Chart Detail,0021400660,273,201600,Omer Asik,1610612740,New Orleans Pelicans,3,9,36,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,15,1,1,0
+206,Shot Chart Detail,0021400660,289,201600,Omer Asik,1610612740,New Orleans Pelicans,3,8,9,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,23,0,1,1
+207,Shot Chart Detail,0021400660,309,201600,Omer Asik,1610612740,New Orleans Pelicans,3,5,20,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,9,-2,1,0
+208,Shot Chart Detail,0021400660,311,201600,Omer Asik,1610612740,New Orleans Pelicans,3,5,18,Made Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,31,-5,1,1
+209,Shot Chart Detail,0021400660,462,201600,Omer Asik,1610612740,New Orleans Pelicans,4,4,14,Made Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,20,19,1,1
+210,Shot Chart Detail,0021400671,14,201600,Omer Asik,1610612740,New Orleans Pelicans,1,9,48,Made Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,21,6,1,1
+211,Shot Chart Detail,0021400671,23,201600,Omer Asik,1610612740,New Orleans Pelicans,1,8,2,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-29,4,1,0
+212,Shot Chart Detail,0021400671,27,201600,Omer Asik,1610612740,New Orleans Pelicans,1,7,35,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,17,6,1,1
+213,Shot Chart Detail,0021400671,257,201600,Omer Asik,1610612740,New Orleans Pelicans,3,10,17,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,18,6,1,0
+214,Shot Chart Detail,0021400671,326,201600,Omer Asik,1610612740,New Orleans Pelicans,3,5,19,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-16,3,1,1
+215,Shot Chart Detail,0021400671,352,201600,Omer Asik,1610612740,New Orleans Pelicans,3,2,44,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+216,Shot Chart Detail,0021400687,31,201600,Omer Asik,1610612740,New Orleans Pelicans,1,8,24,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,17,9,1,0
+217,Shot Chart Detail,0021400687,33,201600,Omer Asik,1610612740,New Orleans Pelicans,1,8,21,Made Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,15,3,1,1
+218,Shot Chart Detail,0021400687,57,201600,Omer Asik,1610612740,New Orleans Pelicans,1,4,46,Missed Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,12,3,1,0
+219,Shot Chart Detail,0021400701,45,201600,Omer Asik,1610612740,New Orleans Pelicans,1,6,48,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-11,3,1,0
+220,Shot Chart Detail,0021400701,147,201600,Omer Asik,1610612740,New Orleans Pelicans,2,9,9,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-19,9,1,0
+221,Shot Chart Detail,0021400701,296,201600,Omer Asik,1610612740,New Orleans Pelicans,3,8,15,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,6,14,1,0
+222,Shot Chart Detail,0021400701,324,201600,Omer Asik,1610612740,New Orleans Pelicans,3,4,38,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,0,15,1,1
+223,Shot Chart Detail,0021400701,486,201600,Omer Asik,1610612740,New Orleans Pelicans,4,3,42,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,10,9,1,0
+224,Shot Chart Detail,0021400722,8,201600,Omer Asik,1610612740,New Orleans Pelicans,1,10,47,Missed Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-26,1,1,0
+225,Shot Chart Detail,0021400722,12,201600,Omer Asik,1610612740,New Orleans Pelicans,1,10,14,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-15,4,1,1
+226,Shot Chart Detail,0021400722,19,201600,Omer Asik,1610612740,New Orleans Pelicans,1,9,10,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,9,7,1,0
+227,Shot Chart Detail,0021400722,310,201600,Omer Asik,1610612740,New Orleans Pelicans,3,6,30,Missed Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,0
+228,Shot Chart Detail,0021400722,450,201600,Omer Asik,1610612740,New Orleans Pelicans,4,6,5,Missed Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,2,17,1,0
+229,Shot Chart Detail,0021400722,453,201600,Omer Asik,1610612740,New Orleans Pelicans,4,6,3,Made Shot,Putback Slam Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+230,Shot Chart Detail,0021400738,74,201600,Omer Asik,1610612740,New Orleans Pelicans,1,4,17,Missed Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,21,17,1,0
+231,Shot Chart Detail,0021400738,229,201600,Omer Asik,1610612740,New Orleans Pelicans,2,0,47,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-18,17,1,1
+232,Shot Chart Detail,0021400738,457,201600,Omer Asik,1610612740,New Orleans Pelicans,4,3,55,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,18,12,1,0
+233,Shot Chart Detail,0021400755,51,201600,Omer Asik,1610612740,New Orleans Pelicans,1,4,39,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,21,0,1,0
+234,Shot Chart Detail,0021400755,251,201600,Omer Asik,1610612740,New Orleans Pelicans,3,9,35,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-15,-3,1,1
+235,Shot Chart Detail,0021400755,318,201600,Omer Asik,1610612740,New Orleans Pelicans,3,5,10,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-13,-2,1,1
+236,Shot Chart Detail,0021400758,5,201600,Omer Asik,1610612740,New Orleans Pelicans,1,11,20,Missed Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,39,-2,1,0
+237,Shot Chart Detail,0021400758,13,201600,Omer Asik,1610612740,New Orleans Pelicans,1,10,48,Missed Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,-2,30,1,0
+238,Shot Chart Detail,0021400758,36,201600,Omer Asik,1610612740,New Orleans Pelicans,1,7,37,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,1,14,1,1
+239,Shot Chart Detail,0021400758,46,201600,Omer Asik,1610612740,New Orleans Pelicans,1,6,10,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+240,Shot Chart Detail,0021400758,210,201600,Omer Asik,1610612740,New Orleans Pelicans,2,3,25,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+241,Shot Chart Detail,0021400758,212,201600,Omer Asik,1610612740,New Orleans Pelicans,2,2,34,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,26,3,1,0
+242,Shot Chart Detail,0021400758,224,201600,Omer Asik,1610612740,New Orleans Pelicans,2,1,55,Missed Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,4,17,1,0
+243,Shot Chart Detail,0021400758,255,201600,Omer Asik,1610612740,New Orleans Pelicans,3,11,41,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,13,19,1,0
+244,Shot Chart Detail,0021400780,23,201600,Omer Asik,1610612740,New Orleans Pelicans,1,7,58,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,4,15,1,0
+245,Shot Chart Detail,0021400780,177,201600,Omer Asik,1610612740,New Orleans Pelicans,2,5,47,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,15,1,1,0
+246,Shot Chart Detail,0021400780,200,201600,Omer Asik,1610612740,New Orleans Pelicans,2,3,41,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,1,4,1,0
+247,Shot Chart Detail,0021400780,264,201600,Omer Asik,1610612740,New Orleans Pelicans,3,10,48,Made Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,20,9,1,1
+248,Shot Chart Detail,0021400780,284,201600,Omer Asik,1610612740,New Orleans Pelicans,3,9,2,Made Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,32,7,1,1
+249,Shot Chart Detail,0021400780,313,201600,Omer Asik,1610612740,New Orleans Pelicans,3,6,16,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,6,3,1,0
+250,Shot Chart Detail,0021400794,55,201600,Omer Asik,1610612740,New Orleans Pelicans,1,6,13,Missed Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-10,0,1,0
+251,Shot Chart Detail,0021400794,87,201600,Omer Asik,1610612740,New Orleans Pelicans,1,3,26,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-13,20,1,0
+252,Shot Chart Detail,0021400794,208,201600,Omer Asik,1610612740,New Orleans Pelicans,2,4,16,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,15,9,1,1
+253,Shot Chart Detail,0021400794,245,201600,Omer Asik,1610612740,New Orleans Pelicans,3,10,50,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+254,Shot Chart Detail,0021400794,282,201600,Omer Asik,1610612740,New Orleans Pelicans,3,6,27,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,9,15,1,1
+255,Shot Chart Detail,0021400794,307,201600,Omer Asik,1610612740,New Orleans Pelicans,3,3,50,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-11,9,1,0
+256,Shot Chart Detail,0021400803,56,201600,Omer Asik,1610612740,New Orleans Pelicans,1,4,33,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+257,Shot Chart Detail,0021400803,65,201600,Omer Asik,1610612740,New Orleans Pelicans,1,3,16,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+258,Shot Chart Detail,0021400803,257,201600,Omer Asik,1610612740,New Orleans Pelicans,3,10,26,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-13,3,1,0
+259,Shot Chart Detail,0021400803,277,201600,Omer Asik,1610612740,New Orleans Pelicans,3,7,6,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+260,Shot Chart Detail,0021400803,297,201600,Omer Asik,1610612740,New Orleans Pelicans,3,4,32,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,2,26,1,0
+261,Shot Chart Detail,0021400817,24,201600,Omer Asik,1610612740,New Orleans Pelicans,1,8,53,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,21,3,1,0
+262,Shot Chart Detail,0021400817,27,201600,Omer Asik,1610612740,New Orleans Pelicans,1,8,28,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,4,12,1,1
+263,Shot Chart Detail,0021400817,46,201600,Omer Asik,1610612740,New Orleans Pelicans,1,6,50,Made Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-7,3,1,1
+264,Shot Chart Detail,0021400817,182,201600,Omer Asik,1610612740,New Orleans Pelicans,2,7,49,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+265,Shot Chart Detail,0021400817,190,201600,Omer Asik,1610612740,New Orleans Pelicans,2,7,13,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,20,-5,1,1
+266,Shot Chart Detail,0021400817,201,201600,Omer Asik,1610612740,New Orleans Pelicans,2,6,36,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+267,Shot Chart Detail,0021400817,505,201600,Omer Asik,1610612740,New Orleans Pelicans,4,5,39,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,-32,31,1,0
+268,Shot Chart Detail,0021400817,540,201600,Omer Asik,1610612740,New Orleans Pelicans,4,2,54,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,2,19,1,1
+269,Shot Chart Detail,0021400817,553,201600,Omer Asik,1610612740,New Orleans Pelicans,4,2,21,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,21,20,1,0
+270,Shot Chart Detail,0021400833,19,201600,Omer Asik,1610612740,New Orleans Pelicans,1,9,51,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-8,19,1,0
+271,Shot Chart Detail,0021400833,97,201600,Omer Asik,1610612740,New Orleans Pelicans,1,2,8,Made Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,13,1,1,1
+272,Shot Chart Detail,0021400833,203,201600,Omer Asik,1610612740,New Orleans Pelicans,2,3,41,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-16,7,1,1
+273,Shot Chart Detail,0021400833,250,201600,Omer Asik,1610612740,New Orleans Pelicans,3,11,46,Missed Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,0
+274,Shot Chart Detail,0021400833,295,201600,Omer Asik,1610612740,New Orleans Pelicans,3,6,33,Made Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,10,11,1,1
+275,Shot Chart Detail,0021400833,329,201600,Omer Asik,1610612740,New Orleans Pelicans,3,4,16,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+276,Shot Chart Detail,0021400849,21,201600,Omer Asik,1610612740,New Orleans Pelicans,1,9,36,Made Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-4,0,1,1
+277,Shot Chart Detail,0021400849,78,201600,Omer Asik,1610612740,New Orleans Pelicans,1,4,44,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,0,28,1,0
+278,Shot Chart Detail,0021400849,99,201600,Omer Asik,1610612740,New Orleans Pelicans,1,3,12,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+279,Shot Chart Detail,0021400849,249,201600,Omer Asik,1610612740,New Orleans Pelicans,3,11,37,Made Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,12,9,1,1
+280,Shot Chart Detail,0021400849,315,201600,Omer Asik,1610612740,New Orleans Pelicans,3,5,14,Made Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,7,14,1,1
+281,Shot Chart Detail,0021400849,332,201600,Omer Asik,1610612740,New Orleans Pelicans,3,3,3,Made Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,6,12,1,1
+282,Shot Chart Detail,0021400865,46,201600,Omer Asik,1610612740,New Orleans Pelicans,1,6,4,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,17,9,1,1
+283,Shot Chart Detail,0021400865,87,201600,Omer Asik,1610612740,New Orleans Pelicans,1,2,30,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,10,9,1,0
+284,Shot Chart Detail,0021400865,213,201600,Omer Asik,1610612740,New Orleans Pelicans,2,1,3,Made Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-2,12,1,1
+285,Shot Chart Detail,0021400884,47,201600,Omer Asik,1610612740,New Orleans Pelicans,1,5,34,Made Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,20,3,1,1
+286,Shot Chart Detail,0021400884,55,201600,Omer Asik,1610612740,New Orleans Pelicans,1,4,25,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-11,6,1,1
+287,Shot Chart Detail,0021400884,180,201600,Omer Asik,1610612740,New Orleans Pelicans,2,4,24,Missed Shot,Alley Oop Layup shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-10,0,1,0
+288,Shot Chart Detail,0021400884,258,201600,Omer Asik,1610612740,New Orleans Pelicans,3,8,11,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,18,14,1,1
+289,Shot Chart Detail,0021400884,480,201600,Omer Asik,1610612740,New Orleans Pelicans,4,2,28,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-10,9,1,0
+290,Shot Chart Detail,0021400889,278,201600,Omer Asik,1610612740,New Orleans Pelicans,3,7,20,Missed Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,-35,3,1,0
+291,Shot Chart Detail,0021400889,467,201600,Omer Asik,1610612740,New Orleans Pelicans,4,2,20,Made Shot,Slam Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+292,Shot Chart Detail,0021400889,469,201600,Omer Asik,1610612740,New Orleans Pelicans,4,1,45,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-7,19,1,0
+293,Shot Chart Detail,0021400903,18,201600,Omer Asik,1610612740,New Orleans Pelicans,1,9,6,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,15,4,1,0
+294,Shot Chart Detail,0021400903,48,201600,Omer Asik,1610612740,New Orleans Pelicans,1,6,4,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,13,12,1,0
+295,Shot Chart Detail,0021400903,212,201600,Omer Asik,1610612740,New Orleans Pelicans,2,4,11,Missed Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,10,11,1,0
+296,Shot Chart Detail,0021400903,237,201600,Omer Asik,1610612740,New Orleans Pelicans,2,2,15,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,28,6,1,0
+297,Shot Chart Detail,0021400903,327,201600,Omer Asik,1610612740,New Orleans Pelicans,3,6,22,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-13,1,1,0
+298,Shot Chart Detail,0021400903,469,201600,Omer Asik,1610612740,New Orleans Pelicans,4,3,40,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,3,1,0
+299,Shot Chart Detail,0021400903,473,201600,Omer Asik,1610612740,New Orleans Pelicans,4,3,22,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+300,Shot Chart Detail,0021400919,12,201600,Omer Asik,1610612740,New Orleans Pelicans,1,10,23,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+301,Shot Chart Detail,0021400919,39,201600,Omer Asik,1610612740,New Orleans Pelicans,1,6,5,Made Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-10,14,1,1
+302,Shot Chart Detail,0021400919,223,201600,Omer Asik,1610612740,New Orleans Pelicans,2,0,5,Missed Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,0
+303,Shot Chart Detail,0021400919,258,201600,Omer Asik,1610612740,New Orleans Pelicans,3,8,56,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+304,Shot Chart Detail,0021400923,52,201600,Omer Asik,1610612740,New Orleans Pelicans,1,5,33,Made Shot,Slam Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+305,Shot Chart Detail,0021400923,63,201600,Omer Asik,1610612740,New Orleans Pelicans,1,4,18,Made Shot,Slam Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+306,Shot Chart Detail,0021400923,197,201600,Omer Asik,1610612740,New Orleans Pelicans,2,7,43,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,12,4,1,0
+307,Shot Chart Detail,0021400923,200,201600,Omer Asik,1610612740,New Orleans Pelicans,2,7,18,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-21,17,1,1
+308,Shot Chart Detail,0021400923,212,201600,Omer Asik,1610612740,New Orleans Pelicans,2,6,5,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-16,6,1,0
+309,Shot Chart Detail,0021400923,257,201600,Omer Asik,1610612740,New Orleans Pelicans,2,2,53,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,13,17,1,0
+310,Shot Chart Detail,0021400942,22,201600,Omer Asik,1610612740,New Orleans Pelicans,1,8,48,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,1,1,1,1
+311,Shot Chart Detail,0021400942,37,201600,Omer Asik,1610612740,New Orleans Pelicans,1,6,1,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-5,4,1,0
+312,Shot Chart Detail,0021400942,471,201600,Omer Asik,1610612740,New Orleans Pelicans,4,0,0,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-2,4,1,1
+313,Shot Chart Detail,0021400947,29,201600,Omer Asik,1610612740,New Orleans Pelicans,1,8,12,Made Shot,Slam Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+314,Shot Chart Detail,0021400947,167,201600,Omer Asik,1610612740,New Orleans Pelicans,2,6,31,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-15,-3,1,1
+315,Shot Chart Detail,0021400947,183,201600,Omer Asik,1610612740,New Orleans Pelicans,2,4,59,Made Shot,Slam Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+316,Shot Chart Detail,0021400947,219,201600,Omer Asik,1610612740,New Orleans Pelicans,2,2,1,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),8-16 ft.,13,21,138,1,0
+317,Shot Chart Detail,0021400947,246,201600,Omer Asik,1610612740,New Orleans Pelicans,3,10,57,Made Shot,Slam Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+318,Shot Chart Detail,0021400947,249,201600,Omer Asik,1610612740,New Orleans Pelicans,3,10,16,Missed Shot,Hook Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,6,-54,31,1,0
+319,Shot Chart Detail,0021400947,276,201600,Omer Asik,1610612740,New Orleans Pelicans,3,8,12,Made Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-7,-6,1,1
+320,Shot Chart Detail,0021400947,293,201600,Omer Asik,1610612740,New Orleans Pelicans,3,6,55,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,-6,1,1
+321,Shot Chart Detail,0021400984,14,201600,Omer Asik,1610612740,New Orleans Pelicans,1,9,33,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,15,11,1,0
+322,Shot Chart Detail,0021400984,36,201600,Omer Asik,1610612740,New Orleans Pelicans,1,7,23,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,24,6,1,0
+323,Shot Chart Detail,0021400984,38,201600,Omer Asik,1610612740,New Orleans Pelicans,1,7,19,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,21,15,1,0
+324,Shot Chart Detail,0021400984,226,201600,Omer Asik,1610612740,New Orleans Pelicans,2,1,13,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,20,1,1,1
+325,Shot Chart Detail,0021400984,286,201600,Omer Asik,1610612740,New Orleans Pelicans,3,8,59,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+326,Shot Chart Detail,0021400984,289,201600,Omer Asik,1610612740,New Orleans Pelicans,3,8,14,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,24,3,1,1
+327,Shot Chart Detail,0021400984,308,201600,Omer Asik,1610612740,New Orleans Pelicans,3,6,44,Made Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,7,4,1,1
+328,Shot Chart Detail,0021400984,455,201600,Omer Asik,1610612740,New Orleans Pelicans,4,5,11,Missed Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,23,-8,1,0
+329,Shot Chart Detail,0021401003,57,201600,Omer Asik,1610612740,New Orleans Pelicans,1,6,2,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,36,9,1,1
+330,Shot Chart Detail,0021401003,74,201600,Omer Asik,1610612740,New Orleans Pelicans,1,5,2,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,23,25,1,1
+331,Shot Chart Detail,0021401003,210,201600,Omer Asik,1610612740,New Orleans Pelicans,2,3,50,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,12,7,1,1
+332,Shot Chart Detail,0021401003,219,201600,Omer Asik,1610612740,New Orleans Pelicans,2,3,23,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,13,6,1,0
+333,Shot Chart Detail,0021401003,230,201600,Omer Asik,1610612740,New Orleans Pelicans,2,2,36,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,17,1,1,0
+334,Shot Chart Detail,0021401003,290,201600,Omer Asik,1610612740,New Orleans Pelicans,3,9,6,Made Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,1,6,1,1
+335,Shot Chart Detail,0021401003,301,201600,Omer Asik,1610612740,New Orleans Pelicans,3,8,19,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+336,Shot Chart Detail,0021401003,483,201600,Omer Asik,1610612740,New Orleans Pelicans,4,3,58,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,26,3,1,1
+337,Shot Chart Detail,0021401018,13,201600,Omer Asik,1610612740,New Orleans Pelicans,1,10,3,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,13,4,1,1
+338,Shot Chart Detail,0021401018,19,201600,Omer Asik,1610612740,New Orleans Pelicans,1,8,37,Missed Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-17,8,1,0
+339,Shot Chart Detail,0021401018,54,201600,Omer Asik,1610612740,New Orleans Pelicans,1,4,2,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,5,54,22,1,0
+340,Shot Chart Detail,0021401018,195,201600,Omer Asik,1610612740,New Orleans Pelicans,2,3,30,Made Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,2,12,1,1
+341,Shot Chart Detail,0021401018,242,201600,Omer Asik,1610612740,New Orleans Pelicans,2,0,28,Missed Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-3,14,1,0
+342,Shot Chart Detail,0021401018,253,201600,Omer Asik,1610612740,New Orleans Pelicans,3,10,20,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-4,9,1,1
+343,Shot Chart Detail,0021401068,29,201600,Omer Asik,1610612740,New Orleans Pelicans,1,8,2,Made Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,1,-2,1,1
+344,Shot Chart Detail,0021401068,154,201600,Omer Asik,1610612740,New Orleans Pelicans,2,7,37,Made Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-8,15,1,1
+345,Shot Chart Detail,0021401068,252,201600,Omer Asik,1610612740,New Orleans Pelicans,3,10,18,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-8,12,1,0
+346,Shot Chart Detail,0021401068,476,201600,Omer Asik,1610612740,New Orleans Pelicans,4,1,19,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,6,1,0
+347,Shot Chart Detail,0021401068,477,201600,Omer Asik,1610612740,New Orleans Pelicans,4,1,16,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-15,1,1,1
+348,Shot Chart Detail,0021401083,187,201600,Omer Asik,1610612740,New Orleans Pelicans,2,4,42,Made Shot,Slam Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+349,Shot Chart Detail,0021401083,479,201600,Omer Asik,1610612740,New Orleans Pelicans,4,1,54,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,20,-2,1,0
+350,Shot Chart Detail,0021401094,10,201600,Omer Asik,1610612740,New Orleans Pelicans,1,10,27,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-16,0,1,1
+351,Shot Chart Detail,0021401094,28,201600,Omer Asik,1610612740,New Orleans Pelicans,1,8,54,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,18,6,1,0
+352,Shot Chart Detail,0021401094,33,201600,Omer Asik,1610612740,New Orleans Pelicans,1,8,14,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+353,Shot Chart Detail,0021401094,46,201600,Omer Asik,1610612740,New Orleans Pelicans,1,6,27,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,21,14,1,0
+354,Shot Chart Detail,0021401094,72,201600,Omer Asik,1610612740,New Orleans Pelicans,1,4,8,Made Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,24,3,1,1
+355,Shot Chart Detail,0021401094,188,201600,Omer Asik,1610612740,New Orleans Pelicans,2,4,35,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-15,-2,1,1
+356,Shot Chart Detail,0021401094,234,201600,Omer Asik,1610612740,New Orleans Pelicans,2,0,17,Made Shot,Slam Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+357,Shot Chart Detail,0021401094,268,201600,Omer Asik,1610612740,New Orleans Pelicans,3,8,58,Made Shot,Slam Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+358,Shot Chart Detail,0021401094,312,201600,Omer Asik,1610612740,New Orleans Pelicans,3,3,21,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,6,15,1,1
+359,Shot Chart Detail,0021401123,5,201600,Omer Asik,1610612740,New Orleans Pelicans,1,10,23,Made Shot,Hook Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,-20,33,1,1
+360,Shot Chart Detail,0021401123,51,201600,Omer Asik,1610612740,New Orleans Pelicans,1,4,46,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,11,2,1,1
+361,Shot Chart Detail,0021401123,59,201600,Omer Asik,1610612740,New Orleans Pelicans,1,4,12,Missed Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,6,18,1,0
+362,Shot Chart Detail,0021401123,178,201600,Omer Asik,1610612740,New Orleans Pelicans,2,6,8,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,0,15,1,1
+363,Shot Chart Detail,0021401123,199,201600,Omer Asik,1610612740,New Orleans Pelicans,2,3,2,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,5,10,1,0
+364,Shot Chart Detail,0021401123,203,201600,Omer Asik,1610612740,New Orleans Pelicans,2,2,44,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-6,1,1,0
+365,Shot Chart Detail,0021401123,279,201600,Omer Asik,1610612740,New Orleans Pelicans,3,6,23,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-20,2,1,1
+366,Shot Chart Detail,0021401135,8,201600,Omer Asik,1610612740,New Orleans Pelicans,1,10,37,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,4,16,1,0
+367,Shot Chart Detail,0021401135,217,201600,Omer Asik,1610612740,New Orleans Pelicans,2,3,16,Missed Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,34,1,1,0
+368,Shot Chart Detail,0021401135,228,201600,Omer Asik,1610612740,New Orleans Pelicans,2,2,17,Made Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,17,20,1,1
+369,Shot Chart Detail,0021401135,267,201600,Omer Asik,1610612740,New Orleans Pelicans,3,10,32,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-27,4,1,0
+370,Shot Chart Detail,0021401135,292,201600,Omer Asik,1610612740,New Orleans Pelicans,3,8,23,Made Shot,Reverse Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+371,Shot Chart Detail,0021401135,505,201600,Omer Asik,1610612740,New Orleans Pelicans,4,2,1,Missed Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,-26,22,1,0
+372,Shot Chart Detail,0021401135,507,201600,Omer Asik,1610612740,New Orleans Pelicans,4,1,58,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-27,-3,1,0
+373,Shot Chart Detail,0021401146,12,201600,Omer Asik,1610612740,New Orleans Pelicans,1,10,0,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,29,-5,1,0
+374,Shot Chart Detail,0021401146,14,201600,Omer Asik,1610612740,New Orleans Pelicans,1,9,52,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-10,1,1,1
+375,Shot Chart Detail,0021401146,340,201600,Omer Asik,1610612740,New Orleans Pelicans,3,4,37,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-2,9,1,0
+376,Shot Chart Detail,0021401146,455,201600,Omer Asik,1610612740,New Orleans Pelicans,4,4,24,Missed Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-10,0,1,0
+377,Shot Chart Detail,0021401146,476,201600,Omer Asik,1610612740,New Orleans Pelicans,4,2,42,Missed Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,0
+378,Shot Chart Detail,0021401156,223,201600,Omer Asik,1610612740,New Orleans Pelicans,2,1,47,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,21,11,1,0
+379,Shot Chart Detail,0021401156,253,201600,Omer Asik,1610612740,New Orleans Pelicans,3,11,31,Made Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,23,6,1,1
+380,Shot Chart Detail,0021401156,263,201600,Omer Asik,1610612740,New Orleans Pelicans,3,9,47,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-5,17,1,0
+381,Shot Chart Detail,0021401156,269,201600,Omer Asik,1610612740,New Orleans Pelicans,3,9,24,Made Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-4,14,1,1
+382,Shot Chart Detail,0021401156,437,201600,Omer Asik,1610612740,New Orleans Pelicans,4,5,24,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-23,4,1,0
+383,Shot Chart Detail,0021401166,196,201600,Omer Asik,1610612740,New Orleans Pelicans,2,2,59,Missed Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,9,-2,1,0
+384,Shot Chart Detail,0021401166,207,201600,Omer Asik,1610612740,New Orleans Pelicans,2,1,34,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),8-16 ft.,13,45,124,1,0
+385,Shot Chart Detail,0021401166,263,201600,Omer Asik,1610612740,New Orleans Pelicans,3,7,58,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+386,Shot Chart Detail,0021401166,279,201600,Omer Asik,1610612740,New Orleans Pelicans,3,4,52,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,9,-5,1,1
+387,Shot Chart Detail,0021401182,14,201600,Omer Asik,1610612740,New Orleans Pelicans,1,9,51,Missed Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,0
+388,Shot Chart Detail,0021401182,103,201600,Omer Asik,1610612740,New Orleans Pelicans,1,1,6,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,29,11,1,0
+389,Shot Chart Detail,0021401182,246,201600,Omer Asik,1610612740,New Orleans Pelicans,2,0,1,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,18,11,1,0
+390,Shot Chart Detail,0021401182,332,201600,Omer Asik,1610612740,New Orleans Pelicans,3,4,10,Made Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-24,7,1,1
+391,Shot Chart Detail,0021401182,340,201600,Omer Asik,1610612740,New Orleans Pelicans,3,3,19,Missed Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,6,12,1,0
+392,Shot Chart Detail,0021401199,4,201600,Omer Asik,1610612740,New Orleans Pelicans,1,11,26,Missed Shot,Hook Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-27,12,1,0
+393,Shot Chart Detail,0021401199,16,201600,Omer Asik,1610612740,New Orleans Pelicans,1,9,57,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+394,Shot Chart Detail,0021401199,25,201600,Omer Asik,1610612740,New Orleans Pelicans,1,8,27,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-19,7,1,0
+395,Shot Chart Detail,0021401199,64,201600,Omer Asik,1610612740,New Orleans Pelicans,1,5,24,Missed Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,20,25,1,0
+396,Shot Chart Detail,0021401199,66,201600,Omer Asik,1610612740,New Orleans Pelicans,1,5,22,Made Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,26,14,1,1
+397,Shot Chart Detail,0021401199,143,201600,Omer Asik,1610612740,New Orleans Pelicans,2,10,33,Missed Shot,Alley Oop Layup shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,26,-2,1,0
+398,Shot Chart Detail,0021401199,285,201600,Omer Asik,1610612740,New Orleans Pelicans,3,10,38,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+399,Shot Chart Detail,0021401199,302,201600,Omer Asik,1610612740,New Orleans Pelicans,3,8,9,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+400,Shot Chart Detail,0021401199,318,201600,Omer Asik,1610612740,New Orleans Pelicans,3,6,49,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-15,3,1,0
+401,Shot Chart Detail,0021401199,447,201600,Omer Asik,1610612740,New Orleans Pelicans,4,6,10,Missed Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,-29,17,1,0
+402,Shot Chart Detail,0021401199,511,201600,Omer Asik,1610612740,New Orleans Pelicans,4,3,19,Made Shot,Slam Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+403,Shot Chart Detail,0021401208,11,201600,Omer Asik,1610612740,New Orleans Pelicans,1,10,22,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,4,0,1,1
+404,Shot Chart Detail,0021401208,17,201600,Omer Asik,1610612740,New Orleans Pelicans,1,9,18,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+405,Shot Chart Detail,0021401208,206,201600,Omer Asik,1610612740,New Orleans Pelicans,2,2,7,Missed Shot,Driving Jump shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,39,31,1,0
+406,Shot Chart Detail,0021401208,225,201600,Omer Asik,1610612740,New Orleans Pelicans,2,0,51,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,2,12,1,0
+407,Shot Chart Detail,0021401208,302,201600,Omer Asik,1610612740,New Orleans Pelicans,3,6,43,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,12,17,1,0
+408,Shot Chart Detail,0021401208,481,201600,Omer Asik,1610612740,New Orleans Pelicans,4,2,47,Made Shot,Slam Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+409,Shot Chart Detail,0021401223,14,201600,Omer Asik,1610612740,New Orleans Pelicans,1,10,14,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+410,Shot Chart Detail,0021401223,20,201600,Omer Asik,1610612740,New Orleans Pelicans,1,9,13,Made Shot,Tip Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,18,7,1,1
+411,Shot Chart Detail,0021401223,269,201600,Omer Asik,1610612740,New Orleans Pelicans,3,5,52,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
