@@ -1,0 +1,379 @@
+,GRID_TYPE,GAME_ID,GAME_EVENT_ID,PLAYER_ID,PLAYER_NAME,TEAM_ID,TEAM_NAME,PERIOD,MINUTES_REMAINING,SECONDS_REMAINING,EVENT_TYPE,ACTION_TYPE,SHOT_TYPE,SHOT_ZONE_BASIC,SHOT_ZONE_AREA,SHOT_ZONE_RANGE,SHOT_DISTANCE,LOC_X,LOC_Y,SHOT_ATTEMPTED_FLAG,SHOT_MADE_FLAG
+0,Shot Chart Detail,0021400003,636,203477,Isaiah Canaan,1610612745,Houston Rockets,4,3,20,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,160,200,1,0
+1,Shot Chart Detail,0021400012,97,203477,Isaiah Canaan,1610612745,Houston Rockets,1,0,1,Missed Shot,Running Jump Shot,2PT Field Goal,Mid-Range,Left Side(L),8-16 ft.,15,-141,74,1,0
+2,Shot Chart Detail,0021400012,113,203477,Isaiah Canaan,1610612745,Houston Rockets,2,9,51,Made Shot,Jump Shot,3PT Field Goal,Right Corner 3,Right Side(R),24+ ft.,22,226,42,1,1
+3,Shot Chart Detail,0021400012,319,203477,Isaiah Canaan,1610612745,Houston Rockets,3,0,29,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,23,-109,208,1,0
+4,Shot Chart Detail,0021400034,54,203477,Isaiah Canaan,1610612745,Houston Rockets,1,6,14,Made Shot,Jump Shot,3PT Field Goal,Left Corner 3,Left Side(L),24+ ft.,22,-224,3,1,1
+5,Shot Chart Detail,0021400034,68,203477,Isaiah Canaan,1610612745,Houston Rockets,1,5,1,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,223,123,1,0
+6,Shot Chart Detail,0021400034,136,203477,Isaiah Canaan,1610612745,Houston Rockets,1,0,0,Missed Shot,Jump Shot,3PT Field Goal,Backcourt,Back Court(BC),Back Court Shot,47,-106,468,1,0
+7,Shot Chart Detail,0021400034,186,203477,Isaiah Canaan,1610612745,Houston Rockets,2,8,17,Missed Shot,Jump Shot,3PT Field Goal,Right Corner 3,Right Side(R),24+ ft.,23,234,0,1,0
+8,Shot Chart Detail,0021400034,189,203477,Isaiah Canaan,1610612745,Houston Rockets,2,8,5,Made Shot,Jump Shot,3PT Field Goal,Right Corner 3,Right Side(R),24+ ft.,24,231,86,1,1
+9,Shot Chart Detail,0021400034,202,203477,Isaiah Canaan,1610612745,Houston Rockets,2,6,28,Missed Shot,Pullup Jump shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-108,233,1,0
+10,Shot Chart Detail,0021400034,262,203477,Isaiah Canaan,1610612745,Houston Rockets,2,2,20,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,4,255,1,0
+11,Shot Chart Detail,0021400034,292,203477,Isaiah Canaan,1610612745,Houston Rockets,3,11,13,Made Shot,Jump Shot,3PT Field Goal,Left Corner 3,Left Side(L),24+ ft.,23,-232,0,1,1
+12,Shot Chart Detail,0021400034,304,203477,Isaiah Canaan,1610612745,Houston Rockets,3,9,21,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-13,7,1,0
+13,Shot Chart Detail,0021400034,590,203477,Isaiah Canaan,1610612745,Houston Rockets,4,2,19,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,26,-49,265,1,0
+14,Shot Chart Detail,0021400034,613,203477,Isaiah Canaan,1610612745,Houston Rockets,4,0,26,Missed Shot,Driving Layup Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,48,9,1,0
+15,Shot Chart Detail,0021400043,6,203477,Isaiah Canaan,1610612745,Houston Rockets,1,10,47,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),8-16 ft.,8,7,86,1,0
+16,Shot Chart Detail,0021400043,33,203477,Isaiah Canaan,1610612745,Houston Rockets,1,8,26,Missed Shot,Jump Shot,3PT Field Goal,Right Corner 3,Right Side(R),24+ ft.,23,230,-22,1,0
+17,Shot Chart Detail,0021400043,111,203477,Isaiah Canaan,1610612745,Houston Rockets,1,0,1,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,28,-142,242,1,0
+18,Shot Chart Detail,0021400043,270,203477,Isaiah Canaan,1610612745,Houston Rockets,3,9,10,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-13,9,1,1
+19,Shot Chart Detail,0021400043,280,203477,Isaiah Canaan,1610612745,Houston Rockets,3,8,27,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,4,19,1,1
+20,Shot Chart Detail,0021400043,306,203477,Isaiah Canaan,1610612745,Houston Rockets,3,5,27,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side(L),16-24 ft.,17,-152,91,1,0
+21,Shot Chart Detail,0021400043,389,203477,Isaiah Canaan,1610612745,Houston Rockets,4,10,38,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,72,242,1,1
+22,Shot Chart Detail,0021400043,396,203477,Isaiah Canaan,1610612745,Houston Rockets,4,10,0,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,26,-228,135,1,0
+23,Shot Chart Detail,0021400043,405,203477,Isaiah Canaan,1610612745,Houston Rockets,4,9,40,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-2,9,1,0
+24,Shot Chart Detail,0021400043,477,203477,Isaiah Canaan,1610612745,Houston Rockets,4,5,1,Made Shot,Jump Shot,3PT Field Goal,Left Corner 3,Left Side(L),24+ ft.,23,-235,7,1,1
+25,Shot Chart Detail,0021400043,487,203477,Isaiah Canaan,1610612745,Houston Rockets,4,3,54,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,26,-218,148,1,1
+26,Shot Chart Detail,0021400050,184,203477,Isaiah Canaan,1610612745,Houston Rockets,2,6,42,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,24,-5,249,1,1
+27,Shot Chart Detail,0021400050,426,203477,Isaiah Canaan,1610612745,Houston Rockets,4,10,52,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-132,220,1,1
+28,Shot Chart Detail,0021400050,449,203477,Isaiah Canaan,1610612745,Houston Rockets,4,9,10,Made Shot,Running Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,17,0,1,1
+29,Shot Chart Detail,0021400069,76,203477,Isaiah Canaan,1610612745,Houston Rockets,1,4,25,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,116,222,1,0
+30,Shot Chart Detail,0021400069,173,203477,Isaiah Canaan,1610612745,Houston Rockets,2,8,17,Made Shot,Pullup Jump shot,2PT Field Goal,In The Paint (Non-RA),Right Side(R),8-16 ft.,11,64,99,1,1
+31,Shot Chart Detail,0021400069,176,203477,Isaiah Canaan,1610612745,Houston Rockets,2,7,52,Made Shot,Driving Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,4,0,1,1
+32,Shot Chart Detail,0021400069,213,203477,Isaiah Canaan,1610612745,Houston Rockets,2,5,7,Missed Shot,Running Jump Shot,2PT Field Goal,Mid-Range,Left Side(L),8-16 ft.,11,-100,47,1,0
+33,Shot Chart Detail,0021400069,217,203477,Isaiah Canaan,1610612745,Houston Rockets,2,4,45,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,163,190,1,0
+34,Shot Chart Detail,0021400069,311,203477,Isaiah Canaan,1610612745,Houston Rockets,3,8,55,Missed Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,24,12,1,0
+35,Shot Chart Detail,0021400069,326,203477,Isaiah Canaan,1610612745,Houston Rockets,3,8,0,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,27,-158,225,1,1
+36,Shot Chart Detail,0021400069,350,203477,Isaiah Canaan,1610612745,Houston Rockets,3,6,13,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,-6,1,1
+37,Shot Chart Detail,0021400069,479,203477,Isaiah Canaan,1610612745,Houston Rockets,4,7,32,Missed Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-18,12,1,0
+38,Shot Chart Detail,0021400069,538,203477,Isaiah Canaan,1610612745,Houston Rockets,4,3,31,Made Shot,Pullup Jump shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,24,-5,246,1,1
+39,Shot Chart Detail,0021400087,13,203477,Isaiah Canaan,1610612745,Houston Rockets,1,10,25,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,24,-114,214,1,0
+40,Shot Chart Detail,0021400087,36,203477,Isaiah Canaan,1610612745,Houston Rockets,1,7,42,Made Shot,Pullup Jump shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,24,-134,200,1,1
+41,Shot Chart Detail,0021400087,57,203477,Isaiah Canaan,1610612745,Houston Rockets,1,6,0,Made Shot,Pullup Jump shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,24,97,224,1,1
+42,Shot Chart Detail,0021400087,59,203477,Isaiah Canaan,1610612745,Houston Rockets,1,5,36,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,7,0,1,1
+43,Shot Chart Detail,0021400087,206,203477,Isaiah Canaan,1610612745,Houston Rockets,2,7,9,Made Shot,Step Back Jump shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,16,-84,143,1,1
+44,Shot Chart Detail,0021400087,331,203477,Isaiah Canaan,1610612745,Houston Rockets,3,9,42,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,24,-136,203,1,0
+45,Shot Chart Detail,0021400087,338,203477,Isaiah Canaan,1610612745,Houston Rockets,3,8,51,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,4,0,1,1
+46,Shot Chart Detail,0021400087,357,203477,Isaiah Canaan,1610612745,Houston Rockets,3,7,28,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,233,93,1,0
+47,Shot Chart Detail,0021400087,364,203477,Isaiah Canaan,1610612745,Houston Rockets,3,6,46,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,9,-6,1,0
+48,Shot Chart Detail,0021400087,417,203477,Isaiah Canaan,1610612745,Houston Rockets,3,1,49,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-5,-6,1,1
+49,Shot Chart Detail,0021400087,490,203477,Isaiah Canaan,1610612745,Houston Rockets,4,8,28,Made Shot,Pullup Jump shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,23,249,1,1
+50,Shot Chart Detail,0021400087,553,203477,Isaiah Canaan,1610612745,Houston Rockets,4,3,1,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,24,102,228,1,0
+51,Shot Chart Detail,0021400117,138,203477,Isaiah Canaan,1610612745,Houston Rockets,2,10,23,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,4,11,1,1
+52,Shot Chart Detail,0021400117,152,203477,Isaiah Canaan,1610612745,Houston Rockets,2,8,35,Missed Shot,Jump Shot,3PT Field Goal,Right Corner 3,Right Side(R),24+ ft.,23,230,56,1,0
+53,Shot Chart Detail,0021400117,238,203477,Isaiah Canaan,1610612745,Houston Rockets,2,2,20,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,6,-56,33,1,0
+54,Shot Chart Detail,0021400117,256,203477,Isaiah Canaan,1610612745,Houston Rockets,2,0,35,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,5,-40,31,1,0
+55,Shot Chart Detail,0021400117,311,203477,Isaiah Canaan,1610612745,Houston Rockets,3,7,14,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-2,11,1,1
+56,Shot Chart Detail,0021400117,342,203477,Isaiah Canaan,1610612745,Houston Rockets,3,6,0,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,24,-112,213,1,0
+57,Shot Chart Detail,0021400117,502,203477,Isaiah Canaan,1610612745,Houston Rockets,4,3,43,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,24,190,153,1,0
+58,Shot Chart Detail,0021400127,5,203477,Isaiah Canaan,1610612745,Houston Rockets,1,11,22,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,24,-196,143,1,0
+59,Shot Chart Detail,0021400127,173,203477,Isaiah Canaan,1610612745,Houston Rockets,2,8,46,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-171,189,1,1
+60,Shot Chart Detail,0021400127,183,203477,Isaiah Canaan,1610612745,Houston Rockets,2,7,43,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,24,-183,159,1,1
+61,Shot Chart Detail,0021400127,207,203477,Isaiah Canaan,1610612745,Houston Rockets,2,5,48,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,26,-187,186,1,1
+62,Shot Chart Detail,0021400127,218,203477,Isaiah Canaan,1610612745,Houston Rockets,2,4,57,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-16,0,1,0
+63,Shot Chart Detail,0021400127,259,203477,Isaiah Canaan,1610612745,Houston Rockets,2,1,46,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,24,-163,183,1,0
+64,Shot Chart Detail,0021400127,314,203477,Isaiah Canaan,1610612745,Houston Rockets,3,9,19,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,24,-147,197,1,0
+65,Shot Chart Detail,0021400127,343,203477,Isaiah Canaan,1610612745,Houston Rockets,3,6,48,Missed Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-16,7,1,0
+66,Shot Chart Detail,0021400151,206,203477,Isaiah Canaan,1610612745,Houston Rockets,2,3,2,Made Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,12,0,1,1
+67,Shot Chart Detail,0021400151,269,203477,Isaiah Canaan,1610612745,Houston Rockets,3,10,17,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,26,146,216,1,0
+68,Shot Chart Detail,0021400151,272,203477,Isaiah Canaan,1610612745,Houston Rockets,3,9,56,Missed Shot,Jump Shot,3PT Field Goal,Right Corner 3,Right Side(R),24+ ft.,23,236,-2,1,0
+69,Shot Chart Detail,0021400151,291,203477,Isaiah Canaan,1610612745,Houston Rockets,3,8,18,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-7,3,1,1
+70,Shot Chart Detail,0021400151,310,203477,Isaiah Canaan,1610612745,Houston Rockets,3,6,46,Missed Shot,Jump Shot,3PT Field Goal,Left Corner 3,Left Side(L),24+ ft.,22,-226,-10,1,0
+71,Shot Chart Detail,0021400151,312,203477,Isaiah Canaan,1610612745,Houston Rockets,3,6,39,Missed Shot,Jump Shot,3PT Field Goal,Left Corner 3,Left Side(L),24+ ft.,22,-223,1,1,0
+72,Shot Chart Detail,0021400151,415,203477,Isaiah Canaan,1610612745,Houston Rockets,4,8,35,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,1,-3,1,0
+73,Shot Chart Detail,0021400151,435,203477,Isaiah Canaan,1610612745,Houston Rockets,4,7,1,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,5,0,53,1,0
+74,Shot Chart Detail,0021400151,473,203477,Isaiah Canaan,1610612745,Houston Rockets,4,3,12,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,36,250,1,1
+75,Shot Chart Detail,0021400202,53,203477,Isaiah Canaan,1610612745,Houston Rockets,1,6,1,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,24,-7,249,1,1
+76,Shot Chart Detail,0021400202,63,203477,Isaiah Canaan,1610612745,Houston Rockets,1,4,56,Made Shot,Pullup Jump shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,19,189,60,1,1
+77,Shot Chart Detail,0021400202,81,203477,Isaiah Canaan,1610612745,Houston Rockets,1,3,46,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,24,-221,102,1,0
+78,Shot Chart Detail,0021400202,154,203477,Isaiah Canaan,1610612745,Houston Rockets,2,9,53,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,12,1,1,0
+79,Shot Chart Detail,0021400202,220,203477,Isaiah Canaan,1610612745,Houston Rockets,2,5,30,Missed Shot,Jump Shot,3PT Field Goal,Right Corner 3,Right Side(R),24+ ft.,23,233,-19,1,0
+80,Shot Chart Detail,0021400202,310,203477,Isaiah Canaan,1610612745,Houston Rockets,3,8,10,Missed Shot,Floating Jump shot,2PT Field Goal,In The Paint (Non-RA),Center(C),8-16 ft.,9,21,96,1,0
+81,Shot Chart Detail,0021400202,425,203477,Isaiah Canaan,1610612745,Houston Rockets,4,9,49,Missed Shot,Step Back Jump shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,24,162,186,1,0
+82,Shot Chart Detail,0021400202,474,203477,Isaiah Canaan,1610612745,Houston Rockets,4,4,17,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,24,215,126,1,0
+83,Shot Chart Detail,0021400217,14,203477,Isaiah Canaan,1610612745,Houston Rockets,1,10,16,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,2,-2,1,1
+84,Shot Chart Detail,0021400217,29,203477,Isaiah Canaan,1610612745,Houston Rockets,1,9,14,Missed Shot,Jump Shot,3PT Field Goal,Right Corner 3,Right Side(R),24+ ft.,22,225,11,1,0
+85,Shot Chart Detail,0021400217,49,203477,Isaiah Canaan,1610612745,Houston Rockets,1,6,43,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,17,-6,1,0
+86,Shot Chart Detail,0021400217,58,203477,Isaiah Canaan,1610612745,Houston Rockets,1,5,39,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-187,172,1,1
+87,Shot Chart Detail,0021400217,85,203477,Isaiah Canaan,1610612745,Houston Rockets,1,3,57,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,24,14,1,1
+88,Shot Chart Detail,0021400217,193,203477,Isaiah Canaan,1610612745,Houston Rockets,2,5,54,Missed Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,24,15,1,0
+89,Shot Chart Detail,0021400217,278,203477,Isaiah Canaan,1610612745,Houston Rockets,3,10,47,Missed Shot,Pullup Jump shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,19,89,168,1,0
+90,Shot Chart Detail,0021400217,293,203477,Isaiah Canaan,1610612745,Houston Rockets,3,8,58,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-164,194,1,1
+91,Shot Chart Detail,0021400217,308,203477,Isaiah Canaan,1610612745,Houston Rockets,3,7,40,Made Shot,Pullup Jump shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,26,-106,241,1,1
+92,Shot Chart Detail,0021400217,329,203477,Isaiah Canaan,1610612745,Houston Rockets,3,5,45,Made Shot,Pullup Jump shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,24,223,105,1,1
+93,Shot Chart Detail,0021400217,332,203477,Isaiah Canaan,1610612745,Houston Rockets,3,5,5,Missed Shot,Pullup Jump shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,198,153,1,0
+94,Shot Chart Detail,0021400217,349,203477,Isaiah Canaan,1610612745,Houston Rockets,3,3,29,Made Shot,Pullup Jump shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,21,250,1,1
+95,Shot Chart Detail,0021400217,359,203477,Isaiah Canaan,1610612745,Houston Rockets,3,2,24,Missed Shot,Pullup Jump shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,26,-196,184,1,0
+96,Shot Chart Detail,0021400217,361,203477,Isaiah Canaan,1610612745,Houston Rockets,3,2,13,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,147,206,1,0
+97,Shot Chart Detail,0021400217,375,203477,Isaiah Canaan,1610612745,Houston Rockets,3,2,1,Made Shot,Pullup Jump shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,18,147,119,1,1
+98,Shot Chart Detail,0021400217,537,203477,Isaiah Canaan,1610612745,Houston Rockets,4,1,19,Made Shot,Pullup Jump shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,24,4,247,1,1
+99,Shot Chart Detail,0021400228,12,203477,Isaiah Canaan,1610612745,Houston Rockets,1,9,54,Made Shot,Jump Bank Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,27,-163,222,1,1
+100,Shot Chart Detail,0021400228,36,203477,Isaiah Canaan,1610612745,Houston Rockets,1,7,30,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,24,-3,1,1
+101,Shot Chart Detail,0021400228,51,203477,Isaiah Canaan,1610612745,Houston Rockets,1,5,45,Made Shot,Jump Shot,3PT Field Goal,Right Corner 3,Right Side(R),24+ ft.,23,231,-2,1,1
+102,Shot Chart Detail,0021400228,63,203477,Isaiah Canaan,1610612745,Houston Rockets,1,3,57,Missed Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-18,1,1,0
+103,Shot Chart Detail,0021400228,139,203477,Isaiah Canaan,1610612745,Houston Rockets,2,9,13,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,26,-183,190,1,0
+104,Shot Chart Detail,0021400228,150,203477,Isaiah Canaan,1610612745,Houston Rockets,2,8,30,Made Shot,Jump Shot,3PT Field Goal,Left Corner 3,Left Side(L),24+ ft.,23,-234,14,1,1
+105,Shot Chart Detail,0021400228,153,203477,Isaiah Canaan,1610612745,Houston Rockets,2,8,2,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,189,168,1,0
+106,Shot Chart Detail,0021400228,193,203477,Isaiah Canaan,1610612745,Houston Rockets,2,3,53,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-179,175,1,0
+107,Shot Chart Detail,0021400378,211,203477,Isaiah Canaan,1610612745,Houston Rockets,2,7,0,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,20,105,176,1,0
+108,Shot Chart Detail,0021400378,231,203477,Isaiah Canaan,1610612745,Houston Rockets,2,4,59,Missed Shot,Jump Shot,3PT Field Goal,Left Corner 3,Left Side(L),24+ ft.,22,-228,-19,1,0
+109,Shot Chart Detail,0021400380,115,203477,Isaiah Canaan,1610612745,Houston Rockets,1,0,1,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,154,208,1,0
+110,Shot Chart Detail,0021400380,155,203477,Isaiah Canaan,1610612745,Houston Rockets,2,9,56,Made Shot,Turnaround Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,6,62,4,1,1
+111,Shot Chart Detail,0021400380,186,203477,Isaiah Canaan,1610612745,Houston Rockets,2,6,23,Made Shot,Pullup Jump shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,19,58,181,1,1
+112,Shot Chart Detail,0021400411,545,203477,Isaiah Canaan,1610612745,Houston Rockets,4,2,25,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,24,39,246,1,0
+113,Shot Chart Detail,0021400478,522,203477,Isaiah Canaan,1610612745,Houston Rockets,4,1,35,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,24,-139,205,1,0
+114,Shot Chart Detail,0021400478,531,203477,Isaiah Canaan,1610612745,Houston Rockets,4,0,18,Missed Shot,Pullup Jump shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-105,233,1,0
+115,Shot Chart Detail,0021400488,410,203477,Isaiah Canaan,1610612745,Houston Rockets,4,7,23,Missed Shot,Jump Shot,3PT Field Goal,Right Corner 3,Right Side(R),24+ ft.,22,226,11,1,0
+116,Shot Chart Detail,0021400488,478,203477,Isaiah Canaan,1610612745,Houston Rockets,4,1,44,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,27,-116,250,1,0
+117,Shot Chart Detail,0021400488,481,203477,Isaiah Canaan,1610612745,Houston Rockets,4,1,22,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,26,-175,200,1,1
+118,Shot Chart Detail,0021400497,501,203477,Isaiah Canaan,1610612745,Houston Rockets,4,7,7,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-125,219,1,0
+119,Shot Chart Detail,0021400497,514,203477,Isaiah Canaan,1610612745,Houston Rockets,4,4,46,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,-48,254,1,1
+120,Shot Chart Detail,0021400497,523,203477,Isaiah Canaan,1610612745,Houston Rockets,4,3,21,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,157,197,1,1
+121,Shot Chart Detail,0021400497,534,203477,Isaiah Canaan,1610612745,Houston Rockets,4,2,42,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,-32,28,1,0
+122,Shot Chart Detail,0021400536,531,203477,Isaiah Canaan,1610612745,Houston Rockets,4,2,15,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,176,183,1,1
+123,Shot Chart Detail,0021400536,546,203477,Isaiah Canaan,1610612745,Houston Rockets,4,0,59,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-207,142,1,0
+124,Shot Chart Detail,0021400709,340,203477,Isaiah Canaan,1610612745,Houston Rockets,3,2,35,Missed Shot,Jump Shot,3PT Field Goal,Right Corner 3,Right Side(R),24+ ft.,24,237,71,1,0
+125,Shot Chart Detail,0021400709,343,203477,Isaiah Canaan,1610612745,Houston Rockets,3,2,12,Missed Shot,Jump Shot,3PT Field Goal,Right Corner 3,Right Side(R),24+ ft.,23,234,48,1,0
+126,Shot Chart Detail,0021400709,362,203477,Isaiah Canaan,1610612745,Houston Rockets,3,0,23,Missed Shot,Jump Shot,3PT Field Goal,Left Corner 3,Left Side(L),24+ ft.,24,-234,69,1,0
+127,Shot Chart Detail,0021400709,393,203477,Isaiah Canaan,1610612745,Houston Rockets,4,10,3,Missed Shot,Jump Shot,3PT Field Goal,Right Corner 3,Right Side(R),24+ ft.,23,233,15,1,0
+128,Shot Chart Detail,0021400709,406,203477,Isaiah Canaan,1610612745,Houston Rockets,4,8,59,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,26,-144,227,1,0
+129,Shot Chart Detail,0021400709,514,203477,Isaiah Canaan,1610612745,Houston Rockets,4,0,28,Missed Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,13,4,1,0
+130,Shot Chart Detail,0021400799,607,203477,Isaiah Canaan,1610612745,Houston Rockets,4,0,24,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,24,-144,200,1,0
+131,Shot Chart Detail,0021400825,5,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,11,10,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-168,194,1,1
+132,Shot Chart Detail,0021400825,168,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,7,9,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,26,12,265,1,1
+133,Shot Chart Detail,0021400825,208,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,4,18,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,26,0,260,1,0
+134,Shot Chart Detail,0021400825,255,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,1,12,Missed Shot,Step Back Jump shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,20,203,22,1,0
+135,Shot Chart Detail,0021400825,276,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,11,28,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,27,69,268,1,0
+136,Shot Chart Detail,0021400825,285,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,10,26,Missed Shot,Driving Jump shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,-29,17,1,0
+137,Shot Chart Detail,0021400825,303,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,7,57,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,28,-78,274,1,1
+138,Shot Chart Detail,0021400825,313,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,7,22,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,26,257,1,0
+139,Shot Chart Detail,0021400825,480,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,4,38,Made Shot,Running Bank shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,7,73,22,1,1
+140,Shot Chart Detail,0021400825,486,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,4,7,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,26,83,249,1,0
+141,Shot Chart Detail,0021400825,552,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,0,31,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,26,163,209,1,1
+142,Shot Chart Detail,0021400825,561,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,0,4,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,27,-116,246,1,0
+143,Shot Chart Detail,0021400830,25,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,9,19,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,203,153,1,0
+144,Shot Chart Detail,0021400830,76,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,4,34,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,24,-105,224,1,1
+145,Shot Chart Detail,0021400830,201,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,6,20,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,24,-163,187,1,1
+146,Shot Chart Detail,0021400830,220,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,3,8,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-213,149,1,0
+147,Shot Chart Detail,0021400830,232,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,1,19,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,24,-26,244,1,0
+148,Shot Chart Detail,0021400830,245,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,0,6,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,22,135,183,1,1
+149,Shot Chart Detail,0021400830,290,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,7,31,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side(L),8-16 ft.,11,-100,60,1,0
+150,Shot Chart Detail,0021400830,429,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,8,32,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,24,-172,179,1,1
+151,Shot Chart Detail,0021400830,439,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,7,42,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,4,252,1,0
+152,Shot Chart Detail,0021400847,24,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,8,39,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,26,-194,181,1,0
+153,Shot Chart Detail,0021400847,41,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,6,25,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-2,-8,1,0
+154,Shot Chart Detail,0021400847,173,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,7,32,Missed Shot,Jump Shot,3PT Field Goal,Right Corner 3,Right Side(R),24+ ft.,24,245,11,1,0
+155,Shot Chart Detail,0021400847,227,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,2,39,Missed Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-5,0,1,0
+156,Shot Chart Detail,0021400847,279,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,10,13,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,26,83,254,1,1
+157,Shot Chart Detail,0021400847,281,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,9,36,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,27,-201,184,1,0
+158,Shot Chart Detail,0021400847,286,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,9,3,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,6,14,1,0
+159,Shot Chart Detail,0021400847,422,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,8,29,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,19,189,-21,1,1
+160,Shot Chart Detail,0021400847,458,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,4,3,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,22,89,210,1,1
+161,Shot Chart Detail,0021400847,497,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,0,52,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,152,201,1,0
+162,Shot Chart Detail,0021400857,8,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,10,44,Made Shot,Driving Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-2,-3,1,1
+163,Shot Chart Detail,0021400857,19,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,8,59,Made Shot,Jump Shot,3PT Field Goal,Right Corner 3,Right Side(R),24+ ft.,23,231,-17,1,1
+164,Shot Chart Detail,0021400857,41,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,6,2,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-108,231,1,0
+165,Shot Chart Detail,0021400857,55,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,5,12,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,-24,258,1,0
+166,Shot Chart Detail,0021400857,63,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,4,25,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,12,-3,1,1
+167,Shot Chart Detail,0021400857,209,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,4,46,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,-64,246,1,0
+168,Shot Chart Detail,0021400857,216,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,4,23,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,24,-150,194,1,0
+169,Shot Chart Detail,0021400857,227,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,3,16,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-23,-2,1,0
+170,Shot Chart Detail,0021400857,275,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,0,0,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side(L),16-24 ft.,16,-144,88,1,0
+171,Shot Chart Detail,0021400857,306,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,9,6,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-15,0,1,0
+172,Shot Chart Detail,0021400857,308,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,8,52,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,26,21,261,1,0
+173,Shot Chart Detail,0021400881,34,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,7,40,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,27,187,206,1,0
+174,Shot Chart Detail,0021400881,50,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,6,34,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),8-16 ft.,12,124,6,1,0
+175,Shot Chart Detail,0021400881,216,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,5,34,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side(L),16-24 ft.,18,-182,-5,1,0
+176,Shot Chart Detail,0021400881,238,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,3,46,Made Shot,Pullup Jump shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,17,119,135,1,1
+177,Shot Chart Detail,0021400881,284,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,0,4,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,24,-57,242,1,0
+178,Shot Chart Detail,0021400881,426,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,9,7,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,28,-117,265,1,1
+179,Shot Chart Detail,0021400881,454,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,7,18,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,27,-15,279,1,0
+180,Shot Chart Detail,0021400881,483,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,5,43,Missed Shot,Jump Shot,3PT Field Goal,Left Corner 3,Left Side(L),24+ ft.,22,-228,-8,1,0
+181,Shot Chart Detail,0021400885,2,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,11,34,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),8-16 ft.,12,119,-43,1,0
+182,Shot Chart Detail,0021400885,48,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,6,0,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,0,254,1,0
+183,Shot Chart Detail,0021400885,198,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,3,42,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,26,-152,211,1,1
+184,Shot Chart Detail,0021400885,203,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,2,36,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,26,-112,241,1,0
+185,Shot Chart Detail,0021400885,219,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,0,57,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,-62,246,1,1
+186,Shot Chart Detail,0021400885,235,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,0,5,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,20,0,1,0
+187,Shot Chart Detail,0021400885,247,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,11,15,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,26,136,224,1,1
+188,Shot Chart Detail,0021400885,268,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,8,20,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,21,4,1,0
+189,Shot Chart Detail,0021400885,285,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,7,30,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,26,9,263,1,0
+190,Shot Chart Detail,0021400885,412,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,7,53,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-191,176,1,0
+191,Shot Chart Detail,0021400885,459,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,3,1,Made Shot,Jump Shot,3PT Field Goal,Right Corner 3,Right Side(R),24+ ft.,23,231,11,1,1
+192,Shot Chart Detail,0021400885,476,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,0,24,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-17,-1,1,1
+193,Shot Chart Detail,0021400904,12,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,10,34,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,24,-139,200,1,1
+194,Shot Chart Detail,0021400904,76,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,6,4,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,26,-139,230,1,1
+195,Shot Chart Detail,0021400904,91,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,4,44,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,23,67,230,1,1
+196,Shot Chart Detail,0021400904,108,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,3,49,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-146,203,1,1
+197,Shot Chart Detail,0021400904,110,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,3,30,Made Shot,Pullup Jump shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-93,235,1,1
+198,Shot Chart Detail,0021400904,118,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,2,36,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-158,198,1,0
+199,Shot Chart Detail,0021400904,274,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,3,7,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,24,-172,175,1,0
+200,Shot Chart Detail,0021400904,286,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,2,2,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,32,-2,1,1
+201,Shot Chart Detail,0021400904,329,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,11,0,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,214,135,1,1
+202,Shot Chart Detail,0021400904,364,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,7,58,Made Shot,Step Back Jump shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,24,-136,201,1,1
+203,Shot Chart Detail,0021400904,372,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,7,20,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,24,24,242,1,1
+204,Shot Chart Detail,0021400904,493,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,10,1,Missed Shot,Jump Shot,3PT Field Goal,Right Corner 3,Right Side(R),24+ ft.,23,230,-3,1,0
+205,Shot Chart Detail,0021400904,563,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,4,10,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,24,-40,238,1,0
+206,Shot Chart Detail,0021400904,591,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,1,25,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-4,-6,1,1
+207,Shot Chart Detail,0021400904,633,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,5,2,45,Missed Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-15,19,1,0
+208,Shot Chart Detail,0021400904,669,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,5,0,32,Missed Shot,Pullup Jump shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,24,-114,220,1,0
+209,Shot Chart Detail,0021400914,27,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,8,29,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-207,156,1,0
+210,Shot Chart Detail,0021400914,50,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,6,17,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,19,-84,175,1,0
+211,Shot Chart Detail,0021400914,56,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,5,55,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,26,-157,209,1,0
+212,Shot Chart Detail,0021400914,68,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,4,42,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-139,214,1,0
+213,Shot Chart Detail,0021400914,83,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,3,46,Made Shot,Floating Jump shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,7,-79,-2,1,1
+214,Shot Chart Detail,0021400914,214,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,4,58,Made Shot,Jump Shot,3PT Field Goal,Left Corner 3,Left Side(L),24+ ft.,22,-224,-16,1,1
+215,Shot Chart Detail,0021400914,219,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,4,3,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,18,0,1,1
+216,Shot Chart Detail,0021400914,229,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,3,27,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,22,-171,145,1,0
+217,Shot Chart Detail,0021400914,258,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,0,24,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side(L),16-24 ft.,20,-201,-30,1,0
+218,Shot Chart Detail,0021400914,289,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,9,12,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,2,11,1,0
+219,Shot Chart Detail,0021400914,324,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,6,8,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,28,181,220,1,0
+220,Shot Chart Detail,0021400914,488,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,5,44,Made Shot,Jump Shot,3PT Field Goal,Left Corner 3,Left Side(L),24+ ft.,24,-240,-8,1,1
+221,Shot Chart Detail,0021400914,545,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,1,51,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,27,168,213,1,0
+222,Shot Chart Detail,0021400914,570,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,0,44,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-98,230,1,1
+223,Shot Chart Detail,0021400914,581,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,0,1,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,24,-8,249,1,1
+224,Shot Chart Detail,0021400927,23,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,9,27,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-183,178,1,0
+225,Shot Chart Detail,0021400927,76,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,4,46,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,-23,254,1,0
+226,Shot Chart Detail,0021400927,92,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,2,29,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,26,-175,205,1,0
+227,Shot Chart Detail,0021400927,253,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,10,54,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,27,77,265,1,0
+228,Shot Chart Detail,0021400927,263,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,9,44,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,27,136,242,1,1
+229,Shot Chart Detail,0021400927,295,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,6,25,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,1,14,1,0
+230,Shot Chart Detail,0021400927,341,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,2,4,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,24,-149,200,1,1
+231,Shot Chart Detail,0021400927,384,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,10,3,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,184,183,1,0
+232,Shot Chart Detail,0021400927,402,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,7,55,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,0,252,1,0
+233,Shot Chart Detail,0021400927,430,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,4,50,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,-19,37,1,0
+234,Shot Chart Detail,0021400927,452,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,3,30,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,18,108,149,1,0
+235,Shot Chart Detail,0021400927,467,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,2,16,Missed Shot,Jump Shot,3PT Field Goal,Left Corner 3,Left Side(L),24+ ft.,24,-240,-22,1,0
+236,Shot Chart Detail,0021400927,487,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,0,17,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-16,1,1,0
+237,Shot Chart Detail,0021400953,91,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,2,4,Made Shot,Jump Shot,3PT Field Goal,Right Corner 3,Right Side(R),24+ ft.,24,244,-19,1,1
+238,Shot Chart Detail,0021400953,98,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,0,59,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,27,-141,231,1,1
+239,Shot Chart Detail,0021400953,109,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,0,4,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,-41,250,1,1
+240,Shot Chart Detail,0021400953,368,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,0,31,Made Shot,Driving Bank shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,7,-68,36,1,1
+241,Shot Chart Detail,0021400953,370,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,0,3,Made Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,2,15,1,1
+242,Shot Chart Detail,0021400953,380,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,11,37,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,26,-182,189,1,0
+243,Shot Chart Detail,0021400953,418,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,8,47,Made Shot,Driving Bank shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,-34,19,1,1
+244,Shot Chart Detail,0021400953,423,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,8,24,Missed Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,-35,6,1,0
+245,Shot Chart Detail,0021400953,427,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,7,52,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,24,122,217,1,1
+246,Shot Chart Detail,0021400953,457,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,5,25,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,24,9,246,1,0
+247,Shot Chart Detail,0021400953,487,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,1,20,Missed Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,6,30,1,0
+248,Shot Chart Detail,0021400953,519,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,0,18,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,12,9,1,0
+249,Shot Chart Detail,0021400953,535,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,5,3,50,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,24,-35,246,1,0
+250,Shot Chart Detail,0021400953,539,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,5,3,25,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,40,26,1,0
+251,Shot Chart Detail,0021400953,555,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,5,1,26,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,26,121,238,1,0
+252,Shot Chart Detail,0021400968,2,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,11,40,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,-30,254,1,0
+253,Shot Chart Detail,0021400968,30,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,7,21,Missed Shot,Jump Shot,3PT Field Goal,Right Corner 3,Right Side(R),24+ ft.,23,239,-13,1,0
+254,Shot Chart Detail,0021400968,34,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,6,59,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,7,7,1,1
+255,Shot Chart Detail,0021400968,216,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,4,42,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,0,258,1,0
+256,Shot Chart Detail,0021400968,255,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,1,14,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,179,184,1,0
+257,Shot Chart Detail,0021400968,322,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,7,38,Missed Shot,Jump Shot,3PT Field Goal,Left Corner 3,Left Side(L),24+ ft.,22,-228,4,1,0
+258,Shot Chart Detail,0021400968,337,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,6,30,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,27,-149,228,1,1
+259,Shot Chart Detail,0021400968,347,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,5,21,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,18,-8,1,1
+260,Shot Chart Detail,0021400968,350,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,5,5,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,27,-106,252,1,0
+261,Shot Chart Detail,0021400978,54,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,8,12,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,26,155,216,1,1
+262,Shot Chart Detail,0021400978,97,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,4,38,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,198,156,1,0
+263,Shot Chart Detail,0021400978,159,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,10,58,Made Shot,Fadeaway Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),8-16 ft.,14,138,-25,1,1
+264,Shot Chart Detail,0021400978,166,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,9,52,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,184,181,1,0
+265,Shot Chart Detail,0021400978,179,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,9,0,Made Shot,Running Bank shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,-35,-3,1,1
+266,Shot Chart Detail,0021400978,188,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,7,53,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,24,-27,247,1,0
+267,Shot Chart Detail,0021400978,210,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,5,34,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,26,-2,1,1
+268,Shot Chart Detail,0021400978,300,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,10,51,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,24,110,224,1,0
+269,Shot Chart Detail,0021400978,319,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,7,59,Made Shot,Running Bank shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,17,37,1,1
+270,Shot Chart Detail,0021400978,331,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,5,36,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,24,140,198,1,0
+271,Shot Chart Detail,0021400978,472,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,5,18,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-114,227,1,0
+272,Shot Chart Detail,0021400978,529,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,0,58,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,24,-3,1,1
+273,Shot Chart Detail,0021400978,540,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,0,16,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,163,192,1,0
+274,Shot Chart Detail,0021400992,7,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,11,3,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-79,239,1,0
+275,Shot Chart Detail,0021400992,33,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,7,35,Made Shot,Step Back Jump shot,3PT Field Goal,Left Corner 3,Left Side(L),24+ ft.,23,-231,7,1,1
+276,Shot Chart Detail,0021400992,153,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,8,37,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,20,204,3,1,0
+277,Shot Chart Detail,0021400992,169,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,7,37,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,18,138,119,1,0
+278,Shot Chart Detail,0021400992,195,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,5,46,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-209,154,1,0
+279,Shot Chart Detail,0021400992,218,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,3,41,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,-75,244,1,0
+280,Shot Chart Detail,0021400992,290,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,7,21,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,1,0,1,1
+281,Shot Chart Detail,0021400992,304,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,6,29,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),8-16 ft.,15,138,60,1,1
+282,Shot Chart Detail,0021400992,317,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,5,32,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,27,-34,272,1,1
+283,Shot Chart Detail,0021400992,323,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,4,39,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-97,231,1,0
+284,Shot Chart Detail,0021400992,508,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,1,39,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,-73,247,1,0
+285,Shot Chart Detail,0021401006,96,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,2,23,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,18,0,1,0
+286,Shot Chart Detail,0021401006,144,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,9,24,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-108,231,1,0
+287,Shot Chart Detail,0021401006,167,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,7,5,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,24,-111,222,1,0
+288,Shot Chart Detail,0021401006,361,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,0,1,Missed Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,24,19,1,0
+289,Shot Chart Detail,0021401006,380,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,10,2,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-108,236,1,1
+290,Shot Chart Detail,0021401006,384,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,9,20,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,18,-95,153,1,0
+291,Shot Chart Detail,0021401006,407,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,7,40,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-141,214,1,0
+292,Shot Chart Detail,0021401006,422,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,6,22,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,20,11,1,0
+293,Shot Chart Detail,0021401006,424,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,6,8,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,27,-204,190,1,1
+294,Shot Chart Detail,0021401006,441,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,4,29,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,26,-168,211,1,0
+295,Shot Chart Detail,0021401021,84,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,3,18,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Right Side(R),8-16 ft.,11,69,86,1,0
+296,Shot Chart Detail,0021401021,109,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,2,13,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,-46,12,1,0
+297,Shot Chart Detail,0021401021,127,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,0,23,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,200,156,1,1
+298,Shot Chart Detail,0021401021,145,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,10,12,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,27,-41,271,1,0
+299,Shot Chart Detail,0021401021,185,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,6,23,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,26,-23,263,1,1
+300,Shot Chart Detail,0021401021,364,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,1,56,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,-10,250,1,1
+301,Shot Chart Detail,0021401021,389,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,10,57,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,26,124,230,1,1
+302,Shot Chart Detail,0021401021,398,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,9,50,Missed Shot,Jump Shot,3PT Field Goal,Left Corner 3,Left Side(L),24+ ft.,23,-234,-27,1,0
+303,Shot Chart Detail,0021401021,403,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,9,4,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,-37,250,1,0
+304,Shot Chart Detail,0021401021,429,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,6,59,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,26,31,1,0
+305,Shot Chart Detail,0021401021,431,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,6,49,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,28,-172,230,1,0
+306,Shot Chart Detail,0021401047,87,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,1,53,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-98,230,1,0
+307,Shot Chart Detail,0021401047,107,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,0,38,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Left Side(L),8-16 ft.,9,-72,66,1,0
+308,Shot Chart Detail,0021401047,111,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,0,4,Missed Shot,Jump Shot,3PT Field Goal,Left Corner 3,Left Side(L),24+ ft.,22,-225,5,1,0
+309,Shot Chart Detail,0021401047,139,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,9,19,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,24,184,157,1,0
+310,Shot Chart Detail,0021401047,153,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,8,8,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,24,-172,171,1,0
+311,Shot Chart Detail,0021401047,344,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,1,55,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-145,215,1,1
+312,Shot Chart Detail,0021401047,360,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,0,39,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-19,16,1,0
+313,Shot Chart Detail,0021401047,369,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,0,5,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,11,18,1,0
+314,Shot Chart Detail,0021401047,381,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,10,38,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,1,13,1,0
+315,Shot Chart Detail,0021401047,405,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,8,18,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,5,27,1,0
+316,Shot Chart Detail,0021401047,409,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,7,57,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),8-16 ft.,15,133,71,1,0
+317,Shot Chart Detail,0021401047,531,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,0,11,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,26,-3,261,1,0
+318,Shot Chart Detail,0021401058,88,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,3,38,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,24,105,219,1,1
+319,Shot Chart Detail,0021401058,110,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,1,37,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,24,69,238,1,0
+320,Shot Chart Detail,0021401058,121,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,0,31,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,-43,1,1,0
+321,Shot Chart Detail,0021401058,126,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,0,0,Made Shot,Running Bank shot,2PT Field Goal,Mid-Range,Right Side(R),8-16 ft.,9,91,26,1,1
+322,Shot Chart Detail,0021401058,256,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,2,50,Made Shot,Running Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,6,-65,3,1,1
+323,Shot Chart Detail,0021401058,294,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,0,5,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,24,15,247,1,1
+324,Shot Chart Detail,0021401058,383,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,4,45,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-175,187,1,0
+325,Shot Chart Detail,0021401058,416,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,2,26,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,23,257,1,0
+326,Shot Chart Detail,0021401058,460,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,11,30,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,13,7,1,1
+327,Shot Chart Detail,0021401058,465,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,10,47,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,-41,252,1,0
+328,Shot Chart Detail,0021401069,83,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,4,56,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,140,217,1,1
+329,Shot Chart Detail,0021401069,117,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,2,37,Missed Shot,Jump Shot,3PT Field Goal,Left Corner 3,Left Side(L),24+ ft.,23,-234,47,1,0
+330,Shot Chart Detail,0021401069,128,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,1,41,Missed Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,24,0,1,0
+331,Shot Chart Detail,0021401069,136,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,0,48,Missed Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-15,-5,1,0
+332,Shot Chart Detail,0021401069,144,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,0,22,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side(L),16-24 ft.,17,-174,28,1,0
+333,Shot Chart Detail,0021401069,147,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,0,0,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,34,-128,318,1,0
+334,Shot Chart Detail,0021401069,231,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,3,44,Made Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,-15,42,1,1
+335,Shot Chart Detail,0021401069,233,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,3,26,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,29,0,1,0
+336,Shot Chart Detail,0021401069,259,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,1,40,Made Shot,Running Bank shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,-45,4,1,1
+337,Shot Chart Detail,0021401069,511,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,3,25,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,-18,255,1,1
+338,Shot Chart Detail,0021401069,516,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,2,58,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-191,164,1,0
+339,Shot Chart Detail,0021401075,116,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,0,43,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,26,-93,246,1,0
+340,Shot Chart Detail,0021401075,141,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,10,0,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,26,-158,213,1,0
+341,Shot Chart Detail,0021401075,436,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,0,2,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,27,-166,217,1,0
+342,Shot Chart Detail,0021401075,448,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,11,2,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-190,165,1,1
+343,Shot Chart Detail,0021401075,465,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,9,42,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,29,249,1,1
+344,Shot Chart Detail,0021401075,468,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,9,14,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,163,194,1,1
+345,Shot Chart Detail,0021401075,527,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,3,27,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-141,211,1,0
+346,Shot Chart Detail,0021401092,105,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,0,21,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,18,-141,113,1,0
+347,Shot Chart Detail,0021401092,119,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,10,59,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,28,163,239,1,0
+348,Shot Chart Detail,0021401092,144,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,9,8,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,3,1,1
+349,Shot Chart Detail,0021401092,159,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,7,15,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,179,175,1,1
+350,Shot Chart Detail,0021401092,339,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,3,25,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,27,-191,195,1,0
+351,Shot Chart Detail,0021401092,391,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,0,0,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,38,-158,351,1,0
+352,Shot Chart Detail,0021401092,396,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,11,41,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,9,258,1,1
+353,Shot Chart Detail,0021401092,398,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,11,4,Missed Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,10,9,1,0
+354,Shot Chart Detail,0021401092,421,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,9,8,Missed Shot,Driving Bank shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,-35,22,1,0
+355,Shot Chart Detail,0021401092,431,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,8,40,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-234,104,1,0
+356,Shot Chart Detail,0021401092,441,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,7,34,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,29,-8,291,1,0
+357,Shot Chart Detail,0021401102,150,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,10,59,Made Shot,Step Back Jump shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,18,0,183,1,1
+358,Shot Chart Detail,0021401102,159,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,9,42,Made Shot,Pullup Jump shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-116,225,1,1
+359,Shot Chart Detail,0021401102,174,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,8,4,Missed Shot,Jump Shot,3PT Field Goal,Right Corner 3,Right Side(R),24+ ft.,23,239,-13,1,0
+360,Shot Chart Detail,0021401102,394,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,0,27,Made Shot,Jump Shot,3PT Field Goal,Left Corner 3,Left Side(L),24+ ft.,24,-245,14,1,1
+361,Shot Chart Detail,0021401102,399,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,0,0,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-122,227,1,0
+362,Shot Chart Detail,0021401102,436,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,9,42,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-185,170,1,0
+363,Shot Chart Detail,0021401102,442,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,9,3,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,16,-64,154,1,0
+364,Shot Chart Detail,0021401102,473,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,5,55,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,27,-84,258,1,0
+365,Shot Chart Detail,0021401102,494,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,5,18,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,165,189,1,1
+366,Shot Chart Detail,0021401114,93,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,1,12,Made Shot,Step Back Jump shot,3PT Field Goal,Left Corner 3,Left Side(L),24+ ft.,24,-237,50,1,1
+367,Shot Chart Detail,0021401114,100,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,1,0,2,Made Shot,Step Back Jump shot,2PT Field Goal,Mid-Range,Left Side(L),16-24 ft.,17,-177,0,1,1
+368,Shot Chart Detail,0021401114,132,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,2,9,13,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,27,10,274,1,0
+369,Shot Chart Detail,0021401114,391,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,3,0,6,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,26,13,263,1,1
+370,Shot Chart Detail,0021401114,398,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,11,33,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,26,-190,184,1,0
+371,Shot Chart Detail,0021401114,418,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,10,6,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-15,12,1,1
+372,Shot Chart Detail,0021401114,422,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,9,40,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-26,11,1,1
+373,Shot Chart Detail,0021401114,437,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,8,41,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,26,-139,224,1,1
+374,Shot Chart Detail,0021401114,449,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,7,28,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,124,224,1,0
+375,Shot Chart Detail,0021401114,452,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,6,50,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,27,-155,224,1,0
+376,Shot Chart Detail,0021401114,461,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,6,11,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,26,-210,165,1,1
+377,Shot Chart Detail,0021401114,476,203477,Isaiah Canaan,1610612755,Philadelphia 76ers,4,4,52,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,27,-128,241,1,0
