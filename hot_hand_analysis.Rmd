@@ -210,7 +210,7 @@ overall_cond_df <- d_prev %>%
                                  ifelse(curr_miss_streak == 2, "2",
                                         ifelse(curr_miss_streak == 3, "3", "4+")))) %>%
   gather(cond_probs_type, cond_probs_value, c(cond_probs_hit, cond_probs_miss)) %>%
-  group_by(PLAYER_NAME, cond_probs_type, cond_probs_value) %>%
+  group_by(cond_probs_type, cond_probs_value) %>%
   summarize(shots_taken = n(),
             avg_shot_distance = mean(SHOT_DISTANCE),
             sd_shot_distance = sd(SHOT_DISTANCE),
@@ -222,7 +222,7 @@ overall_cond_df <- d_prev %>%
 overall_row <- d_prev %>%
   mutate(cond_probs_type = "overall",
          cond_probs_value = 0) %>%
-  group_by(cond_probs_type,cond_probs_value) %>%
+  group_by(cond_probs_type, cond_probs_value) %>%
   summarise(shots_taken=n(),
             avg_shot_distance = mean(SHOT_DISTANCE),
             sd_shot_distance = sd(SHOT_DISTANCE),
@@ -247,7 +247,44 @@ overall_cond_df$context <- factor(overall_cond_df$context, levels = c('made_4+',
                                                                       'missed_2',
                                                                       'missed_3',
                                                                       'missed_4+'))
+## Populated standard errors
+overall_cond_df <- overall_cond_df %>%
+  mutate(se = ci_upper - ci_lower / 3.92)
 
+```
+
+### T-test for prev shots
+```{r}
+## T test for missed prev shot
+## ------------------------
+n1 <- overall_cond_df[5, ]$shots_taken
+n2 <- overall_cond_df[4, ]$shots_taken
+sd1 <- overall_cond_df[5, ]$se / sqrt(n1)
+sd2 <- overall_cond_df[4, ]$se / sqrt(n2)
+shooting_per1 <- overall_cond_df[5, ]$shooting_percentage
+shooting_per2 <- overall_cond_df[4, ]$shooting_percentage
+se <- sqrt(sd1^2 / n1 + sd2^2/n2)
+t <- (shooting_per2 - shooting_per1) / se
+pt(t, n1 + n2 - 2)
+
+## T test for missed prev shot
+## ------------------------
+n1 <- overall_cond_df[4, ]$shots_taken
+n2 <- overall_cond_df[6, ]$shots_taken
+sd1 <- overall_cond_df[4, ]$se / sqrt(n1)
+sd2 <- overall_cond_df[6, ]$se / sqrt(n2)
+shooting_per1 <- overall_cond_df[4, ]$shooting_percentage
+shooting_per2 <- overall_cond_df[6, ]$shooting_percentage
+se <- sqrt(sd1^2/n1 + sd2^2/n2)
+t <- (shooting_per2 - shooting_per1) / se
+pt(t, n1 + n2 - 2)
+```
+
+##
+```{r}
+names(d_prev)
+d_prev %>%
+    filter(curr_miss_streak == 1)
 ```
 
 
@@ -279,6 +316,10 @@ overall_cond_df$context <- factor(overall_cond_df$context, levels = c('made_4+',
 # coeftest(bgtest)
 # 
 # dwtest(SHOT_MADE_FLAG ~ prev_shot, data = K_Bryant)
+names(overall_cond_df)
+
+overall_cond_df %>%
+  select(shooting_percentage, ci_lower, ci_upper)
 
 ggplot(overall_cond_df, aes(x = context, y = shooting_percentage)) +
   geom_bar(stat = "identity") +
@@ -288,8 +329,7 @@ ggplot(overall_cond_df, aes(x = context, y = shooting_percentage)) +
 ```
 
 
-## Runs analysis
-
+## Question 2:Wald-Wolfowitch run test
 ```{r}
 players_over_100_shots <- d_prev %>%
   group_by(PLAYER_NAME) %>%
@@ -297,6 +337,8 @@ players_over_100_shots <- d_prev %>%
   filter(num_shots >= 100) %>%
   select(PLAYER_NAME)
 players_over_100_shots <- players_over_100_shots$PLAYER_NAME
+## Num players
+length(players_over_100_shots)
 
 run_test_df <- data.frame("PLAYER_NAME"=NA, "RUNS_STAT"=NA, "RUNS_PVALUE"=NA)
 for (player in players_over_100_shots) {
@@ -318,66 +360,51 @@ run_test_df_plot <- run_test_df %>%
          p_value_col = ifelse(RUNS_PVALUE < 0.01, "green", "grey")) %>%
   arrange(-RUNS_STAT)
 
+run_test_df_plot %>%
+  filter(p_value_col == "green") %>%
+  nrow()
+
 x_breaks <- levels(run_test_df_plot$PLAYER_NAME)[rep(c(TRUE,FALSE), length(run_test_df_plot$PLAYER_NAME)/2)]
 ggplot(run_test_df_plot, aes(x=reorder(PLAYER_NAME, RUNS_STAT), y=RUNS_STAT, fill=p_value_col)) +
   geom_bar(stat="identity", position="identity") +
   scale_fill_manual(values=c("forest green", "grey")) +
   xlab("Players") +
   ylab("Z") +
-  theme(axis.text.x = element_blank())
-
-
-```
-
-
-### Who had the longest runs (streaks)
-```{r}
-calc_runs(subset(d_prev, as.character(PLAYER_NAME) == "Al Jefferson")$SHOT_MADE_FLAG)
-strruns(lawstat::runs.test(subset(d_prev, as.character(PLAYER_NAME) == "Al Jefferson")$SHOT_MADE_FLAG))
-
-
-
-d_prev %>%
-  filter(PLAYER_NAME %in% players_over_1000_shots) %>%
-  group_by(PLAYER_NAME) %>%
-  summarise(runs_test = runs.test(SHOT_MADE_FLAG))
+  theme(axis.text.x = element_blank()) +
+  ggtitle("Wald-Wolfowitz run test\n
+          All players from the 2014-15 season with 100+ shots")
   
-d_prev %>%
-  filter(curr_hit_streak > 10)
-
-K_Bryant <- d_prev %>%
-  filter(PLAYER_NAME == 'Kobe Bryant')
-runs.test(K_Bryant$SHOT_MADE_FLAG)
 ```
 
-
+## Question 3: Does prev shot predict shot distance?
 ```{r}
-d_prev %>%
+shot_dist_plot <- d_prev %>%
   gather(streak_type, streak_value, c(curr_hit_streak, curr_miss_streak)) %>%
-ggplot(., aes(x=streak_value, y=SHOT_DISTANCE)) +
+  mutate(streak_type = ifelse(streak_type == "curr_hit_streak", streak_type, "_curr_miss_streak"))
+ggplot(shot_dist_plot, aes(x=streak_value, y=SHOT_DISTANCE, col=streak_type)) +
   geom_point(alpha=0.25) +
   geom_jitter(width=1) +
   facet_wrap(~streak_type) +
-  geom_smooth(method="lm")
+  geom_smooth(method="lm") +
+  ggtitle("Shot distance by hit/miss streaks\n
+          All shots from the 2014-15 season")
 ```
 
-## lmer predict SHOT_DISTANCE
+### lmer predict SHOT_DISTANCE
 ```{r}
 library(lme4)
 library(lmerTest)
 summary(lmer(SHOT_DISTANCE ~ curr_hit_streak + curr_miss_streak + (1 | PLAYER_ID) + (1 | POSITION), data=d_prev))
+
 ```
 
-
+## Question 4: predict made shot controlling in-game vars
 ```{r}
-# d.raw_mini <- d[1:1000,]
-# d.raw_mini2 <- populate_prev_shots(d.raw_mini)
-# d.raw_mini2 %>% select(GAME_ID, PLAYER_NAME, PERIOD, TOTAL_TIME_REMAINING, time_between_shots, curr_hit_streak, curr_miss_streak) %>% View
-# undebug(get_time_between_shots)
+names(d_prev)
+summary(glm(SHOT_MADE_FLAG ~ curr_hit_streak + curr_miss_streak + SHOT_VALUE + TOTAL_TIME_REMAINING + SHOT_DISTANCE + AGE + HEIGHT + WEIGHT + ACTION_TYPE, family="binomial", data=d_prev))
 ```
 
-
-## Shooting percentage by shot number
+### Shooting percentage by shot number
 ```{r}
 d_prev %>%
   group_by(shot_num) %>%
@@ -397,8 +424,10 @@ Hmmm, this plot makes it look like accuracy stays steady, but `avg_shot_distance
 
 ```{r}
 d_prev %>%
-  ggplot(aes(x = shot_num, y = SHOT_DISTANCE, col = as.factor(SHOT_MADE_FLAG))) +
-    geom_point(alpha = 0.4)
+  ggplot(aes(x=shot_num, y=SHOT_DISTANCE, col=as.factor(SHOT_MADE_FLAG))) +
+    geom_point(alpha=0.4) +
+    geom_jitter(width=0.5) +
+    geom_smooth(method="lm")
 ```
 
 Well, it actually isn't the case that people are taking longer shots later in the game - that was an artificat of increased variance with fewer sample at the higher number of shots.
