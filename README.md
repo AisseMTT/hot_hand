@@ -1,4 +1,4 @@
-# Hot Hand Project
+# Misperceptions of Randomness: Revisiting the Hot Hand Fallacy
 
 In their seminal, 1974 work, “Judgment under Uncertainty: Heuristics and Biases,” Amos Tversky and Daniel Kahneman asked the question, “how do people assess the probability of an uncertain event or the value of an uncertain quantity?”  This question is fundamental to the human experience - day-to-day life is replete with ambiguity we must somehow navigate. In perceiving the distance of an object, or assessing the intended meaning of a speaker’s utterance, we converge on some pragmatic estimate of the “truth,” despite the constraints of limited cognitive resources and often-incomplete information.
 
