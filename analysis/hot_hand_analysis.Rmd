@@ -278,18 +278,26 @@ run_test_df <- run_test_df %>%
 ```{r analysis2_WWruns_analsysis_plot}
 run_test_df_plot <- run_test_df %>% 
   mutate(PLAYER_NAME = as.factor(PLAYER_NAME),
-         p_value_col = ifelse(RUNS_PVALUE < 0.01, "green", "grey")) %>%
+         p_value_col = ifelse(RUNS_PVALUE < 0.01, "p<0.01", "non-sig")) %>%
   arrange(-RUNS_STAT)
 
 x_breaks <- levels(run_test_df_plot$PLAYER_NAME)[rep(c(TRUE,FALSE), length(run_test_df_plot$PLAYER_NAME)/2)]
 ggplot(run_test_df_plot, aes(x=reorder(PLAYER_NAME, RUNS_STAT), y=RUNS_STAT, fill=p_value_col)) +
   geom_bar(stat="identity", position="identity") +
-  scale_fill_manual(values=c("forest green", "grey")) +
+  scale_fill_manual(values=c("grey", "forest green")) +
   xlab("Players") +
   ylab("Z") +
   theme(axis.text.x = element_blank()) +
-  ggtitle("Wald-Wolfowitz run test\n
-          All players from the 2014-15 season with 100+ shots")
+  ggtitle(paste0("Wald-Wolfowitz run test", "\n",
+          "All players from the 2014-15 season with 100+ shots"))
+```
+
+### Num players with p < 0.001
+```{r}
+run_test_df_plot %>%
+  filter(RUNS_PVALUE < 0.01) %>%
+  select(PLAYER_NAME, RUNS_STAT, RUNS_PVALUE) %>%
+  knitr::kable(., digits=4)
 ```
 
 ## Question 3: Does prev shot predict shot distance?
@@ -310,8 +318,8 @@ ggplot(shot_dist_plot, aes(x=streak_value, y=SHOT_DISTANCE, col=streak_type)) +
   geom_jitter(alpha=0.25, size=0.6, width=1) +
   facet_wrap(~streak_type) +
   geom_smooth(method="lm") +
-  ggtitle("Shot distance by hit/miss streaks\n
-          All shots from the 2014-15 season")
+  ggtitle(paste0("Shot distance by hit/miss streaks", "\n",
+          "All shots from the 2014-15 season"))
 ```
 
 ### Test
