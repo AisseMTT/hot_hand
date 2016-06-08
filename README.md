@@ -10,10 +10,9 @@ In the following project, we review one of the more popular errors studied withi
 
 https://github.com/benpeloquin7/hot_hand/blob/master/paper/Final_Paper1.docx
 
-
 ### Analysis
 
-here...
+https://htmlpreview.github.io/?https://github.com/benpeloquin7/hot_hand/blob/master/analysis/hot_hand_analysis.html
 
 ### Data collection and scraping
 
