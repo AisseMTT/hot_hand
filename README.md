@@ -4,7 +4,7 @@ In their seminal, 1974 work, “Judgment under Uncertainty: Heuristics and Biase
 
 ## Current project
 
-In the following project, we review one of the more popular errors studied within this framework – the divergence of people’s intuitive beliefs of randomness from the basic laws of chance. To do so, we revisit the controversial topic of the “Hot Hand” in Basketball. To do so we review the orginal study of the Hot Hand phenomenon, which proposed that it is a fallacy (Gillovich, Vallone & Tversky, 1985) along with more recent work which claims to provide evidence for the phenomenon from a controlled shooting experiment (Miller and Sanjurjo, 2014). 
+In the following project, we review one of the more popular errors studied within this framework – the divergence of people’s intuitive beliefs of randomness from the basic laws of chance. To do so, we revisit the controversial topic of the “Hot Hand” in Basketball. We review the orginal study which proposed that the Hot Hand was a fallacy (Gillovich, Vallone & Tversky, 1985) along with more recent work which claims to provide evidence for the phenomenon from a controlled shooting experiment (Miller and Sanjurjo, 2014). We conduct our own anlaysis of the phenomenon using the entire shot history from the 2014-15 NBA season (~200,000 shots from 400 players), also integrating player specific information scraped from stats.nba.com. While we are unable to detect Hot Hand effects in our data set, we do observe a potential in-game data confound proposed by Miller and Sanjurjo (2014).
 
 ### Paper
 
